@@ -1163,63 +1163,77 @@ content="What do people in 2026 think the world will look like in 2126? A time c
 
 
 <!-- ADD YOUR IDEA -->
-
 <section class="add-idea">
+  <div class="add-idea-label">Contribute to this article</div>
 
-  <div class="add-idea-label">
-    Contribute to this article
-  </div>
-
-  <h2>
-    Add Your Idea
-  </h2>
+  <h2>Add Your Idea</h2>
 
   <p>
-    Did this article miss something?
-    Add an idea, example, or prediction that you think belongs
-    in the historical record.
+    Did this article miss something? Add an idea, example, or prediction
+    that you think belongs in the historical record.
   </p>
 
-  <form class="idea-form">
+  <form
+    class="idea-form"
+    onsubmit="submitIdea(event)"
+  >
+    <textarea
+      name="idea"
+      placeholder="What idea, prediction, or example should be added?"
+      required
+    ></textarea>
 
-    <label>
-      Your idea
-      <textarea
-        name="idea"
-        placeholder="What idea, prediction, or example should be added?"
-        required
-      ></textarea>
-    </label>
+    <select name="type" required>
+      <option value="" disabled selected>Select a submission type</option>
+      <option value="A new idea">A new idea</option>
+      <option value="An example from 2026">An example from 2026</option>
+      <option value="A correction">A correction</option>
+    </select>
 
-    <label>
-      What are you adding?
-      <select name="type">
-        <option value="idea">A new idea</option>
-        <option value="example">An example from 2026</option>
-        <option value="correction">A correction</option>
-      </select>
-    </label>
-
-    <label>
-      Your name (optional)
-      <input
-        type="text"
-        name="name"
-        placeholder="Anonymous"
-      >
-    </label>
-
-    <button type="submit">
-      Submit Your Idea
-    </button>
-
+    <button type="submit">Submit Your Idea</button>
   </form>
 
   <p class="approval-note">
-    Submissions are reviewed before they are added to the archive.
+    Your submission will open a GitHub Issue for review.
+    You’ll need a GitHub account to submit it.
   </p>
-
 </section>
+
+<script>
+  function submitIdea(event) {
+    event.preventDefault();
+
+    const form = event.target;
+    const idea = form.idea.value.trim();
+    const type = form.type.value;
+
+    if (!idea || !type) return;
+
+    const title = `[Article Submission] ${type}`;
+
+    const body =
+`## Article Submission
+
+**Article:** What People in 2026 Think 2126 Will Look Like
+
+**Type:** ${type}
+
+### Submitted Idea
+
+${idea}
+
+---
+
+Submitted through the History of Humanity archive.`;
+
+    const issueUrl =
+      "https://github.com/frog1230/history-of-humanity/issues/new" +
+      "?title=" + encodeURIComponent(title) +
+      "&body=" + encodeURIComponent(body);
+
+    window.open(issueUrl, "_blank");
+  }
+</script>
  
 
   </article>
