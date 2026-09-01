@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>History of Humanity — An Archive of Ordinary Human Life</title>
+  <meta name="description" content="History of Humanity is an archive of ordinary human life, preserved year by year. Leave something behind for the people of the future.">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      background: #f4f1e8;
+      color: #24231f;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* NAVIGATION */
+
+    nav {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 24px 6%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 10;
+    }
+
+    .logo {
+      font-size: 1.15rem;
+      font-weight: bold;
+      letter-spacing: 0.04em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      font-family: Arial, sans-serif;
+      font-size: 0.9rem;
+    }
+
+    .nav-links a {
+      opacity: 0.7;
+      transition: opacity 0.2s;
+    }
+
+    .nav-links a:hover {
+      opacity: 1;
+    }
+
+    /* HERO */
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 120px 20px 80px;
+      position: relative;
+      border-bottom: 1px solid #d4d0c4;
+    }
+
+    .hero-content {
+      max-width: 850px;
+    }
+
+    .eyebrow {
+      font-family: Arial, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      font-size: 0.72rem;
+      color: #777268;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      font-size: clamp(3.5rem, 9vw, 7.5rem);
+      line-height: 0.95;
+      font-weight: normal;
+      letter-spacing: -0.055em;
+      margin-bottom: 30px;
+    }
+
+    .hero-subtitle {
+      font-size: clamp(1.25rem, 2vw, 1.65rem);
+      color: #5e5a51;
+      max-width: 650px;
+      margin: 0 auto 42px;
+      font-style: italic;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+      font-family: Arial, sans-serif;
+    }
+
+    .button {
+      padding: 14px 24px;
+      border: 1px solid #24231f;
+      transition: 0.2s;
+      font-size: 0.9rem;
+    }
+
+    .button.primary {
+      background: #24231f;
+      color: #f4f1e8;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+    }
+
+    .button.secondary:hover {
+      background: #e5e1d6;
+    }
+
+    /* SECTIONS */
+
+    section {
+      padding: 110px 7%;
+    }
+
+    .section-inner {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section-label {
+      font-family: Arial, sans-serif;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: #817b70;
+      margin-bottom: 18px;
+    }
+
+    h2 {
+      font-size: clamp(2.4rem, 5vw, 4.5rem);
+      font-weight: normal;
+      line-height: 1.05;
+      letter-spacing: -0.04em;
+      max-width: 800px;
+      margin-bottom: 30px;
+    }
+
+    .intro-text {
+      max-width: 700px;
+      font-size: 1.15rem;
+      color: #5e5a51;
+    }
+
+    /* ARCHIVE */
+
+    .archive-section {
+      background: #e9e5da;
+    }
+
+    .archive-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 30px;
+      margin-bottom: 50px;
+    }
+
+    .archive-header p {
+      max-width: 400px;
+      color: #666157;
+    }
+
+    .timeline {
+      border-top: 1px solid #aaa59a;
+    }
+
+    .year {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      gap: 40px;
+      padding: 32px 0;
+      border-bottom: 1px solid #aaa59a;
+    }
+
+    .year-number {
+      font-size: 2rem;
+    }
+
+    .year-content h3 {
+      font-size: 1.4rem;
+      font-weight: normal;
+      margin-bottom: 7px;
+    }
+
+    .year-content p {
+      color: #666157;
+      max-width: 650px;
+    }
+
+    /* WHY */
+
+    .why {
+      background: #24231f;
+      color: #f4f1e8;
+    }
+
+    .why .section-label {
+      color: #aaa59a;
+    }
+
+    .why h2 {
+      max-width: 900px;
+    }
+
+    .why-text {
+      max-width: 720px;
+      font-size: 1.2rem;
+      color: #c9c4b9;
+    }
+
+    .quote {
+      margin-top: 70px;
+      padding-left: 30px;
+      border-left: 2px solid #f4f1e8;
+      font-size: clamp(1.5rem, 3vw, 2.4rem);
+      font-style: italic;
+      max-width: 800px;
+    }
+
+    /* CATEGORIES */
+
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      margin-top: 55px;
+      border-top: 1px solid #bbb6aa;
+      border-left: 1px solid #bbb6aa;
+    }
+
+    .category {
+      padding: 30px;
+      border-right: 1px solid #bbb6aa;
+      border-bottom: 1px solid #bbb6aa;
+      min-height: 130px;
+    }
+
+    .category strong {
+      display: block;
+      font-size: 1.2rem;
+      font-weight: normal;
+      margin-bottom: 5px;
+    }
+
+    .category span {
+      font-family: Arial, sans-serif;
+      font-size: 0.8rem;
+      color: #777268;
+    }
+
+    /* CTA */
+
+    .cta {
+      text-align: center;
+      padding: 140px 20px;
+    }
+
+    .cta h2 {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta p {
+      max-width: 600px;
+      margin: 0 auto 35px;
+      color: #666157;
+      font-size: 1.1rem;
+    }
+
+    /* FOOTER */
+
+    footer {
+      padding: 30px 7%;
+      border-top: 1px solid #d4d0c4;
+      display: flex;
+      justify-content: space-between;
+      font-family: Arial, sans-serif;
+      font-size: 0.75rem;
+      color: #817b70;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 700px) {
+      nav {
+        padding: 20px;
+      }
+
+      .nav-links {
+        gap: 14px;
+      }
+
+      .nav-links a:first-child {
+        display: none;
+      }
+
+      section {
+        padding: 80px 20px;
+      }
+
+      .archive-header {
+        display: block;
+      }
+
+      .archive-header p {
+        margin-top: 20px;
+      }
+
+      .year {
+        grid-template-columns: 80px 1fr;
+        gap: 20px;
+      }
+
+      .year-number {
+        font-size: 1.4rem;
+      }
+
+      .categories {
+        grid-template-columns: 1fr;
+      }
+
+      footer {
+        display: block;
+      }
+
+      footer span {
+        display: block;
+        margin-top: 8px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <a href="#" class="logo">HISTORY OF HUMANITY</a>
+
+    <div class="nav-links">
+      <a href="#archive">Archive</a>
+      <a href="#about">About</a>
+      <a href="#contribute">Contribute</a>
+    </div>
+  </nav>
+
+
+  <!-- HERO -->
+
+  <header class="hero">
+    <div class="hero-content">
+
+      <div class="eyebrow">An archive for the future</div>
+
+      <h1>History of Humanity</h1>
+
+      <p class="hero-subtitle">
+        An archive of ordinary human life, preserved year by year.
+      </p>
+
+      <div class="buttons">
+        <a href="#contribute" class="button primary">
+          Leave Your Mark
+        </a>
+
+        <a href="#archive" class="button secondary">
+          Explore the Archive
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+
+  <!-- INTRO -->
+
+  <section id="about">
+    <div class="section-inner">
+
+      <div class="section-label">Why this exists</div>
+
+      <h2>
+        History isn't only made by famous people.
+      </h2>
+
+      <p class="intro-text">
+        It's made by everyone.
+        The ordinary conversations, hobbies, worries, jokes, routines,
+        opinions, and experiences of everyday people are part of history too.
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- ARCHIVE -->
+
+  <section id="archive" class="archive-section">
+
+    <div class="section-inner">
+
+      <div class="archive-header">
+
+        <div>
+          <div class="section-label">The archive</div>
+
+          <h2>What will people find here?</h2>
+        </div>
+
+        <p>
+          A growing record of what it was like to be alive in different
+          moments of human history.
+        </p>
+
+      </div>
+
+
+      <div class="timeline">
+
+        <article class="year">
+
+          <div class="year-number">2026</div>
+
+          <div class="year-content">
+            <h3>The present</h3>
+
+            <p>
+              AI became part of everyday life. People questioned what
+              technology meant for humanity while ordinary life continued
+              around it.
+            </p>
+          </div>
+
+        </article>
+
+
+        <article class="year">
+
+          <div class="year-number">2027</div>
+
+          <div class="year-content">
+            <h3>The year is still being written.</h3>
+
+            <p>
+              Future entries will document the things people chose to
+              remember.
+            </p>
+          </div>
+
+        </article>
+
+
+        <article class="year">
+
+          <div class="year-number">2040</div>
+
+          <div class="year-content">
+            <h3>Not yet written.</h3>
+
+            <p>
+              Someone living in 2040 may look back at these entries and
+              discover what life was actually like decades earlier.
+            </p>
+          </div>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- WHY -->
+
+  <section class="why">
+
+    <div class="section-inner">
+
+      <div class="section-label">The idea</div>
+
+      <h2>
+        History is happening right now.
+      </h2>
+
+      <p class="why-text">
+        Most of it won't make the news.
+        Most people won't have a biography written about them.
+        Most ordinary moments will simply disappear.
+      </p>
+
+      <div class="quote">
+        Unless someone preserves them.
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- WHAT TO PRESERVE -->
+
+  <section>
+
+    <div class="section-inner">
+
+      <div class="section-label">Your contribution</div>
+
+      <h2>
+        What should be remembered?
+      </h2>
+
+      <p class="intro-text">
+        Your entry doesn't need to be important.
+        That's the point.
+      </p>
+
+
+      <div class="categories">
+
+        <div class="category">
+          <strong>Daily Life</strong>
+          <span>What was an ordinary day like?</span>
+        </div>
+
+        <div class="category">
+          <strong>Technology</strong>
+          <span>What technology shaped your life?</span>
+        </div>
+
+        <div class="category">
+          <strong>Culture</strong>
+          <span>Music, games, movies, trends and traditions.</span>
+        </div>
+
+        <div class="category">
+          <strong>School & Work</strong>
+          <span>How did people spend their time?</span>
+        </div>
+
+        <div class="category">
+          <strong>Thoughts</strong>
+          <span>What did people believe or worry about?</span>
+        </div>
+
+        <div class="category">
+          <strong>Anything Else</strong>
+          <span>If it mattered to you, it belongs here.</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CTA -->
+
+  <section id="contribute" class="cta">
+
+    <div class="section-inner">
+
+      <div class="section-label">Add to the archive</div>
+
+      <h2>
+        One day, today will be history.
+      </h2>
+
+      <p>
+        Leave something behind for the people who will wonder what it was
+        really like to live through this time.
+      </p>
+
+      <div class="buttons">
+
+        <a href="#" class="button primary">
+          Create an Entry
+        </a>
+
+        <a href="#archive" class="button secondary">
+          Browse the Archive
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <footer>
+
+    <strong>HISTORY OF HUMANITY</strong>
+
+    <span>
+      An archive of ordinary human life.
+    </span>
+
+  </footer>
+
+</body>
+</html>
