@@ -1,0 +1,2020 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Jobs in 2026: What People Actually Did for Work | History of Humanity</title>
+
+  <meta
+    name="description"
+    content="What did people actually do for work in 2026? A historical record of the jobs, workplaces, industries, technology, and working lives of ordinary people."
+  >
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      background: #f4f1e8;
+      color: #24231f;
+      line-height: 1.75;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    /* NAV */
+
+    nav {
+      border-bottom: 1px solid #d4d0c4;
+      padding: 22px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: Arial, sans-serif;
+    }
+
+    .logo {
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 0.9rem;
+      letter-spacing: 0.05em;
+    }
+
+    .back {
+      font-size: 0.8rem;
+      color: #777268;
+    }
+
+    /* ARTICLE HEADER */
+
+    .article-header {
+      max-width: 950px;
+      margin: auto;
+      padding: 110px 25px 90px;
+      text-align: center;
+    }
+
+    .archive-label {
+      font-family: Arial, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      font-size: 0.7rem;
+      color: #817b70;
+      margin-bottom: 25px;
+    }
+
+    h1 {
+      font-size: clamp(3rem, 7vw, 6.5rem);
+      line-height: 0.98;
+      font-weight: normal;
+      letter-spacing: -0.055em;
+      margin-bottom: 30px;
+    }
+
+    .subtitle {
+      max-width: 700px;
+      margin: auto;
+      font-size: 1.35rem;
+      font-style: italic;
+      color: #666157;
+    }
+
+    .metadata {
+      margin-top: 35px;
+      font-family: Arial, sans-serif;
+      font-size: 0.75rem;
+      color: #817b70;
+    }
+
+    /* ARTICLE */
+
+    article {
+      max-width: 780px;
+      margin: auto;
+      padding: 0 25px 120px;
+    }
+
+    article p {
+      font-size: 1.08rem;
+      margin-bottom: 25px;
+    }
+
+    .lead {
+      font-size: 1.35rem;
+      color: #4f4b43;
+      margin-bottom: 55px;
+    }
+
+    h2 {
+      font-size: 2.6rem;
+      font-weight: normal;
+      line-height: 1.1;
+      letter-spacing: -0.035em;
+      margin: 90px 0 25px;
+    }
+
+    h3 {
+      font-size: 1.55rem;
+      font-weight: normal;
+      margin: 45px 0 15px;
+    }
+
+    /* SOURCE BOX */
+
+    .source {
+      margin: 30px 0 40px;
+      padding: 22px 25px;
+      background: #e9e5da;
+      border-left: 3px solid #817b70;
+      font-family: Arial, sans-serif;
+      font-size: 0.85rem;
+    }
+
+    .source strong {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .source a {
+      color: #4f4b43;
+      text-decoration: underline;
+    }
+
+    /* ARCHIVE NOTE */
+
+    .archive-note {
+      margin: 55px 0;
+      padding: 30px;
+      border: 1px solid #bbb6aa;
+      background: #f0ede4;
+    }
+
+    .archive-note strong {
+      display: block;
+      font-family: Arial, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-size: 0.7rem;
+      margin-bottom: 10px;
+    }
+
+    /* IDEA LIST */
+
+    .idea-list {
+      margin-top: 30px;
+      border-top: 1px solid #bbb6aa;
+    }
+
+    .idea {
+      padding: 22px 0;
+      border-bottom: 1px solid #bbb6aa;
+    }
+
+    .idea strong {
+      font-size: 1.1rem;
+      font-weight: normal;
+    }
+
+    .idea span {
+      color: #666157;
+    }
+
+    /* FINAL */
+
+    .ending {
+      margin-top: 100px;
+      padding: 55px 0;
+      border-top: 1px solid #aaa59a;
+      border-bottom: 1px solid #aaa59a;
+      text-align: center;
+    }
+
+    .ending p {
+      font-size: 1.4rem;
+      font-style: italic;
+      max-width: 650px;
+      margin: auto;
+    }
+
+    /* ADD YOUR IDEA */
+
+    .add-idea {
+      margin-top: 100px;
+      padding: 45px 35px;
+      border: 1px solid #bbb6aa;
+      background: #e9e5da;
+    }
+
+    .add-idea-label {
+      font-family: Arial, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 0.7rem;
+      color: #817b70;
+      margin-bottom: 12px;
+    }
+
+    .add-idea h2 {
+      margin: 0 0 18px;
+      font-size: 2.3rem;
+    }
+
+    .add-idea p {
+      color: #555148;
+      font-size: 1rem;
+      margin-bottom: 25px;
+    }
+
+    .idea-form {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .idea-form label {
+      font-family: Arial, sans-serif;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #5f5a51;
+    }
+
+    .idea-form textarea,
+    .idea-form input,
+    .idea-form select {
+      width: 100%;
+      margin-top: 7px;
+      padding: 13px 14px;
+      border: 1px solid #aaa59a;
+      background: #f4f1e8;
+      color: #24231f;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1rem;
+      border-radius: 0;
+    }
+
+    .idea-form textarea {
+      min-height: 140px;
+      resize: vertical;
+    }
+
+    .idea-form textarea:focus,
+    .idea-form input:focus,
+    .idea-form select:focus {
+      outline: 2px solid #817b70;
+      outline-offset: 1px;
+    }
+
+    .idea-form button {
+      align-self: flex-start;
+      padding: 13px 22px;
+      border: 1px solid #24231f;
+      background: #24231f;
+      color: #f4f1e8;
+      font-family: Arial, sans-serif;
+      font-size: 0.78rem;
+      letter-spacing: 0.05em;
+      cursor: pointer;
+    }
+
+    .idea-form button:hover {
+      opacity: 0.85;
+    }
+
+    .approval-note {
+      margin-top: 20px;
+      margin-bottom: 0 !important;
+      font-family: Arial, sans-serif;
+      font-size: 0.75rem !important;
+      color: #817b70 !important;
+    }
+
+    /* FOOTER */
+
+    footer {
+      padding: 35px 7%;
+      border-top: 1px solid #d4d0c4;
+      font-family: Arial, sans-serif;
+      font-size: 0.75rem;
+      color: #817b70;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @media (max-width: 700px) {
+      .article-header {
+        padding: 80px 20px 65px;
+      }
+
+      article {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      h2 {
+        font-size: 2.2rem;
+      }
+
+      .add-idea {
+        padding: 35px 22px;
+      }
+
+      footer {
+        display: block;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <nav>
+    <a href="../index.html" class="logo">
+      HISTORY OF HUMANITY
+    </a>
+
+    <a href="https://fluryjanis.github.io/History-of-Humanity/#archive" class="back">
+      ← Archive
+    </a>
+  </nav>
+
+
+  <!-- ARTICLE HEADER -->
+
+  <header class="article-header">
+
+    <div class="archive-label">
+      History of Humanity · 2026
+    </div>
+
+    <h1>
+      Jobs in 2026: What People Actually Did for Work
+    </h1>
+
+    <p class="subtitle">
+      A record of the work people did, the jobs they depended on,
+      and the changing meaning of work at the beginning of the
+      second century of the digital age.
+    </p>
+
+    <div class="metadata">
+      Published September 1, 2026 · Looking at work in 2026
+    </div>
+
+  </header>
+
+
+  <!-- ARTICLE -->
+
+  <article>
+
+    <p class="lead">
+      In 2026, work was changing rapidly.
+      Artificial intelligence was entering offices, robots were
+      becoming more capable, remote work had become normal for some
+      workers, and new industries were appearing.
+    </p>
+
+    <p>
+      But most people were not living in a futuristic workplace.
+    </p>
+
+    <p>
+      Millions of people still worked in hospitals, stores,
+      restaurants, warehouses, schools, construction sites,
+      offices, farms, factories, government buildings, and homes.
+    </p>
+
+    <p>
+      Some jobs were changing because of computers and AI.
+      Others had changed surprisingly little.
+    </p>
+
+    <p>
+      This article is a record of what work actually looked like
+      in 2026 — not what people expected work to look like in the
+      future.
+    </p>
+
+    <div class="archive-note">
+
+      <strong>Archive note</strong>
+
+      This article documents the jobs and working conditions that
+      existed in 2026.
+
+      <br><br>
+
+      The future of work was being debated heavily during this period.
+      Some jobs were expected to grow, some were expected to decline,
+      and artificial intelligence was beginning to change how many
+      people performed their work.
+
+      <br><br>
+
+      Those predictions are included where relevant, but they are
+      kept separate from the historical record of what people were
+      actually doing in 2026.
+    </div>
+
+
+    <!-- HEALTHCARE -->
+
+    <h2>
+      1. Healthcare Was One of the Biggest Employers
+    </h2>
+
+    <p>
+      Healthcare was one of the largest and fastest-growing parts
+      of the American labor market in 2026.
+    </p>
+
+    <p>
+      Millions of people worked as nurses, doctors, medical assistants,
+      home health aides, personal care aides, therapists, technicians,
+      administrators, and other healthcare workers.
+    </p>
+
+    <p>
+      Home health and personal care aides were the single largest
+      occupation in the United States, with roughly 4.3 million workers.
+    </p>
+
+    <p>
+      Registered nurses were another enormous occupation, with around
+      3.3 million workers.
+    </p>
+
+    <div class="source">
+
+      <strong>Employment record</strong>
+
+      <a
+        href="https://www.bls.gov/news.release/archives/ocwage_05152026.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        U.S. Bureau of Labor Statistics — May 2025 Occupational Employment and Wages
+      </a>
+
+    </div>
+
+    <p>
+      Healthcare was also projected to be the fastest-growing major
+      industry over the 2024–2034 period.
+    </p>
+
+    <p>
+      The Bureau of Labor Statistics projected healthcare and social
+      assistance employment to increase by approximately two million
+      jobs.
+    </p>
+
+    <div class="source">
+
+      <strong>Employment projections</strong>
+
+      <a
+        href="https://www.bls.gov/opub/mlr/2026/article/industry-and-occupational-employment-projections-overview.htm"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        U.S. Bureau of Labor Statistics — Industry and Occupational Employment Projections Overview
+      </a>
+
+    </div>
+
+    <p>
+      This meant that even in a period dominated by conversations about
+      software and artificial intelligence, some of the most important
+      jobs remained deeply physical and human.
+    </p>
+
+
+    <!-- RETAIL -->
+
+    <h2>
+      2. Retail Was Still Everywhere
+    </h2>
+
+    <p>
+      Shopping in 2026 was highly digital, but retail still required
+      enormous numbers of people.
+    </p>
+
+    <p>
+      Retail salespersons were among the largest occupations in the
+      United States, with approximately 3.9 million workers.
+    </p>
+
+    <p>
+      Cashiers represented another huge occupation, with around
+      3.1 million workers.
+    </p>
+
+    <div class="source">
+
+      <strong>Employment record</strong>
+
+      <a
+        href="https://www.bls.gov/news.release/archives/ocwage_05152026.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        U.S. Bureau of Labor Statistics — Occupational Employment and Wages
+      </a>
+
+    </div>
+
+    <p>
+      Stores were increasingly connected to online ordering,
+      automated inventory systems, self-checkout machines, digital
+      payment systems, and delivery networks.
+    </p>
+
+    <p>
+      Yet people still stocked shelves, helped customers, unloaded
+      shipments, operated registers, managed stores, and handled the
+      physical side of getting products into people's hands.
+    </p>
+
+
+    <!-- RESTAURANTS -->
+
+    <h2>
+      3. Restaurants Still Needed People
+    </h2>
+
+    <p>
+      Restaurants remained another enormous source of employment.
+    </p>
+
+    <p>
+      Fast food and counter workers numbered roughly 3.9 million,
+      while cooks represented another large occupation.
+    </p>
+
+    <p>
+      The Bureau of Labor Statistics projected approximately
+      217,000 additional cook jobs over the 2024–2034 period.
+    </p>
+
+    <div class="source">
+
+      <strong>Employment projections</strong>
+
+      <a
+        href="https://www.bls.gov/emp/tables/occupations-most-job-growth.htm"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        U.S. Bureau of Labor Statistics — Occupations With the Most Job Growth
+      </a>
+
+    </div>
+
+    <p>
+      Restaurants were becoming more technological, but food still
+      had to be prepared, customers still had to be served, and
+      kitchens still had to operate in physical space.
+    </p>
+
+
+    <!-- OFFICE -->
+
+    <h2>
+      4. Offices Had Become Digital Workplaces
+    </h2>
+
+    <p>
+      For many office workers, the computer had become the primary
+      tool of the job.
+    </p>
+
+    <p>
+      Documents were created digitally. Meetings could happen through
+      video calls. Files were stored in cloud systems. Communication
+      happened through email, messaging applications, and workplace
+      collaboration software.
+    </p>
+
+    <p>
+      Many jobs that once required paper files and physical offices
+      could now be performed almost entirely through a computer.
+    </p>
+
+    <p>
+      This did not mean offices disappeared.
+    </p>
+
+    <p>
+      Instead, the workplace increasingly became a mixture of people,
+      software, digital communication, databases, and automated systems.
+    </p>
+
+
+    <!-- REMOTE -->
+
+    <h2>
+      5. Remote Work Was Normal — But Not Universal
+    </h2>
+
+    <p>
+      One of the most visible changes to working life was the
+      normalization of working from home.
+    </p>
+
+    <p>
+      But remote work was far from universal.
+    </p>
+
+    <p>
+      According to the Bureau of Labor Statistics' 2025 American Time
+      Use Survey, 35 percent of employed people did some or all of
+      their work at home on days they worked, while 70 percent did
+      some or all of their work at their workplace.
+    </p>
+
+    <div class="source">
+
+      <strong>Working from home</strong>
+
+      <a
+        href="https://www.bls.gov/news.release/atus.htm"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        U.S. Bureau of Labor Statistics — American Time Use Survey, 2025
+      </a>
+
+    </div>
+
+    <p>
+      The ability to work remotely depended heavily on the occupation.
+    </p>
+
+    <p>
+      A programmer could potentially work from almost anywhere with
+      an internet connection.
+    </p>
+
+    <p>
+      A nurse, construction worker, cook, warehouse employee,
+      mechanic, or retail worker generally could not.
+    </p>
+
+    <p>
+      This created two very different experiences of the modern
+      workplace.
+    </p>
+
+
+    <!-- COMPUTER -->
+
+    <h2>
+      6. The Computer Became a Workplace Tool
+    </h2>
+
+    <p>
+      By 2026, computers were no longer associated only with
+      technology jobs.
+    </p>
+
+    <p>
+      They were ordinary tools across almost every sector of the
+      economy.
+    </p>
+
+    <p>
+      A manager could use software to track employees.
+      A warehouse worker could use a handheld scanner.
+      A doctor could access digital medical records.
+      A teacher could manage assignments online.
+      A truck driver could use navigation and logistics systems.
+      A cashier could operate a computerized point-of-sale system.
+    </p>
+
+    <p>
+      The computer was no longer a separate category of technology.
+      It had become part of the basic infrastructure of work.
+    </p>
+
+
+    <!-- AI -->
+
+    <h2>
+      7. AI Entered the Workplace
+    </h2>
+
+    <p>
+      Artificial intelligence was one of the most discussed changes
+      to work in 2026.
+    </p>
+
+    <p>
+      AI systems were being used for writing, research, summarization,
+      programming, data analysis, customer support, image generation,
+      brainstorming, and other tasks.
+    </p>
+
+    <p>
+      But AI use was not yet universal.
+    </p>
+
+    <p>
+      In a Pew Research Center survey conducted in 2024, 16 percent
+      of U.S. workers said they used AI for at least some of their work.
+      By September 2025, that figure had risen to 21 percent.
+    </p>
+
+    <div class="source">
+
+      <strong>AI at work</strong>
+
+      <a
+        href="https://www.pewresearch.org/technology/2025/12/15/workers-use-ai-in-some-of-their-work/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Pew Research Center — Workers' Use of AI in Some of Their Work
+      </a>
+
+    </div>
+
+    <p>
+      Many workers who used AI were using it as an assistant rather
+      than allowing it to completely perform their jobs.
+    </p>
+
+    <p>
+      Common uses included researching information, editing writing,
+      drafting reports and documents, summarizing material, generating
+      ideas, and working with data or code.
+    </p>
+
+    <p>
+      AI therefore became another tool inside many workplaces rather
+      than immediately replacing the workplace itself.
+    </p>
+
+
+    <!-- AI CONCERNS -->
+
+    <h2>
+      8. Workers Were Not All Excited About AI
+    </h2>
+
+    <p>
+      The arrival of workplace AI was accompanied by uncertainty.
+    </p>
+
+    <p>
+      Many workers worried that AI could eventually reduce the need
+      for human workers or change the value of their skills.
+    </p>
+
+    <p>
+      Pew Research found that more workers were worried than hopeful
+      about the future impact of AI in the workplace.
+    </p>
+
+    <p>
+      In one survey, 52 percent of workers said they were worried
+      about future AI use at work, compared with 36 percent who were
+      hopeful.
+    </p>
+
+    <div class="source">
+
+      <strong>Workers and AI</strong>
+
+      <a
+        href="https://www.pewresearch.org/technology/2025/02/25/workers-views-of-ai-use-in-the-workplace/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Pew Research Center — Workers' Views of AI Use in the Workplace
+      </a>
+
+    </div>
+
+    <p>
+      This tension became one of the defining features of work in
+      the mid-2020s.
+    </p>
+
+    <p>
+      AI could make certain tasks easier while simultaneously creating
+      uncertainty about what those tasks would mean for the future
+      of employment.
+    </p>
+
+
+    <!-- SOFTWARE -->
+
+    <h2>
+      9. Software Developers Became Even More Important
+    </h2>
+
+    <p>
+      Software development was already a major occupation before
+      generative AI became widespread.
+    </p>
+
+    <p>
+      In 2026, software developers remained one of the largest sources
+      of projected employment growth.
+    </p>
+
+    <p>
+      The Bureau of Labor Statistics projected approximately
+      268,000 additional software developer jobs between 2024 and 2034,
+      an increase of about 15.8 percent.
+    </p>
+
+    <div class="source">
+
+      <strong>Employment projections</strong>
+
+      <a
+        href="https://www.bls.gov/emp/tables/occupations-most-job-growth.htm"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        U.S. Bureau of Labor Statistics — Occupations With the Most Job Growth
+      </a>
+
+    </div>
+
+    <p>
+      This was happening at the same time that AI coding tools were
+      becoming increasingly capable.
+    </p>
+
+    <p>
+      Rather than making software development irrelevant immediately,
+      AI became another tool developers could use to write, inspect,
+      explain, and modify code.
+    </p>
+
+
+    <!-- DATA -->
+
+    <h2>
+      10. Data Became a Job
+    </h2>
+
+    <p>
+      Modern organizations generated enormous amounts of data.
+    </p>
+
+    <p>
+      Someone had to collect it, analyze it, protect it, visualize it,
+      and turn it into useful information.
+    </p>
+
+    <p>
+      Data scientists were among the fastest-growing occupations in
+      the United States.
+    </p>
+
+    <p>
+      The Bureau of Labor Statistics projected data scientist employment
+      to grow by approximately 33.5 percent from 2024 to 2034.
+    </p>
+
+    <div class="source">
+
+      <strong>Fast-growing occupations</strong>
+
+      <a
+        href="https://www.bls.gov/emp/tables/fastest-growing-occupations.htm"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        U.S. Bureau of Labor Statistics — Fastest-Growing Occupations
+      </a>
+
+    </div>
+
+    <p>
+      Data had become part of nearly every major industry, from
+      healthcare and finance to transportation, retail, entertainment,
+      science, and government.
+    </p>
+
+
+    <!-- CYBERSECURITY -->
+
+    <h2>
+      11. Cybersecurity Became Its Own Industry
+    </h2>
+
+    <p>
+      As more of society moved online, protecting digital systems
+      became increasingly important.
+    </p>
+
+    <p>
+      Businesses, governments, hospitals, schools, and individuals
+      all depended on computer systems that could be attacked,
+      disrupted, or exploited.
+    </p>
+
+    <p>
+      Information security analysts were among the fastest-growing
+      occupations tracked by the Bureau of Labor Statistics.
+    </p>
+
+    <p>
+      Employment was projected to increase by approximately 28.5
+      percent from 2024 to 2034.
+    </p>
+
+    <div class="source">
+
+      <strong>Fast-growing occupation</strong>
+
+      <a
+        href="https://www.bls.gov/emp/tables/fastest-growing-occupations.htm"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        U.S. Bureau of Labor Statistics — Information Security Analysts
+      </a>
+
+    </div>
+
+
+    <!-- TRADES -->
+
+    <h2>
+      12. Trades Never Went Away
+    </h2>
+
+    <p>
+      The digital economy did not eliminate physical work.
+    </p>
+
+    <p>
+      Electricians, plumbers, mechanics, technicians, welders,
+      carpenters, machinists, maintenance workers, and other skilled
+      tradespeople remained necessary.
+    </p>
+
+    <p>
+      Many of these jobs required physical presence and practical
+      knowledge that could not simply be transferred into a computer.
+    </p>
+
+    <p>
+      Even highly automated societies still need people who can
+      install, repair, maintain, construct, and physically interact
+      with the world.
+    </p>
+
+
+    <!-- CONSTRUCTION -->
+
+    <h2>
+      13. Construction Was Still a Human Industry
+    </h2>
+
+    <p>
+      Buildings, roads, bridges, electrical systems, pipes, and other
+      infrastructure still had to be physically constructed.
+    </p>
+
+    <p>
+      Construction increasingly involved digital planning,
+      computer-controlled equipment, sensors, drones, and other
+      technologies.
+    </p>
+
+    <p>
+      But construction remained fundamentally physical.
+    </p>
+
+    <p>
+      Someone still had to turn plans into buildings.
+    </p>
+
+
+    <!-- TRANSPORT -->
+
+    <h2>
+      14. Transportation Connected Everything
+    </h2>
+
+    <p>
+      Modern economies depended on enormous transportation networks.
+    </p>
+
+    <p>
+      Truck drivers, delivery workers, pilots, mechanics, warehouse
+      workers, logistics managers, shipping workers, and public
+      transportation employees moved people and goods around the world.
+    </p>
+
+    <p>
+      Digital logistics systems increasingly optimized these networks,
+      but the physical movement of objects still required enormous
+      amounts of human labor.
+    </p>
+
+
+    <!-- WAREHOUSES -->
+
+    <h2>
+      15. Warehouses Became More Technological
+    </h2>
+
+    <p>
+      Online shopping created enormous demand for warehouses and
+      distribution systems.
+    </p>
+
+    <p>
+      Workers used scanners, inventory software, automated sorting
+      systems, robots, conveyor systems, and other technology.
+    </p>
+
+    <p>
+      Stockers and order fillers represented approximately 2.8 million
+      workers in the United States.
+    </p>
+
+    <div class="source">
+
+      <strong>Employment record</strong>
+
+      <a
+        href="https://www.bls.gov/news.release/archives/ocwage_05152026.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        U.S. Bureau of Labor Statistics — Occupational Employment and Wages
+      </a>
+
+    </div>
+
+    <p>
+      Automation did not mean warehouses stopped needing people.
+      Instead, people increasingly worked alongside machines and
+      software.
+    </p>
+
+
+    <!-- CUSTOMER SERVICE -->
+
+    <h2>
+      16. Customer Service Became a Digital Job
+    </h2>
+
+    <p>
+      Customer service was increasingly conducted through digital
+      systems.
+    </p>
+
+    <p>
+      Workers could communicate with customers through phone systems,
+      email, live chat, social media, and support platforms.
+    </p>
+
+    <p>
+      Artificial intelligence was also beginning to handle some
+      customer interactions.
+    </p>
+
+    <p>
+      Yet human customer service representatives remained a huge
+      occupation, with approximately 2.7 million workers in the
+      United States.
+    </p>
+
+    <div class="source">
+
+      <strong>Employment record</strong>
+
+      <a
+        href="https://www.bls.gov/news.release/archives/ocwage_05152026.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        U.S. Bureau of Labor Statistics — Occupational Employment and Wages
+      </a>
+
+    </div>
+
+
+    <!-- EDUCATION -->
+
+    <h2>
+      17. Education Was Still Fundamentally Human
+    </h2>
+
+    <p>
+      Schools and universities had adopted enormous amounts of
+      technology by 2026.
+    </p>
+
+    <p>
+      Teachers used digital learning platforms, online assignments,
+      video conferencing, electronic gradebooks, and increasingly
+      artificial intelligence.
+    </p>
+
+    <p>
+      But teachers remained responsible for much more than delivering
+      information.
+    </p>
+
+    <p>
+      Teaching involved explaining ideas, managing classrooms,
+      motivating students, evaluating work, communicating with
+      families, and responding to individual students.
+    </p>
+
+    <p>
+      Technology changed education without eliminating the need for
+      educators.
+    </p>
+
+
+    <!-- GOVERNMENT -->
+
+    <h2>
+      18. Government Was Still One of the Largest Employers
+    </h2>
+
+    <p>
+      Governments continued to employ millions of people in 2026.
+    </p>
+
+    <p>
+      Public employees worked in education, healthcare, administration,
+      transportation, public safety, infrastructure, courts,
+      environmental protection, defense, and countless other fields.
+    </p>
+
+    <p>
+      The public sector represented approximately 14.6 percent of
+      employment in the United States.
+    </p>
+
+    <div class="source">
+
+      <strong>Employment record</strong>
+
+      <a
+        href="https://www.bls.gov/news.release/archives/ocwage_05152026.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        U.S. Bureau of Labor Statistics — Occupational Employment and Wages
+      </a>
+
+    </div>
+
+
+    <!-- AGRICULTURE -->
+
+    <h2>
+      19. Agriculture Was Still Here
+    </h2>
+
+    <p>
+      Agriculture was one of humanity's oldest industries, and it
+      remained part of the economy in 2026.
+    </p>
+
+    <p>
+      Modern farms used tractors with GPS systems, sensors, drones,
+      automated machinery, satellite imagery, data analysis, and
+      increasingly sophisticated agricultural technology.
+    </p>
+
+    <p>
+      But people still planted crops, raised animals, maintained
+      equipment, managed farms, and performed physical agricultural
+      work.
+    </p>
+
+    <p>
+      The future of farming was becoming more automated, but farming
+      itself had not disappeared.
+    </p>
+
+
+    <!-- CREATOR -->
+
+    <h2>
+      20. The Creator Became a Job
+    </h2>
+
+    <p>
+      The internet created entirely new ways for people to earn a
+      living from creating things for audiences.
+    </p>
+
+    <p>
+      YouTubers, streamers, podcasters, writers, artists, musicians,
+      influencers, independent developers, and other creators could
+      build audiences without working for a traditional media company.
+    </p>
+
+    <p>
+      A person could potentially publish a video from their bedroom
+      and reach millions of people around the world.
+    </p>
+
+    <p>
+      This was one of the clearest examples of the internet changing
+      not only how people worked, but what could count as work.
+    </p>
+
+
+    <!-- FREELANCE -->
+
+    <h2>
+      21. Freelancing and Independent Work
+    </h2>
+
+    <p>
+      The internet also made it easier for people to work independently.
+    </p>
+
+    <p>
+      Designers, programmers, writers, consultants, photographers,
+      editors, marketers, translators, and many other professionals
+      could find clients without being employed by a single company.
+    </p>
+
+    <p>
+      Online marketplaces and professional networks connected workers
+      with clients across geographic boundaries.
+    </p>
+
+    <p>
+      For some people, this created freedom and flexibility.
+      For others, it meant unpredictable income and fewer traditional
+      employment protections.
+    </p>
+
+
+    <!-- GIG -->
+
+    <h2>
+      22. The Gig Economy
+    </h2>
+
+    <p>
+      Another form of independent work involved completing individual
+      tasks or short-term jobs through digital platforms.
+    </p>
+
+    <p>
+      Delivery drivers, rideshare drivers, task workers, freelancers,
+      and other platform workers could receive jobs through an app
+      rather than through a traditional employer.
+    </p>
+
+    <p>
+      The smartphone became an important connection between workers,
+      customers, and companies.
+    </p>
+
+
+    <!-- SOFTWARE MEASUREMENT -->
+
+    <h2>
+      23. Work Was Increasingly Measured by Software
+    </h2>
+
+    <p>
+      Digital workplaces created another major change:
+      work became easier to measure.
+    </p>
+
+    <p>
+      Companies could track sales, productivity, response times,
+      completed tasks, customer interactions, deliveries, computer
+      activity, and many other metrics.
+    </p>
+
+    <p>
+      This allowed organizations to understand their operations in
+      unprecedented detail.
+    </p>
+
+    <p>
+      It also created new questions about workplace surveillance,
+      privacy, productivity pressure, and how much of a person's
+      working life should be monitored.
+    </p>
+
+
+    <!-- SKILLS -->
+
+    <h2>
+      24. Skills Were Changing
+    </h2>
+
+    <p>
+      Technology did not simply create new jobs.
+      It also changed what employers wanted from workers.
+    </p>
+
+    <p>
+      Communication, adaptability, problem-solving, technical
+      knowledge, customer service, and the ability to work with
+      digital tools became increasingly important across many
+      occupations.
+    </p>
+
+    <p>
+      The Bureau of Labor Statistics found that interpersonal and
+      customer-service skills were especially important across several
+      of the largest occupations.
+    </p>
+
+    <div class="source">
+
+      <strong>Skills in the labor market</strong>
+
+      <a
+        href="https://www.bls.gov/opub/mlr/2026/article/skills-savvy-a-skills-based-look-at-occupational-data.htm"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        U.S. Bureau of Labor Statistics — A Skills-Based Look at Occupational Data
+      </a>
+
+    </div>
+
+    <p>
+      Workers increasingly had to learn new tools throughout their
+      careers rather than assuming that the skills they learned at
+      the beginning of their working lives would remain unchanged.
+    </p>
+
+
+    <!-- FASTEST GROWING -->
+
+    <h2>
+      25. The Jobs Growing Fastest Were Not Always the Jobs Adding the Most Workers
+    </h2>
+
+    <p>
+      One of the interesting features of the 2026 labor market was
+      the difference between percentage growth and total job growth.
+    </p>
+
+    <p>
+      Wind turbine service technicians were projected to be the
+      fastest-growing occupation, increasing by approximately
+      49.9 percent.
+    </p>
+
+    <p>
+      Solar photovoltaic installers were projected to grow by
+      approximately 42.1 percent.
+    </p>
+
+    <p>
+      Nurse practitioners were projected to grow by 40.1 percent,
+      while data scientists were projected to grow by 33.5 percent.
+    </p>
+
+    <div class="source">
+
+      <strong>Fastest-growing occupations</strong>
+
+      <a
+        href="https://www.bls.gov/emp/tables/fastest-growing-occupations.htm"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        U.S. Bureau of Labor Statistics — Fastest-Growing Occupations
+      </a>
+
+    </div>
+
+    <p>
+      But some occupations with lower percentage growth were expected
+      to add far more actual workers simply because they were already
+      enormous occupations.
+    </p>
+
+    <p>
+      Home health and personal care aides were projected to add nearly
+      740,000 jobs.
+    </p>
+
+    <p>
+      Software developers were projected to add approximately
+      268,000.
+    </p>
+
+    <div class="source">
+
+      <strong>Largest projected job growth</strong>
+
+      <a
+        href="https://www.bls.gov/emp/tables/occupations-most-job-growth.htm"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        U.S. Bureau of Labor Statistics — Occupations With the Most Job Growth
+      </a>
+
+    </div>
+
+
+    <!-- DECLINING -->
+
+    <h2>
+      26. Some Traditional Jobs Were Expected to Shrink
+    </h2>
+
+    <p>
+      Not every occupation was expected to grow.
+    </p>
+
+    <p>
+      Office and administrative support occupations were projected
+      to decline by approximately 3.9 percent, representing roughly
+      762,000 fewer jobs.
+    </p>
+
+    <p>
+      Sales occupations were projected to decline by around 2 percent.
+    </p>
+
+    <p>
+      Production occupations were also projected to decline, as were
+      farming, fishing, and forestry occupations.
+    </p>
+
+    <div class="source">
+
+      <strong>Employment projections</strong>
+
+      <a
+        href="https://www.bls.gov/opub/mlr/2026/article/industry-and-occupational-employment-projections-overview.htm"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        U.S. Bureau of Labor Statistics — Industry and Occupational Employment Projections Overview
+      </a>
+
+    </div>
+
+    <p>
+      Automation, changing consumer behavior, technology, and
+      demographic changes all contributed to the changing structure
+      of employment.
+    </p>
+
+
+    <!-- NOT EVERYWHERE -->
+
+    <h2>
+      27. Jobs Did Not Disappear at the Same Speed Everywhere
+    </h2>
+
+    <p>
+      Changes in employment were not evenly distributed.
+    </p>
+
+    <p>
+      A technology worker in a major city could experience a rapidly
+      changing workplace while someone working in a local restaurant,
+      hospital, farm, or construction company experienced much slower
+      change.
+    </p>
+
+    <p>
+      Even inside the same occupation, two workers could have very
+      different experiences depending on their employer and location.
+    </p>
+
+    <p>
+      The phrase "the future of work" therefore described many
+      different futures happening at the same time.
+    </p>
+
+
+    <!-- OLD JOBS -->
+
+    <h2>
+      28. Millions of People Still Did Jobs That Were Centuries Old
+    </h2>
+
+    <p>
+      One of the easiest mistakes when looking at 2026 from the future
+      will be assuming that technological change meant everything
+      became futuristic.
+    </p>
+
+    <p>
+      It did not.
+    </p>
+
+    <p>
+      People still cooked food, cleaned buildings, cared for children,
+      repaired machines, taught students, transported goods, built
+      houses, sold products, cared for elderly people, worked farms,
+      managed businesses, and performed countless other activities
+      that humans had been doing for generations.
+    </p>
+
+    <p>
+      The tools changed.
+      The basic needs often did not.
+    </p>
+
+
+    <!-- WORKDAY -->
+
+    <h2>
+      29. The Workday Itself
+    </h2>
+
+    <p>
+      For full-time workers, the average workday in the 2025 American
+      Time Use Survey was approximately 8.1 hours on days worked.
+    </p>
+
+    <div class="source">
+
+      <strong>American Time Use Survey</strong>
+
+      <a
+        href="https://www.bls.gov/news.release/atus.htm"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        U.S. Bureau of Labor Statistics — American Time Use Survey
+      </a>
+
+    </div>
+
+    <p>
+      The experience of those hours depended enormously on the job.
+    </p>
+
+    <p>
+      One person could spend most of the day sitting at a computer.
+      Another could spend the same eight hours standing in a store.
+      Another could work outdoors.
+      Another could move between patients in a hospital.
+      Another could drive hundreds of miles.
+    </p>
+
+    <p>
+      There was no single 2026 workplace.
+    </p>
+
+
+    <!-- DIFFERENT -->
+
+    <h2>
+      30. What Made 2026 Different?
+    </h2>
+
+    <p>
+      The defining feature of work in 2026 was not that humans had
+      stopped working.
+    </p>
+
+    <p>
+      It was that digital technology had become deeply embedded in
+      almost every part of working life.
+    </p>
+
+    <p>
+      Computers were everywhere.
+      Smartphones were everywhere.
+      Internet connectivity was expected.
+      Digital payments were normal.
+      Cloud software was ordinary.
+      Automation was spreading.
+      Artificial intelligence was beginning to become a workplace tool.
+    </p>
+
+    <p>
+      Yet physical work remained essential.
+    </p>
+
+    <p>
+      Hospitals still needed nurses.
+      Restaurants still needed cooks.
+      Buildings still needed construction workers.
+      Stores still needed employees.
+      Farms still needed workers.
+      Warehouses still needed people.
+    </p>
+
+
+    <!-- TWO WORLDS -->
+
+    <h2>
+      The Two Worlds of Work
+    </h2>
+
+    <p>
+      Looking at employment in 2026 reveals something that can be
+      difficult to see when focusing only on technology news.
+    </p>
+
+    <p>
+      Two worlds existed simultaneously.
+    </p>
+
+    <p>
+      One was increasingly digital.
+      People wrote software, analyzed data, worked remotely,
+      communicated through online platforms, created digital media,
+      and used artificial intelligence.
+    </p>
+
+    <p>
+      The other remained physical.
+      People built roads, cared for patients, prepared food,
+      stocked shelves, repaired machines, transported goods,
+      cleaned buildings, and worked with their hands.
+    </p>
+
+    <p>
+      The future of work was therefore not a simple transition
+      from physical jobs to digital jobs.
+    </p>
+
+    <p>
+      It was the combination of both.
+    </p>
+
+
+    <!-- FUTURE EXPECTATIONS -->
+
+    <h2>
+      What People in 2026 Thought Would Happen Next
+    </h2>
+
+    <p>
+      People in 2026 were already trying to understand what would
+      happen to these jobs next.
+    </p>
+
+    <p>
+      Artificial intelligence was expected to transform many forms
+      of knowledge work.
+    </p>
+
+    <p>
+      Robotics was expected to change manufacturing, warehouses,
+      transportation, agriculture, and eventually many other physical
+      industries.
+    </p>
+
+    <p>
+      The World Economic Forum's Future of Jobs Report 2025 estimated
+      that 170 million jobs could be created globally by 2030 while
+      92 million could be displaced, producing a projected net gain
+      of 78 million jobs.
+    </p>
+
+    <div class="source">
+
+      <strong>Global future-of-work expectations</strong>
+
+      <a
+        href="https://www.weforum.org/publications/the-future-of-jobs-report-2025/in-full/2-jobs-outlook/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        World Economic Forum — Future of Jobs Report 2025
+      </a>
+
+    </div>
+
+    <p>
+      The same report estimated that approximately 39 percent of
+      workers' existing skill sets could be transformed or become
+      outdated by 2030.
+    </p>
+
+    <p>
+      These were projections, not guarantees.
+    </p>
+
+    <p>
+      But they demonstrate what people in 2026 were beginning to
+      believe: the workplace of the future might change significantly
+      without work itself disappearing.
+    </p>
+
+
+    <!-- SNAPSHOT -->
+
+    <div class="ending">
+
+      <p>
+        Work in 2026 was not the end of human labor.
+        It was the beginning of another transition.
+      </p>
+
+    </div>
+
+
+    <h2>
+      A Snapshot of Work in 2026
+    </h2>
+
+    <p>
+      Work in 2026 was a strange mixture of old and new.
+    </p>
+
+    <p>
+      People worked with artificial intelligence while others worked
+      almost entirely with their hands.
+    </p>
+
+    <p>
+      Some people worked from bedrooms and home offices.
+      Others worked in hospitals, warehouses, kitchens, farms,
+      construction sites, stores, schools, and factories.
+    </p>
+
+    <p>
+      Some jobs were growing rapidly.
+      Others were shrinking.
+      Some had barely changed.
+    </p>
+
+    <p>
+      The internet had created careers that would have been difficult
+      to imagine only a few decades earlier.
+    </p>
+
+    <p>
+      At the same time, many of the largest occupations in 2026
+      involved activities humans had been performing for centuries:
+      caring for people, preparing food, selling goods, transporting
+      things, building structures, and maintaining society.
+    </p>
+
+    <p>
+      Artificial intelligence was beginning to change the meaning of
+      knowledge work, but it had not yet transformed every workplace.
+    </p>
+
+    <p>
+      Robots were becoming more capable, but millions of people still
+      performed physical tasks every day.
+    </p>
+
+    <p>
+      Remote work was normal for some people, but impossible for many
+      others.
+    </p>
+
+    <p>
+      There was no single experience of employment in 2026.
+    </p>
+
+    <p>
+      There were millions of different versions of working life.
+    </p>
+
+
+    <h2>
+      The Historical Record
+    </h2>
+
+    <p>
+      Future generations may look back at 2026 and see the beginning
+      of a major transformation in work.
+    </p>
+
+    <p>
+      They may see artificial intelligence as the beginning of a
+      revolution.
+    </p>
+
+    <p>
+      They may see it as an overhyped technology that changed less
+      than expected.
+    </p>
+
+    <p>
+      They may see today's workplace as primitive.
+    </p>
+
+    <p>
+      But whatever happens next, this was what work looked like
+      before the future had been decided.
+    </p>
+
+    <p>
+      People were still working.
+    </p>
+
+    <p>
+      They were writing code.
+      Caring for patients.
+      Teaching children.
+      Driving trucks.
+      Serving food.
+      Building houses.
+      Selling products.
+      Managing companies.
+      Farming land.
+      Creating videos.
+      Designing things.
+      Cleaning buildings.
+      Delivering packages.
+      Repairing machines.
+    </p>
+
+    <p>
+      Technology was changing the tools people used to do these jobs.
+    </p>
+
+    <p>
+      But the work itself was still deeply human.
+    </p>
+
+
+    <h2>
+      This Is What Work Looked Like
+    </h2>
+
+    <p>
+      In 2026, the future of work had not arrived yet.
+    </p>
+
+    <p>
+      It was being built one job at a time.
+    </p>
+
+    <p>
+      Some workers were already using technologies that would have
+      seemed impossible to earlier generations.
+    </p>
+
+    <p>
+      Others were doing work that looked almost exactly like it had
+      decades earlier.
+    </p>
+
+    <p>
+      Both were part of the same world.
+    </p>
+
+    <p>
+      <strong>
+        This is what we did for a living.
+      </strong>
+    </p>
+
+
+    <!-- ADD YOUR IDEA -->
+
+    <section class="add-idea">
+
+      <div class="add-idea-label">
+        Contribute to this article
+      </div>
+
+      <h2>
+        Add Your Idea
+      </h2>
+
+      <p>
+        Did this article miss something? Add a job, workplace,
+        working experience, or example from 2026 that you think
+        belongs in the historical record.
+      </p>
+
+      <form
+        class="idea-form"
+        onsubmit="submitIdea(event)"
+      >
+
+        <textarea
+          name="idea"
+          placeholder="What job, workplace, or aspect of working life should be added?"
+          required
+        ></textarea>
+
+        <select name="type" required>
+
+          <option value="" disabled selected>
+            Select a submission type
+          </option>
+
+          <option value="A job or occupation">
+            A job or occupation
+          </option>
+
+          <option value="An example from 2026">
+            An example from 2026
+          </option>
+
+          <option value="A correction">
+            A correction
+          </option>
+
+        </select>
+
+        <button type="submit">
+          Submit Your Idea
+        </button>
+
+      </form>
+
+      <p class="approval-note">
+        Your submission will open a GitHub Issue for review.
+        You’ll need a GitHub account to submit it.
+      </p>
+
+    </section>
+
+
+    <script>
+
+      function submitIdea(event) {
+
+        event.preventDefault();
+
+        const form = event.target;
+        const idea = form.idea.value.trim();
+        const type = form.type.value;
+
+        if (!idea || !type) return;
+
+        const title =
+          `[Article Submission] ${type}`;
+
+        const body =
+`## Article Submission
+
+**Article:** Jobs in 2026: What People Actually Did for Work
+
+**Type:** ${type}
+
+### Submitted Idea
+
+${idea}
+
+---
+
+Submitted through the History of Humanity archive.`;
+
+        const issueUrl =
+          "https://github.com/fluryjanis/History-of-Humanity/issues/new" +
+          "?title=" + encodeURIComponent(title) +
+          "&body=" + encodeURIComponent(body);
+
+        window.open(issueUrl, "_blank");
+
+      }
+
+    </script>
+
+
+  </article>
+
+
+  <footer>
+
+    <strong>
+      HISTORY OF HUMANITY
+    </strong>
+
+    <span>
+      An archive of ordinary human life · 2026
+    </span>
+
+  </footer>
+
+</body>
+</html>
