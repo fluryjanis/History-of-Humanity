@@ -1,0 +1,1919 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Famous Music of 2026 — History of Humanity</title>
+
+  <meta
+    name="description"
+    content="A historical record of individual songs that people listened to, shared, discovered, and recognized during 2026."
+  />
+
+  <style>
+    :root {
+      --paper: #f4efe4;
+      --paper-dark: #ebe4d6;
+      --ink: #292722;
+      --muted: #746d61;
+      --line: #cfc6b5;
+      --dark: #24231f;
+      --dark-text: #f2ede3;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.75;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .site-header {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 26px 30px 20px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+
+    .nav a {
+      text-decoration: none;
+    }
+
+    .nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 75px 30px 100px;
+    }
+
+    .eyebrow {
+      color: var(--muted);
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 18px 0 22px;
+      font-size: clamp(48px, 8vw, 82px);
+      line-height: 1.02;
+      font-weight: 400;
+      letter-spacing: -0.025em;
+    }
+
+    .subtitle {
+      max-width: 790px;
+      color: #514b42;
+      font-size: 22px;
+      line-height: 1.5;
+    }
+
+    .date {
+      margin-top: 24px;
+      color: var(--muted);
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+    }
+
+    .intro {
+      margin: 55px 0;
+      font-size: 18px;
+    }
+
+    h2 {
+      margin: 75px 0 30px;
+      padding-top: 42px;
+      border-top: 1px solid var(--line);
+      font-size: 35px;
+      line-height: 1.2;
+      font-weight: 400;
+    }
+
+    h3 {
+      margin: 0 0 5px;
+      font-size: 26px;
+      line-height: 1.25;
+      font-weight: 400;
+    }
+
+    .section-intro {
+      margin-bottom: 32px;
+      color: #514b42;
+    }
+
+    .note {
+      margin: 35px 0;
+      padding: 19px 21px;
+      background: var(--paper-dark);
+      border-left: 3px solid #7c7467;
+      font-size: 15px;
+    }
+
+    .featured-song {
+      padding: 30px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .featured-song:first-of-type {
+      border-top: none;
+    }
+
+    .song-meta {
+      margin-bottom: 17px;
+      color: var(--muted);
+      font-family: Arial, sans-serif;
+      font-size: 11px;
+      letter-spacing: 0.075em;
+      text-transform: uppercase;
+    }
+
+    .featured-song p {
+      margin: 0 0 15px;
+    }
+
+    .detail {
+      margin-top: 8px;
+      color: var(--muted);
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      line-height: 1.55;
+    }
+
+    .play-count {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 9px 13px;
+      background: #e7dfd0;
+      border: 1px solid var(--line);
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+    }
+
+    .catalog {
+      border-top: 1px solid var(--line);
+    }
+
+    .catalog-row {
+      padding: 13px 0;
+      border-bottom: 1px solid #ded6c8;
+    }
+
+    .catalog-title {
+      font-size: 17px;
+    }
+
+    .catalog-meta {
+      color: var(--muted);
+      font-family: Arial, sans-serif;
+      font-size: 11px;
+      letter-spacing: 0.04em;
+    }
+
+    .catalog-play {
+      display: block;
+      margin-top: 3px;
+      color: var(--muted);
+      font-family: Arial, sans-serif;
+      font-size: 11px;
+    }
+
+    .dark-section {
+      margin: 70px 0;
+      padding: 48px 35px;
+      background: var(--dark);
+      color: var(--dark-text);
+    }
+
+    .dark-section h2 {
+      margin: 0 0 20px;
+      padding: 0;
+      border: none;
+      color: var(--dark-text);
+    }
+
+    .dark-section p:last-child {
+      margin-bottom: 0;
+    }
+
+    .source-box {
+      margin-top: 75px;
+      padding-top: 25px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      line-height: 1.65;
+    }
+
+    .source-box a {
+      word-break: break-word;
+    }
+
+    .archive-cta {
+      margin-top: 70px;
+      padding: 38px 30px;
+      border: 1px solid var(--line);
+    }
+
+    .archive-cta h2 {
+      margin-top: 0;
+      padding-top: 0;
+      border: none;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 11px 17px;
+      background: var(--dark);
+      color: var(--dark-text);
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      letter-spacing: 0.04em;
+    }
+
+    .button:hover {
+      opacity: 0.86;
+    }
+
+    footer {
+      padding: 40px 25px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      text-align: center;
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+    }
+
+    @media (max-width: 650px) {
+      main {
+        padding-top: 45px;
+      }
+
+      h1 {
+        font-size: 49px;
+      }
+
+      .subtitle {
+        font-size: 19px;
+      }
+
+      h2 {
+        font-size: 30px;
+      }
+
+      .dark-section {
+        padding: 35px 24px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a href="https://fluryjanis.github.io/History-of-Humanity/">
+        History of Humanity
+      </a>
+
+      <a href="https://fluryjanis.github.io/History-of-Humanity/">
+        Archive
+      </a>
+    </nav>
+  </header>
+
+
+  <main>
+
+    <div class="eyebrow">Entertainment · Music</div>
+
+    <h1>Famous Music of 2026</h1>
+
+    <div class="subtitle">
+      A record of the individual songs that people listened to, shared,
+      discovered, performed, and recognized during 2026.
+    </div>
+
+    <div class="date">
+      Published September 3, 2026 · A snapshot of music in 2026
+    </div>
+
+
+    <p class="intro">
+      Music in 2026 could be heard almost anywhere. Songs were streamed on
+      phones and computers, played on the radio, discovered through social
+      media, attached to films and television, performed live, used in games,
+      and passed between friends.
+    </p>
+
+    <p>
+      A song did not have to be released in 2026 to be important in 2026.
+      Older songs could become popular again because of a movie, a television
+      show, a viral video, an event, an artist's death, or simply because a
+      new generation discovered them.
+    </p>
+
+    <p>
+      This page therefore records <strong>individual songs</strong>, rather
+      than attempting to create a list of the year's albums or musicians.
+      The creator is included because it is part of the identity of the song.
+      Albums and soundtracks are included only when they help explain where
+      the individual song came from.
+    </p>
+
+
+    <div class="note">
+      <strong>About the play counts:</strong>
+      2026 is still in progress. Where a reliable, comparable figure is
+      available, this archive records it as <strong>2026 plays so far</strong>.
+      The principal figures used in the featured section are U.S.
+      on-demand audio streams measured by Luminate during its 2026 midyear
+      tracking period. These numbers should not be confused with Spotify-only
+      streams, YouTube views, radio plays, or worldwide streams.
+      Where a comparable figure was not publicly available, the article says
+      so instead of estimating one.
+    </div>
+
+
+    <!-- ========================================================= -->
+    <!-- FEATURED SONGS -->
+    <!-- ========================================================= -->
+
+    <h2>Featured Songs</h2>
+
+    <p class="section-intro">
+      These songs receive fuller entries because they were particularly
+      prominent, culturally significant, or useful for understanding the
+      music people encountered during 2026.
+    </p>
+
+
+    <article class="featured-song">
+
+      <h3>Choosin' Texas — Ella Langley</h3>
+
+      <div class="song-meta">
+        Song · Country · Released 2025
+      </div>
+
+      <p>
+        “Choosin' Texas” was a country song by American singer Ella Langley.
+        Although it was released before 2026, it became one of the defining
+        songs of the year in the United States. It was especially notable for
+        its position near the top of the U.S. singles charts and for the
+        enormous number of streams it accumulated during the year.
+      </p>
+
+      <div class="detail">
+        <strong>Album:</strong> Dandelion
+      </div>
+
+      <div class="play-count">
+        <strong>2026 plays so far:</strong>
+        570.9 million U.S. on-demand audio streams
+      </div>
+
+      <div class="detail">
+        Measurement period: January 2–July 2, 2026
+      </div>
+
+    </article>
+
+
+    <article class="featured-song">
+
+      <h3>Man I Need — Olivia Dean</h3>
+
+      <div class="song-meta">
+        Song · Pop / Soul · Released 2025
+      </div>
+
+      <p>
+        “Man I Need” was one of Olivia Dean's most prominent songs during
+        2026. Its performance illustrated the growing reach of artists whose
+        music could move between streaming services, radio, social platforms,
+        and international audiences.
+      </p>
+
+      <div class="detail">
+        <strong>Album:</strong> The Art of Loving
+      </div>
+
+      <div class="play-count">
+        <strong>2026 plays so far:</strong>
+        340.2 million U.S. on-demand audio streams
+      </div>
+
+      <div class="detail">
+        Measurement period: January 2–July 2, 2026
+      </div>
+
+    </article>
+
+
+    <article class="featured-song">
+
+      <h3>Ordinary — Alex Warren</h3>
+
+      <div class="song-meta">
+        Song · Pop · Released 2025
+      </div>
+
+      <p>
+        “Ordinary” was a major pop song that continued its success into 2026.
+        Its presence in streaming and radio measurements made it one of the
+        songs most representative of mainstream U.S. listening during the
+        first half of the year.
+      </p>
+
+      <div class="detail">
+        <strong>Album:</strong> You'll Be Alright, Kid
+      </div>
+
+      <div class="play-count">
+        <strong>2026 plays so far:</strong>
+        322.8 million U.S. on-demand audio streams
+      </div>
+
+      <div class="detail">
+        Measurement period: January 2–July 2, 2026
+      </div>
+
+    </article>
+
+
+    <article class="featured-song">
+
+      <h3>Be Her — Ella Langley</h3>
+
+      <div class="song-meta">
+        Song · Country · Released 2026
+      </div>
+
+      <p>
+        “Be Her” was another major Ella Langley release during 2026. Its
+        presence alongside “Choosin' Texas” demonstrated how strongly
+        Langley's music was represented in the U.S. listening landscape.
+      </p>
+
+      <div class="detail">
+        <strong>Album:</strong> Dandelion
+      </div>
+
+      <div class="play-count">
+        <strong>2026 plays so far:</strong>
+        289.1 million U.S. on-demand audio streams
+      </div>
+
+      <div class="detail">
+        Measurement period: January 2–July 2, 2026
+      </div>
+
+    </article>
+
+
+    <article class="featured-song">
+
+      <h3>DtMF — Bad Bunny</h3>
+
+      <div class="song-meta">
+        Song · Latin / Reggaeton · Released 2025
+      </div>
+
+      <p>
+        “DtMF” was one of Bad Bunny's major songs during 2026. Its continued
+        streaming activity showed how Spanish-language music had become an
+        ordinary part of the mainstream U.S. listening environment rather
+        than a separate musical market.
+      </p>
+
+      <div class="detail">
+        <strong>Album:</strong> Debí Tirar Más Fotos
+      </div>
+
+      <div class="play-count">
+        <strong>2026 plays so far:</strong>
+        284.5 million U.S. on-demand audio streams
+      </div>
+
+      <div class="detail">
+        Measurement period: January 2–July 2, 2026
+      </div>
+
+    </article>
+
+
+    <article class="featured-song">
+
+      <h3>Golden — HUNTR/X</h3>
+
+      <div class="song-meta">
+        Song · K-pop / Pop Soundtrack · Released 2025
+      </div>
+
+      <p>
+        “Golden” was performed by the fictional group HUNTR/X in
+        <em>KPop Demon Hunters</em>. The song became one of the most prominent
+        soundtrack songs of the period and demonstrated how a fictional
+        musical group could become a recognizable musical act through an
+        animated film, streaming platforms, and online fandom.
+      </p>
+
+      <div class="detail">
+        <strong>Soundtrack:</strong> KPop Demon Hunters
+      </div>
+
+      <div class="play-count">
+        <strong>2026 plays so far:</strong>
+        282.8 million U.S. on-demand audio streams
+      </div>
+
+      <div class="detail">
+        Measurement period: January 2–July 2, 2026
+      </div>
+
+    </article>
+
+
+    <article class="featured-song">
+
+      <h3>Stateside — PinkPantheress with Zara Larsson</h3>
+
+      <div class="song-meta">
+        Song · Pop · Released 2025
+      </div>
+
+      <p>
+        “Stateside” was a collaboration between PinkPantheress and Zara
+        Larsson that became a major international pop song during 2026.
+        Its success was especially visible on global charts, where it reached
+        the top position on the Billboard Global 200.
+      </p>
+
+      <div class="detail">
+        <strong>Album:</strong> Fancy That
+      </div>
+
+      <div class="play-count">
+        <strong>2026 plays so far:</strong>
+        272.4 million U.S. on-demand audio streams
+      </div>
+
+      <div class="detail">
+        Measurement period: January 2–July 2, 2026
+      </div>
+
+    </article>
+
+
+    <article class="featured-song">
+
+      <h3>I Just Might — Bruno Mars</h3>
+
+      <div class="song-meta">
+        Song · Pop / R&amp;B · Released 2026
+      </div>
+
+      <p>
+        “I Just Might” was one of Bruno Mars's prominent songs of 2026. It
+        performed strongly across streaming and radio, becoming one of the
+        year's recognizable mainstream releases.
+      </p>
+
+      <div class="detail">
+        <strong>Album:</strong> The Romantic
+      </div>
+
+      <div class="play-count">
+        <strong>2026 plays so far:</strong>
+        267.3 million U.S. on-demand audio streams
+      </div>
+
+      <div class="detail">
+        Measurement period: January 2–July 2, 2026
+      </div>
+
+    </article>
+
+
+    <article class="featured-song">
+
+      <h3>The Fate of Ophelia — Taylor Swift</h3>
+
+      <div class="song-meta">
+        Song · Pop · Released 2025
+      </div>
+
+      <p>
+        “The Fate of Ophelia” was one of Taylor Swift's major songs during
+        2026. Its continued streaming activity placed it among the year's
+        most-heard songs in the United States.
+      </p>
+
+      <div class="detail">
+        <strong>Album:</strong> The Life of a Showgirl
+      </div>
+
+      <div class="play-count">
+        <strong>2026 plays so far:</strong>
+        255.7 million U.S. on-demand audio streams
+      </div>
+
+      <div class="detail">
+        Measurement period: January 2–July 2, 2026
+      </div>
+
+    </article>
+
+
+    <article class="featured-song">
+
+      <h3>So Easy (To Fall In Love) — Olivia Dean</h3>
+
+      <div class="song-meta">
+        Song · Pop / Soul · Released 2025
+      </div>
+
+      <p>
+        “So Easy (To Fall In Love)” was another major Olivia Dean song during
+        2026. Its presence near the top of the U.S. streaming measurements
+        helped make Dean one of the year's most visible new voices.
+      </p>
+
+      <div class="detail">
+        <strong>Album:</strong> The Art of Loving
+      </div>
+
+      <div class="play-count">
+        <strong>2026 plays so far:</strong>
+        252.9 million U.S. on-demand audio streams
+      </div>
+
+      <div class="detail">
+        Measurement period: January 2–July 2, 2026
+      </div>
+
+    </article>
+
+
+    <article class="featured-song">
+
+      <h3>Dai Dai — Shakira &amp; Burna Boy</h3>
+
+      <div class="song-meta">
+        Song · Latin / Afrobeats · Released 2026
+      </div>
+
+      <p>
+        “Dai Dai” was associated with the 2026 FIFA World Cup and brought
+        together Colombian singer Shakira and Nigerian artist Burna Boy.
+        Its connection to one of the world's largest sporting events gave the
+        song an audience extending beyond ordinary music-chart listeners.
+      </p>
+
+      <div class="detail">
+        <strong>Associated with:</strong> FIFA World Cup 2026
+      </div>
+
+      <div class="play-count">
+        <strong>2026 plays so far:</strong>
+        No comparable full-year total published
+      </div>
+
+    </article>
+
+
+    <article class="featured-song">
+
+      <h3>I Knew It, I Knew You — Taylor Swift</h3>
+
+      <div class="song-meta">
+        Song · Pop / Soundtrack · Released 2026
+      </div>
+
+      <p>
+        “I Knew It, I Knew You” was written and recorded for
+        <em>Toy Story 5</em>. Its position at the top of the Billboard Hot 100
+        made it one of the year's most prominent examples of a movie song
+        becoming a major standalone hit.
+      </p>
+
+      <div class="detail">
+        <strong>Film:</strong> Toy Story 5
+      </div>
+
+      <div class="play-count">
+        <strong>2026 plays so far:</strong>
+        No comparable full-year total published
+      </div>
+
+    </article>
+
+
+    <article class="featured-song">
+
+      <h3>Hate That I Made You Love Me — Ariana Grande</h3>
+
+      <div class="song-meta">
+        Song · Pop · Released 2026
+      </div>
+
+      <p>
+        “Hate That I Made You Love Me” became one of Ariana Grande's prominent
+        charting songs during 2026 and was among the songs near the top of the
+        U.S. singles chart late in the summer.
+      </p>
+
+      <div class="play-count">
+        <strong>2026 plays so far:</strong>
+        No comparable full-year total published
+      </div>
+
+    </article>
+
+
+    <article class="featured-song">
+
+      <h3>Dracula — Tame Impala &amp; JENNIE</h3>
+
+      <div class="song-meta">
+        Song · Alternative / K-pop · Released 2025
+      </div>
+
+      <p>
+        “Dracula” combined the music of Tame Impala with South Korean singer
+        JENNIE. The collaboration became a prominent international song
+        during 2026 and appeared near the top of major global charts.
+      </p>
+
+      <div class="detail">
+        <strong>Album:</strong> Deadbeat
+      </div>
+
+      <div class="play-count">
+        <strong>2026 plays so far:</strong>
+        No comparable full-year total published
+      </div>
+
+    </article>
+
+
+    <article class="featured-song">
+
+      <h3>Drop Dead — Olivia Rodrigo</h3>
+
+      <div class="song-meta">
+        Song · Pop Rock · Released 2026
+      </div>
+
+      <p>
+        “Drop Dead” was one of Olivia Rodrigo's prominent releases during
+        2026. It became a significant charting song and formed part of the
+        year's mainstream pop landscape.
+      </p>
+
+      <div class="play-count">
+        <strong>2026 plays so far:</strong>
+        No comparable full-year total published
+      </div>
+
+    </article>
+
+
+    <article class="featured-song">
+
+      <h3>Risk It All — Bruno Mars</h3>
+
+      <div class="song-meta">
+        Song · Pop / R&amp;B · Released 2026
+      </div>
+
+      <p>
+        “Risk It All” was another Bruno Mars song that became visible on
+        U.S. and international charts during 2026.
+      </p>
+
+      <div class="detail">
+        <strong>Album:</strong> The Romantic
+      </div>
+
+      <div class="play-count">
+        <strong>2026 plays so far:</strong>
+        No comparable full-year total published
+      </div>
+
+    </article>
+
+
+    <article class="featured-song">
+
+      <h3>Stupid Song — Olivia Rodrigo</h3>
+
+      <div class="song-meta">
+        Song · Pop · Released 2026
+      </div>
+
+      <p>
+        “Stupid Song” became another recognizable Olivia Rodrigo release
+        during the summer of 2026 and appeared on the U.S. singles charts.
+      </p>
+
+      <div class="play-count">
+        <strong>2026 plays so far:</strong>
+        No comparable full-year total published
+      </div>
+
+    </article>
+
+
+    <article class="featured-song">
+
+      <h3>Midnight Sun — Zara Larsson</h3>
+
+      <div class="song-meta">
+        Song · Pop · Released 2026
+      </div>
+
+      <p>
+        “Midnight Sun” was one of Zara Larsson's notable 2026 songs and
+        remained visible on U.S. and international charts during the summer.
+      </p>
+
+      <div class="play-count">
+        <strong>2026 plays so far:</strong>
+        No comparable full-year total published
+      </div>
+
+    </article>
+
+
+    <article class="featured-song">
+
+      <h3>Janice STFU — Drake</h3>
+
+      <div class="song-meta">
+        Song · Hip-Hop · Released 2026
+      </div>
+
+      <p>
+        “Janice STFU” was a prominent Drake release during 2026. It became
+        one of the year's notable hip-hop chart entries and reached the top
+        position on the U.S. Billboard Hot 100 during its run.
+      </p>
+
+      <div class="detail">
+        <strong>Album:</strong> Iceman
+      </div>
+
+      <div class="play-count">
+        <strong>2026 plays so far:</strong>
+        No comparable full-year total published
+      </div>
+
+    </article>
+
+
+    <article class="featured-song">
+
+      <h3>Loser — Tame Impala</h3>
+
+      <div class="song-meta">
+        Song · Alternative / Pop · Released 2026
+      </div>
+
+      <p>
+        “Loser” was a Tame Impala song that became a notable international
+        chart entry during 2026.
+      </p>
+
+      <div class="detail">
+        <strong>Album:</strong> Deadbeat
+      </div>
+
+      <div class="play-count">
+        <strong>2026 plays so far:</strong>
+        No comparable full-year total published
+      </div>
+
+    </article>
+
+
+    <article class="featured-song">
+
+      <h3>Animal — KATSEYE</h3>
+
+      <div class="song-meta">
+        Song · Pop / K-pop Influenced · Released 2026
+      </div>
+
+      <p>
+        “Animal” was a KATSEYE song that became visible on international
+        charts during 2026. Its success reflected the increasingly
+        international nature of pop music and the influence of K-pop
+        performance culture.
+      </p>
+
+      <div class="detail">
+        <strong>Album:</strong> WILD
+      </div>
+
+      <div class="play-count">
+        <strong>2026 plays so far:</strong>
+        No comparable full-year total published
+      </div>
+
+    </article>
+
+
+    <article class="featured-song">
+
+      <h3>Folded — Kehlani</h3>
+
+      <div class="song-meta">
+        Song · R&amp;B · Released 2026
+      </div>
+
+      <p>
+        “Folded” was one of Kehlani's notable songs during 2026. It was
+        particularly prominent in U.S. radio measurements and demonstrated
+        that radio remained an important part of the music environment even
+        as streaming dominated listening.
+      </p>
+
+      <div class="play-count">
+        <strong>2026 plays so far:</strong>
+        No comparable annual stream total published
+      </div>
+
+    </article>
+
+
+    <article class="featured-song">
+
+      <h3>Back to Friends — sombr</h3>
+
+      <div class="song-meta">
+        Song · Alternative Pop · Released 2024
+      </div>
+
+      <p>
+        “Back to Friends” was an example of a song from an earlier year that
+        continued to find a large audience in 2026. Its continued radio and
+        streaming presence illustrated how songs could remain active for
+        years rather than disappearing when a newer release arrived.
+      </p>
+
+      <div class="play-count">
+        <strong>2026 plays so far:</strong>
+        No comparable annual total published
+      </div>
+
+    </article>
+
+
+    <article class="featured-song">
+
+      <h3>MUTT — Leon Thomas</h3>
+
+      <div class="song-meta">
+        Song · R&amp;B · Released 2024
+      </div>
+
+      <p>
+        “MUTT” remained a prominent Leon Thomas song during 2026 and was
+        among the stronger songs in U.S. radio measurements during the first
+        half of the year.
+      </p>
+
+      <div class="play-count">
+        <strong>2026 plays so far:</strong>
+        No comparable annual total published
+      </div>
+
+    </article>
+
+
+    <!-- ========================================================= -->
+    <!-- OLDER MUSIC -->
+    <!-- ========================================================= -->
+
+    <h2>Older Songs That Were Still Famous</h2>
+
+    <p class="section-intro">
+      Music in 2026 did not have a clean boundary between new and old.
+      Songs released decades earlier could still be part of everyday
+      listening, and some became newly important because of events in 2026.
+    </p>
+
+
+    <article class="featured-song">
+
+      <h3>Jolene — Dolly Parton</h3>
+
+      <div class="song-meta">
+        Song · Country · Released 1973
+      </div>
+
+      <p>
+        “Jolene” was one of Dolly Parton's best-known songs and remained
+        widely recognized more than fifty years after its release. After
+        Parton's death in August 2026, listeners returned to her catalog in
+        enormous numbers, bringing songs such as “Jolene” back into the
+        center of public attention.
+      </p>
+
+      <div class="detail">
+        <strong>Album:</strong> Jolene
+      </div>
+
+      <div class="play-count">
+        <strong>2026 plays so far:</strong>
+        No comparable full-year total published
+      </div>
+
+      <div class="detail">
+        The song experienced a major posthumous streaming surge in August
+        2026.
+      </div>
+
+    </article>
+
+
+    <article class="featured-song">
+
+      <h3>9 to 5 — Dolly Parton</h3>
+
+      <div class="song-meta">
+        Song · Country / Pop · Released 1980
+      </div>
+
+      <p>
+        “9 to 5” was another Dolly Parton song that returned to widespread
+        attention following her death. The song had already been part of
+        American popular culture for decades, but the events of 2026 caused
+        another generation of listeners to revisit it.
+      </p>
+
+      <div class="detail">
+        <strong>Album:</strong> 9 to 5 and Odd Jobs
+      </div>
+
+      <div class="play-count">
+        <strong>2026 plays so far:</strong>
+        No comparable full-year total published
+      </div>
+
+    </article>
+
+
+    <article class="featured-song">
+
+      <h3>I Will Always Love You — Dolly Parton</h3>
+
+      <div class="song-meta">
+        Song · Country · Released 1974
+      </div>
+
+      <p>
+        Parton's original “I Will Always Love You” remained an important part
+        of her musical legacy. The song received renewed attention in 2026 as
+        listeners revisited her work following her death.
+      </p>
+
+      <div class="detail">
+        <strong>Album:</strong> Jolene
+      </div>
+
+      <div class="play-count">
+        <strong>2026 plays so far:</strong>
+        No comparable full-year total published
+      </div>
+
+    </article>
+
+
+    <article class="featured-song">
+
+      <h3>Billie Jean — Michael Jackson</h3>
+
+      <div class="song-meta">
+        Song · Pop · Released 1982
+      </div>
+
+      <p>
+        “Billie Jean” was an example of a song that remained recognizable
+        across generations. Originally released in the early 1980s, it
+        continued to circulate in streaming, playlists, videos, performances,
+        and popular culture in 2026.
+      </p>
+
+      <div class="detail">
+        <strong>Album:</strong> Thriller
+      </div>
+
+      <div class="play-count">
+        <strong>2026 plays so far:</strong>
+        No comparable annual total published
+      </div>
+
+    </article>
+
+
+    <article class="featured-song">
+
+      <h3>Wonderwall — Oasis</h3>
+
+      <div class="song-meta">
+        Song · Britpop / Rock · Released 1995
+      </div>
+
+      <p>
+        “Wonderwall” demonstrated how a song could remain part of everyday
+        popular music decades after its original release. Older songs like
+        this could coexist with brand-new releases on the same streaming
+        services and playlists.
+      </p>
+
+      <div class="detail">
+        <strong>Album:</strong> (What's the Story) Morning Glory?
+      </div>
+
+      <div class="play-count">
+        <strong>2026 plays so far:</strong>
+        No comparable annual total published
+      </div>
+
+    </article>
+
+
+    <article class="featured-song">
+
+      <h3>Sunflower — Post Malone &amp; Swae Lee</h3>
+
+      <div class="song-meta">
+        Song · Hip-Hop / Pop · Released 2018
+      </div>
+
+      <p>
+        “Sunflower,” created for <em>Spider-Man: Into the Spider-Verse</em>,
+        was another example of a soundtrack song becoming a lasting piece of
+        popular music. Years after the movie's release, it remained familiar
+        to listeners in 2026.
+      </p>
+
+      <div class="detail">
+        <strong>Film:</strong> Spider-Man: Into the Spider-Verse
+      </div>
+
+      <div class="play-count">
+        <strong>2026 plays so far:</strong>
+        No comparable annual total published
+      </div>
+
+    </article>
+
+
+    <!-- ========================================================= -->
+    <!-- SONGS CONNECTED TO OTHER CULTURE -->
+    <!-- ========================================================= -->
+
+    <h2>When a Song Became Part of Something Larger</h2>
+
+    <p>
+      Some of the most memorable music of 2026 was connected to something
+      outside music itself.
+    </p>
+
+    <p>
+      A movie could introduce a song to millions of people. A television
+      series could revive a decades-old track. A video game could give an
+      artist a new audience. A sporting event could give a song a global
+      stage. An animated film could create a fictional band whose music
+      listeners treated almost like music from a real group.
+    </p>
+
+    <p>
+      This made the identity of a song increasingly difficult to separate
+      from the culture around it.
+    </p>
+
+
+    <article class="featured-song">
+
+      <h3>Golden — HUNTR/X</h3>
+
+      <div class="song-meta">
+        Song · K-pop / Soundtrack · Released 2025
+      </div>
+
+      <p>
+        “Golden” was performed by the fictional group HUNTR/X in
+        <em>KPop Demon Hunters</em>. The song became notable not only as
+        music but as part of a fictional world that crossed animation,
+        streaming, pop music, fan communities, and online culture.
+      </p>
+
+    </article>
+
+
+    <article class="featured-song">
+
+      <h3>I Knew It, I Knew You — Taylor Swift</h3>
+
+      <div class="song-meta">
+        Song · Pop / Film Soundtrack · Released 2026
+      </div>
+
+      <p>
+        Created for <em>Toy Story 5</em>, this song demonstrated the continued
+        ability of major film franchises to produce songs that could become
+        popular independently of the movie itself.
+      </p>
+
+    </article>
+
+
+    <article class="featured-song">
+
+      <h3>Dai Dai — Shakira &amp; Burna Boy</h3>
+
+      <div class="song-meta">
+        Song · Latin / Afrobeats · Released 2026
+      </div>
+
+      <p>
+        Connected with the 2026 FIFA World Cup, “Dai Dai” showed another way
+        music could reach a worldwide audience: through a major shared
+        cultural event rather than through music distribution alone.
+      </p>
+
+    </article>
+
+
+    <!-- ========================================================= -->
+    <!-- CATALOG -->
+    <!-- ========================================================= -->
+
+    <h2>Other Notable Songs</h2>
+
+    <p class="section-intro">
+      The following catalog is intentionally broader. These are additional
+      individual songs that appeared on major charts, remained visible in
+      streaming or radio measurements, or were useful examples of the music
+      people encountered during 2026.
+    </p>
+
+
+    <div class="catalog">
+
+      <div class="catalog-row">
+        <div class="catalog-title"><strong>Boston</strong> — STELLA LEFTY</div>
+        <div class="catalog-meta">Country / Pop · 2026</div>
+        <div class="catalog-play">2026 plays: comparable annual total not yet published</div>
+      </div>
+
+      <div class="catalog-row">
+        <div class="catalog-title"><strong>Been By Now</strong> — Morgan Wallen</div>
+        <div class="catalog-meta">Country · 2026</div>
+        <div class="catalog-play">2026 plays: comparable annual total not yet published</div>
+      </div>
+
+      <div class="catalog-row">
+        <div class="catalog-title"><strong>I Can't Love You Anymore</strong> — Ella Langley &amp; Morgan Wallen</div>
+        <div class="catalog-meta">Country · 2026</div>
+        <div class="catalog-play">2026 plays: comparable annual total not yet published</div>
+      </div>
+
+      <div class="catalog-row">
+        <div class="catalog-title"><strong>Where Is My Husband!</strong> — RAYE</div>
+        <div class="catalog-meta">Pop · 2025</div>
+        <div class="catalog-play">2026 plays: comparable annual total not yet published</div>
+      </div>
+
+      <div class="catalog-row">
+        <div class="catalog-title"><strong>Fever Dream</strong> — Alex Warren</div>
+        <div class="catalog-meta">Pop · 2026</div>
+        <div class="catalog-play">2026 plays: comparable annual total not yet published</div>
+      </div>
+
+      <div class="catalog-row">
+        <div class="catalog-title"><strong>The Way We Touch</strong> — Charlotte Cardin</div>
+        <div class="catalog-meta">Pop · 2026</div>
+        <div class="catalog-play">2026 plays: comparable annual total not yet published</div>
+      </div>
+
+      <div class="catalog-row">
+        <div class="catalog-title"><strong>Carry On</strong> — Kenny Chesney</div>
+        <div class="catalog-meta">Country · 2026</div>
+        <div class="catalog-play">2026 plays: comparable annual total not yet published</div>
+      </div>
+
+      <div class="catalog-row">
+        <div class="catalog-title"><strong>Don't We</strong> — Morgan Wallen</div>
+        <div class="catalog-meta">Country · 2026</div>
+        <div class="catalog-play">2026 plays: comparable annual total not yet published</div>
+      </div>
+
+      <div class="catalog-row">
+        <div class="catalog-title"><strong>Love Hate Love</strong> — Owen Riegling</div>
+        <div class="catalog-meta">Country · 2026</div>
+        <div class="catalog-play">2026 plays: comparable annual total not yet published</div>
+      </div>
+
+      <div class="catalog-row">
+        <div class="catalog-title"><strong>Under the Influence</strong> — Tyler Joe Miller</div>
+        <div class="catalog-meta">Country · 2026</div>
+        <div class="catalog-play">2026 plays: comparable annual total not yet published</div>
+      </div>
+
+      <div class="catalog-row">
+        <div class="catalog-title"><strong>Good Time Goes</strong> — Dallas Smith</div>
+        <div class="catalog-meta">Country · 2026</div>
+        <div class="catalog-play">2026 plays: comparable annual total not yet published</div>
+      </div>
+
+      <div class="catalog-row">
+        <div class="catalog-title"><strong>Sunshine's Free</strong> — Tenille Townes</div>
+        <div class="catalog-meta">Country · 2026</div>
+        <div class="catalog-play">2026 plays: comparable annual total not yet published</div>
+      </div>
+
+      <div class="catalog-row">
+        <div class="catalog-title"><strong>Phone, Keys, Wallet</strong> — Lainey Wilson &amp; John Mayer</div>
+        <div class="catalog-meta">Country / Pop · 2026</div>
+        <div class="catalog-play">2026 plays: comparable annual total not yet published</div>
+      </div>
+
+      <div class="catalog-row">
+        <div class="catalog-title"><strong>Cowgirl</strong> — Shaboozey</div>
+        <div class="catalog-meta">Country / Hip-Hop · 2026</div>
+        <div class="catalog-play">2026 plays: comparable annual total not yet published</div>
+      </div>
+
+      <div class="catalog-row">
+        <div class="catalog-title"><strong>Woman</strong> — Kane Brown</div>
+        <div class="catalog-meta">Country · 2026</div>
+        <div class="catalog-play">2026 plays: comparable annual total not yet published</div>
+      </div>
+
+      <div class="catalog-row">
+        <div class="catalog-title"><strong>Don't Tell On Me</strong> — Jason Aldean</div>
+        <div class="catalog-meta">Country · 2026</div>
+        <div class="catalog-play">2026 plays: comparable annual total not yet published</div>
+      </div>
+
+      <div class="catalog-row">
+        <div class="catalog-title"><strong>Think As You Drunk</strong> — Riley Green</div>
+        <div class="catalog-meta">Country · 2026</div>
+        <div class="catalog-play">2026 plays: comparable annual total not yet published</div>
+      </div>
+
+      <div class="catalog-row">
+        <div class="catalog-title"><strong>Repeat It</strong> — Martin Garrix &amp; Ed Sheeran</div>
+        <div class="catalog-meta">Dance Pop · 2026</div>
+        <div class="catalog-play">2026 plays: comparable annual total not yet published</div>
+      </div>
+
+      <div class="catalog-row">
+        <div class="catalog-title"><strong>Hit The Wall</strong> — Gracie Abrams</div>
+        <div class="catalog-meta">Pop · 2026</div>
+        <div class="catalog-play">2026 plays: comparable annual total not yet published</div>
+      </div>
+
+      <div class="catalog-row">
+        <div class="catalog-title"><strong>Time Machine</strong> — TALK</div>
+        <div class="catalog-meta">Pop Rock · 2026</div>
+        <div class="catalog-play">2026 plays: comparable annual total not yet published</div>
+      </div>
+
+      <div class="catalog-row">
+        <div class="catalog-title"><strong>Kingdom of Fear</strong> — Cameron Whitcomb</div>
+        <div class="catalog-meta">Country Rock · 2026</div>
+        <div class="catalog-play">2026 plays: comparable annual total not yet published</div>
+      </div>
+
+      <div class="catalog-row">
+        <div class="catalog-title"><strong>Movin' to the Sun</strong> — HUGEL, Imael Angel &amp; Ultra Naté</div>
+        <div class="catalog-meta">Dance · 2026</div>
+        <div class="catalog-play">2026 plays: comparable annual total not yet published</div>
+      </div>
+
+      <div class="catalog-row">
+        <div class="catalog-title"><strong>Jamaican (Bam Bam)</strong> — HUGEL &amp; SOLTO</div>
+        <div class="catalog-meta">Dance · 2026</div>
+        <div class="catalog-play">2026 plays: comparable annual total not yet published</div>
+      </div>
+
+      <div class="catalog-row">
+        <div class="catalog-title"><strong>The One That Got Away</strong> — Katy Perry</div>
+        <div class="catalog-meta">Pop · 2026</div>
+        <div class="catalog-play">2026 plays: comparable annual total not yet published</div>
+      </div>
+
+      <div class="catalog-row">
+        <div class="catalog-title"><strong>Love Me Not</strong> — Ravyn Lenae</div>
+        <div class="catalog-meta">R&amp;B / Pop · 2024</div>
+        <div class="catalog-play">2026 plays: comparable annual total not yet published</div>
+      </div>
+
+      <div class="catalog-row">
+        <div class="catalog-title"><strong>Opalite</strong> — Taylor Swift</div>
+        <div class="catalog-meta">Pop · 2025</div>
+        <div class="catalog-play">2026 plays: comparable annual total not yet published</div>
+      </div>
+
+      <div class="catalog-row">
+        <div class="catalog-title"><strong>Ain't In LA</strong> — ADÉLA</div>
+        <div class="catalog-meta">Pop · 2026</div>
+        <div class="catalog-play">2026 plays: comparable annual total not yet published</div>
+      </div>
+
+      <div class="catalog-row">
+        <div class="catalog-title"><strong>Speed Demon</strong> — Justin Bieber</div>
+        <div class="catalog-meta">Pop · 2026</div>
+        <div class="catalog-play">2026 plays: comparable annual total not yet published</div>
+      </div>
+
+      <div class="catalog-row">
+        <div class="catalog-title"><strong>Vending Machine</strong> — Valley</div>
+        <div class="catalog-meta">Alternative Pop · 2026</div>
+        <div class="catalog-play">2026 plays: comparable annual total not yet published</div>
+      </div>
+
+      <div class="catalog-row">
+        <div class="catalog-title"><strong>DOWNTOWN</strong> — XAV</div>
+        <div class="catalog-meta">Pop · 2026</div>
+        <div class="catalog-play">2026 plays: comparable annual total not yet published</div>
+      </div>
+
+      <div class="catalog-row">
+        <div class="catalog-title"><strong>Beaches in Tennessee</strong> — Cage the Elephant</div>
+        <div class="catalog-meta">Alternative Rock · 2026</div>
+        <div class="catalog-play">2026 plays: comparable annual total not yet published</div>
+      </div>
+
+      <div class="catalog-row">
+        <div class="catalog-title"><strong>Who Will You Follow</strong> — Evanescence</div>
+        <div class="catalog-meta">Rock · 2026</div>
+        <div class="catalog-play">2026 plays: comparable annual total not yet published</div>
+      </div>
+
+      <div class="catalog-row">
+        <div class="catalog-title"><strong>The Mountain</strong> — Finger Eleven</div>
+        <div class="catalog-meta">Rock · 2026</div>
+        <div class="catalog-play">2026 plays: comparable annual total not yet published</div>
+      </div>
+
+      <div class="catalog-row">
+        <div class="catalog-title"><strong>Don't Wanna Go Home Tonight</strong> — Three Days Grace</div>
+        <div class="catalog-meta">Rock · 2026</div>
+        <div class="catalog-play">2026 plays: comparable annual total not yet published</div>
+      </div>
+
+      <div class="catalog-row">
+        <div class="catalog-title"><strong>Bad for Your Health</strong> — The Sheepdogs</div>
+        <div class="catalog-meta">Rock · 2026</div>
+        <div class="catalog-play">2026 plays: comparable annual total not yet published</div>
+      </div>
+
+      <div class="catalog-row">
+        <div class="catalog-title"><strong>Was It Ever Love</strong> — Naomi Sharon</div>
+        <div class="catalog-meta">R&amp;B / Soul · 2026</div>
+        <div class="catalog-play">2026 plays: comparable annual total not yet published</div>
+      </div>
+
+      <div class="catalog-row">
+        <div class="catalog-title"><strong>Mr. Know It All</strong> — Teddy Swims</div>
+        <div class="catalog-meta">Pop / Soul · 2026</div>
+        <div class="catalog-play">2026 plays: comparable annual total not yet published</div>
+      </div>
+
+      <div class="catalog-row">
+        <div class="catalog-title"><strong>Misery</strong> — Alex Sampson</div>
+        <div class="catalog-meta">Pop · 2026</div>
+        <div class="catalog-play">2026 plays: comparable annual total not yet published</div>
+      </div>
+
+      <div class="catalog-row">
+        <div class="catalog-title"><strong>APT.</strong> — ROSÉ &amp; Bruno Mars</div>
+        <div class="catalog-meta">Pop · 2024</div>
+        <div class="catalog-play">2026 plays: comparable annual total not yet published</div>
+      </div>
+
+      <div class="catalog-row">
+        <div class="catalog-title"><strong>Birds of a Feather</strong> — Billie Eilish</div>
+        <div class="catalog-meta">Pop · 2024</div>
+        <div class="catalog-play">2026 plays: comparable annual total not yet published</div>
+      </div>
+
+      <div class="catalog-row">
+        <div class="catalog-title"><strong>Die With a Smile</strong> — Lady Gaga &amp; Bruno Mars</div>
+        <div class="catalog-meta">Pop · 2024</div>
+        <div class="catalog-play">2026 plays: comparable annual total not yet published</div>
+      </div>
+
+      <div class="catalog-row">
+        <div class="catalog-title"><strong>End of Beginning</strong> — Djo</div>
+        <div class="catalog-meta">Alternative Pop · 2022</div>
+        <div class="catalog-play">2026 plays: comparable annual total not yet published</div>
+      </div>
+
+      <div class="catalog-row">
+        <div class="catalog-title"><strong>Last Christmas</strong> — Wham!</div>
+        <div class="catalog-meta">Pop · 1984</div>
+        <div class="catalog-play">2026 plays: seasonal listening; final annual total not yet available</div>
+      </div>
+
+      <div class="catalog-row">
+        <div class="catalog-title"><strong>Islands in the Stream</strong> — Kenny Rogers &amp; Dolly Parton</div>
+        <div class="catalog-meta">Country / Pop · 1983</div>
+        <div class="catalog-play">2026 plays: comparable annual total not yet published</div>
+      </div>
+
+      <div class="catalog-row">
+        <div class="catalog-title"><strong>Here You Come Again</strong> — Dolly Parton</div>
+        <div class="catalog-meta">Country / Pop · 1977</div>
+        <div class="catalog-play">2026 plays: posthumous catalog interest; final annual total not yet available</div>
+      </div>
+
+      <div class="catalog-row">
+        <div class="catalog-title"><strong>Thriller</strong> — Michael Jackson</div>
+        <div class="catalog-meta">Pop · 1982</div>
+        <div class="catalog-play">2026 plays: comparable annual total not yet published</div>
+      </div>
+
+      <div class="catalog-row">
+        <div class="catalog-title"><strong>Bad</strong> — Michael Jackson</div>
+        <div class="catalog-meta">Pop · 1987</div>
+        <div class="catalog-play">2026 plays: comparable annual total not yet published</div>
+      </div>
+
+      <div class="catalog-row">
+        <div class="catalog-title"><strong>Beat It</strong> — Michael Jackson</div>
+        <div class="catalog-meta">Pop Rock · 1982</div>
+        <div class="catalog-play">2026 plays: comparable annual total not yet published</div>
+      </div>
+
+      <div class="catalog-row">
+        <div class="catalog-title"><strong>Iris</strong> — Goo Goo Dolls</div>
+        <div class="catalog-meta">Rock · 1998</div>
+        <div class="catalog-play">2026 plays: comparable annual total not yet published</div>
+      </div>
+
+      <div class="catalog-row">
+        <div class="catalog-title"><strong>Self Aware</strong> — Temper City</div>
+        <div class="catalog-meta">Alternative · 2026</div>
+        <div class="catalog-play">2026 plays: comparable annual total not yet published</div>
+      </div>
+
+      <div class="catalog-row">
+        <div class="catalog-title"><strong>Beaches in Tennessee</strong> — Cage the Elephant</div>
+        <div class="catalog-meta">Alternative Rock · 2026</div>
+        <div class="catalog-play">2026 plays: comparable annual total not yet published</div>
+      </div>
+
+    </div>
+
+
+    <!-- ========================================================= -->
+    <!-- MUSIC CULTURE -->
+    <!-- ========================================================= -->
+
+    <div class="dark-section">
+
+      <h2>What the Numbers Show</h2>
+
+      <p>
+        By the middle of 2026, U.S. listeners had already generated hundreds
+        of billions of on-demand audio streams. The leading individual songs
+        could accumulate hundreds of millions of streams in only six months.
+      </p>
+
+      <p>
+        Yet numbers alone could not describe everything that made a song
+        famous. A song might be heard on radio, watched on YouTube, used in
+        short-form videos, performed at concerts, played at sporting events,
+        attached to a movie, or passed from one person to another without
+        appearing at the top of a single chart.
+      </p>
+
+      <p>
+        Streaming therefore gave historians an unusually useful measurement
+        of listening, but it did not create a perfect measurement of cultural
+        importance.
+      </p>
+
+    </div>
+
+
+    <h2>How People Found Music in 2026</h2>
+
+    <p>
+      Music discovery had become a mixture of old and new systems.
+    </p>
+
+    <p>
+      People could still discover songs through radio, television, concerts,
+      friends, and traditional music journalism. At the same time, streaming
+      recommendations, short-form video, YouTube, playlists, online fandoms,
+      and algorithms could introduce a song to millions of people.
+    </p>
+
+    <p>
+      This meant that the path from unknown song to famous song was no longer
+      a single path.
+    </p>
+
+    <p>
+      A song might become famous because a record company promoted it.
+      Another might become famous because people repeatedly used it in videos.
+      Another might become famous because it appeared in a movie. An older
+      song might suddenly return because someone rediscovered it decades
+      after its release.
+    </p>
+
+
+    <h2>Music Was Global</h2>
+
+    <p>
+      The music people heard in 2026 increasingly crossed national and
+      linguistic boundaries.
+    </p>
+
+    <p>
+      English-language pop remained enormously influential, but Spanish,
+      Korean, Japanese, African, Latin American, and other regional musical
+      traditions were part of the same worldwide streaming environment.
+    </p>
+
+    <p>
+      A song could be created in one country, performed by artists from
+      several countries, become popular on a platform headquartered somewhere
+      else, and reach listeners almost immediately around the world.
+    </p>
+
+    <p>
+      The idea of a completely separate national music culture was therefore
+      becoming harder to maintain.
+    </p>
+
+
+    <h2>New Songs and Old Songs Together</h2>
+
+    <p>
+      One of the most important characteristics of music in 2026 was the
+      absence of a clear expiration date.
+    </p>
+
+    <p>
+      A song from 1973 could be listened to next to a song released that
+      morning. A 1980s pop song could appear in a modern television show.
+      A 1990s rock song could become popular again through a social-media
+      trend. A song from a recent movie could continue being streamed years
+      after its original release.
+    </p>
+
+    <p>
+      Streaming services effectively placed decades of recorded music beside
+      one another.
+    </p>
+
+    <p>
+      The result was an unusual historical situation: <strong>the music of
+      2026 was not simply the music released in 2026.</strong>
+    </p>
+
+
+    <h2>A Catalog, Not a Ranking</h2>
+
+    <p>
+      This page is not intended to claim that these are the only famous songs
+      of 2026, or that one chart can determine which songs mattered most.
+      Music was divided across countries, languages, platforms, communities,
+      and generations.
+    </p>
+
+    <p>
+      Instead, this page preserves a selection of individual songs that help
+      future readers understand what people were hearing and recognizing
+      during 2026.
+    </p>
+
+    <p>
+      The catalog can also change. Songs may become more important later in
+      the year, older songs may return to popularity, and final 2026
+      measurements will eventually replace the partial figures available
+      today.
+    </p>
+
+
+    <h2>What Music Was Like in 2026</h2>
+
+    <p>
+      In 2026, a person could listen to a song released that morning, a song
+      recorded fifty years earlier, a song from another country, and a song
+      created for a fictional character without leaving the same device.
+    </p>
+
+    <p>
+      A phone could hold access to more recorded music than any previous
+      generation had been able to carry. Playlists could contain songs from
+      different decades and continents. Algorithms could recommend something
+      completely unfamiliar. A short video could make an old recording
+      famous again.
+    </p>
+
+    <p>
+      Music had become abundant, immediate, global, and persistent.
+    </p>
+
+    <p>
+      But the reason people listened had not changed very much.
+    </p>
+
+    <p>
+      People listened because a song made them happy. Because it reminded
+      them of someone. Because they wanted to dance. Because everyone else
+      was listening to it. Because they liked the words. Because they liked
+      the sound. Or simply because they wanted to hear it again.
+    </p>
+
+    <p>
+      <strong>The technology surrounding music had changed.</strong>
+    </p>
+
+    <p>
+      <strong>People were still listening.</strong>
+    </p>
+
+
+    <div class="dark-section">
+
+      <h2>One day, these songs will be history.</h2>
+
+      <p>
+        This archive records them while they were still part of everyday life.
+      </p>
+
+    </div>
+
+
+    <!-- ========================================================= -->
+    <!-- CONTRIBUTE -->
+    <!-- ========================================================= -->
+
+    <div class="archive-cta">
+
+      <h2>Add to the Archive</h2>
+
+      <p>
+        Did we miss a song that people in 2026 knew, listened to, shared,
+        or talked about?
+      </p>
+
+      <p>
+        Add it to the historical record. Songs do not have to be brand-new
+        releases to belong here. If an older song became important during
+        2026, it can be submitted too.
+      </p>
+
+      <a
+        class="button"
+        href="https://github.com/fluryjanis/History-of-Humanity/issues/new?title=%5BArticle%20Submission%5D%20Famous%20Music%20of%202026&body=Article%3A%20Famous%20Music%20of%202026%0A%0ASong%3A%20%0ACreator%3A%20%0ARelease%20year%3A%20%0AGenre%3A%20%0AAlbum%20or%20soundtrack%20%28if%20applicable%29%3A%20%0AWhy%20it%20was%20notable%20in%202026%3A%20%0A2026%20play%20count%3A%20%0AMeasurement%20type%20and%20period%3A%20%0ASource%3A%20"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Add a Song to the Archive →
+      </a>
+
+    </div>
+
+
+    <!-- ========================================================= -->
+    <!-- SOURCES -->
+    <!-- ========================================================= -->
+
+    <div class="source-box">
+
+      <strong>Sources and Methodology</strong>
+
+      <p>
+        The principal quantitative source for the featured streaming figures
+        is Luminate's 2026 midyear music report, as reported by Billboard.
+        The midyear song measurements cover U.S. on-demand audio streaming
+        during the first half of the year. These measurements provide a
+        consistent comparison between the songs listed in that ranking.
+      </p>
+
+      <p>
+        Billboard Hot 100 and Billboard Global 200 charts were used to
+        identify prominent songs and chart activity during 2026.
+      </p>
+
+      <p>
+        Additional reporting was used when an individual song's importance
+        came from a specific cultural event rather than from a published
+        annual streaming measurement.
+      </p>
+
+      <p>
+        <strong>Important:</strong> This article was created on September 3,
+        2026. The year is not finished. “2026 plays so far” therefore refers
+        only to the measurement available at the time of this archive
+        snapshot. Final annual figures should be added after December 31,
+        2026, when reliable data becomes available.
+      </p>
+
+      <p>
+        <a
+          href="https://www.billboard.com/music/chart-beat/morgan-wallen-ella-langley-luminate-2026-midyear-rankings-1236294366/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Billboard — Luminate 2026 Midyear Music Rankings
+        </a>
+      </p>
+
+      <p>
+        <a
+          href="https://luminatedata.com/blog/luminate-2026-midyear-report-trends-in-music-television-film/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Luminate — 2026 Midyear Report
+        </a>
+      </p>
+
+      <p>
+        <a
+          href="https://www.billboard.com/charts/hot-100/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Billboard — Hot 100
+        </a>
+      </p>
+
+      <p>
+        <a
+          href="https://www.billboard.com/charts/billboard-global-200/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Billboard — Global 200
+        </a>
+      </p>
+
+      <p>
+        <a
+          href="https://www.reuters.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Reuters
+        </a>
+        — reporting on the 2026 streaming response to Dolly Parton's death.
+      </p>
+
+    </div>
+
+  </main>
+
+
+  <footer>
+    History of Humanity · An archive of ordinary human life, preserved year by year.
+  </footer>
+
+</body>
+</html>
