@@ -1,907 +1,1656 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
+  <link rel="icon" type="image/png" href="../favicon.png" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Will AI Create a Second Gilded Age? — History of Humanity</title>
+  <title>Will AI Create a Second Gilded Age? | History of Humanity</title>
 
-  <meta name="description" content="What people in 2026 thought about the possibility of AI creating a second Gilded Age, and what artificial intelligence might mean for wealth, work, power, and inequality.">
+  <meta
+    name="description"
+    content="What did people in 2026 think AI might do to wealth, work, and inequality? A historical record of the debate over whether artificial intelligence could create a second Gilded Age."
+  >
 
-  <meta name="keywords" content="AI second Gilded Age, artificial intelligence inequality, AI wealth inequality, future of AI, AI jobs, Gilded Age, AI economy, History of Humanity">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-  <link rel="stylesheet" href="../style.css">
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      background: #f4f1e8;
+      color: #24231f;
+      line-height: 1.75;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    /* NAV */
+
+    nav {
+      border-bottom: 1px solid #d4d0c4;
+      padding: 22px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: Arial, sans-serif;
+    }
+
+    .logo {
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 0.9rem;
+      letter-spacing: 0.05em;
+    }
+
+    .back {
+      font-size: 0.8rem;
+      color: #777268;
+    }
+
+    /* ARTICLE HEADER */
+
+    .article-header {
+      max-width: 950px;
+      margin: auto;
+      padding: 110px 25px 90px;
+      text-align: center;
+    }
+
+    .archive-label {
+      font-family: Arial, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      font-size: 0.7rem;
+      color: #817b70;
+      margin-bottom: 25px;
+    }
+
+    h1 {
+      font-size: clamp(3rem, 7vw, 6.5rem);
+      line-height: 0.98;
+      font-weight: normal;
+      letter-spacing: -0.055em;
+      margin-bottom: 30px;
+    }
+
+    .subtitle {
+      max-width: 700px;
+      margin: auto;
+      font-size: 1.35rem;
+      font-style: italic;
+      color: #666157;
+    }
+
+    .metadata {
+      margin-top: 35px;
+      font-family: Arial, sans-serif;
+      font-size: 0.75rem;
+      color: #817b70;
+    }
+
+    /* ARTICLE */
+
+    article {
+      max-width: 780px;
+      margin: auto;
+      padding: 0 25px 120px;
+    }
+
+    article p {
+      font-size: 1.08rem;
+      margin-bottom: 25px;
+    }
+
+    .lead {
+      font-size: 1.35rem;
+      color: #4f4b43;
+      margin-bottom: 55px;
+    }
+
+    h2 {
+      font-size: 2.6rem;
+      font-weight: normal;
+      line-height: 1.1;
+      letter-spacing: -0.035em;
+      margin: 90px 0 25px;
+    }
+
+    h3 {
+      font-size: 1.55rem;
+      font-weight: normal;
+      margin: 45px 0 15px;
+    }
+
+    /* SOURCE */
+
+    .source {
+      margin: 30px 0 40px;
+      padding: 22px 25px;
+      background: #e9e5da;
+      border-left: 3px solid #817b70;
+      font-family: Arial, sans-serif;
+      font-size: 0.85rem;
+    }
+
+    .source strong {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .source a {
+      color: #4f4b43;
+      text-decoration: underline;
+    }
+
+    /* QUOTE */
+
+    .quote {
+      margin: 45px 0;
+      padding: 35px 30px;
+      border-top: 1px solid #aaa59a;
+      border-bottom: 1px solid #aaa59a;
+    }
+
+    .quote p {
+      font-size: 1.35rem;
+      font-style: italic;
+      margin-bottom: 15px;
+    }
+
+    .quote cite {
+      display: block;
+      font-family: Arial, sans-serif;
+      font-size: 0.75rem;
+      color: #817b70;
+      font-style: normal;
+    }
+
+    /* ARCHIVE NOTE */
+
+    .archive-note {
+      margin: 55px 0;
+      padding: 30px;
+      border: 1px solid #bbb6aa;
+      background: #f0ede4;
+    }
+
+    .archive-note strong {
+      display: block;
+      font-family: Arial, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-size: 0.7rem;
+      margin-bottom: 10px;
+    }
+
+    /* COMPARISON */
+
+    .comparison {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 40px 0;
+      font-size: 0.95rem;
+    }
+
+    .comparison th,
+    .comparison td {
+      padding: 15px;
+      border-bottom: 1px solid #bbb6aa;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .comparison th {
+      font-family: Arial, sans-serif;
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: #5f5a51;
+    }
+
+    /* FUTURE BOXES */
+
+    .future-box {
+      margin: 35px 0;
+      padding: 30px;
+      border: 1px solid #bbb6aa;
+      background: #f0ede4;
+    }
+
+    .future-box h3 {
+      margin: 0 0 12px;
+    }
+
+    /* FINAL */
+
+    .ending {
+      margin-top: 100px;
+      padding: 60px 0;
+      border-top: 1px solid #aaa59a;
+      border-bottom: 1px solid #aaa59a;
+      text-align: center;
+    }
+
+    .ending p {
+      font-size: 1.4rem;
+      font-style: italic;
+      max-width: 650px;
+      margin: auto;
+    }
+
+    /* ADD IDEA */
+
+    .add-idea {
+      margin-top: 100px;
+      padding: 45px 35px;
+      border: 1px solid #bbb6aa;
+      background: #e9e5da;
+    }
+
+    .add-idea-label {
+      font-family: Arial, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 0.7rem;
+      color: #817b70;
+      margin-bottom: 12px;
+    }
+
+    .add-idea h2 {
+      margin: 0 0 18px;
+      font-size: 2.3rem;
+    }
+
+    .add-idea p {
+      color: #555148;
+      font-size: 1rem;
+      margin-bottom: 25px;
+    }
+
+    .idea-form {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .idea-form textarea,
+    .idea-form select {
+      width: 100%;
+      padding: 13px 14px;
+      border: 1px solid #aaa59a;
+      background: #f4f1e8;
+      color: #24231f;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1rem;
+      border-radius: 0;
+    }
+
+    .idea-form textarea {
+      min-height: 140px;
+      resize: vertical;
+    }
+
+    .idea-form button {
+      align-self: flex-start;
+      padding: 13px 22px;
+      border: 1px solid #24231f;
+      background: #24231f;
+      color: #f4f1e8;
+      font-family: Arial, sans-serif;
+      font-size: 0.78rem;
+      letter-spacing: 0.05em;
+      cursor: pointer;
+    }
+
+    .idea-form button:hover {
+      opacity: 0.85;
+    }
+
+    .approval-note {
+      margin-top: 20px;
+      margin-bottom: 0 !important;
+      font-family: Arial, sans-serif;
+      font-size: 0.75rem !important;
+      color: #817b70 !important;
+    }
+
+    /* FOOTER */
+
+    footer {
+      padding: 35px 7%;
+      border-top: 1px solid #d4d0c4;
+      font-family: Arial, sans-serif;
+      font-size: 0.75rem;
+      color: #817b70;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @media (max-width: 700px) {
+      .article-header {
+        padding: 80px 20px 65px;
+      }
+
+      article {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      h2 {
+        font-size: 2.2rem;
+      }
+
+      .add-idea {
+        padding: 35px 22px;
+      }
+
+      .comparison {
+        font-size: 0.85rem;
+      }
+
+      .comparison th,
+      .comparison td {
+        padding: 10px;
+      }
+
+      footer {
+        display: block;
+      }
+    }
+  </style>
+
 </head>
 
 <body>
 
-<header class="site-header">
-  <div class="container">
-    <nav>
-      <a href="../index.html" class="site-title">HISTORY OF HUMANITY</a>
+  <nav>
 
-      <div class="nav-links">
-        <a href="../index.html">Archive</a>
-        <a href="../about.html">About</a>
-        <a href="../contribute.html">Contribute</a>
-      </div>
-    </nav>
-  </div>
-</header>
+    <a href="../index.html" class="logo">
+      HISTORY OF HUMANITY
+    </a>
 
+    <a
+      href="https://fluryjanis.github.io/History-of-Humanity/#archive"
+      class="back"
+    >
+      ← Archive
+    </a>
 
-<main>
+  </nav>
+
 
   <!-- ARTICLE HEADER -->
 
-  <section class="article-header">
-    <div class="container">
+  <header class="article-header">
 
-      <div class="metadata">
-        Published September 4, 2026 · Looking at the possible economic future of AI
-      </div>
-
-      <h1>Will AI Create a Second Gilded Age?</h1>
-
-      <p class="subtitle">
-        What people in 2026 thought artificial intelligence might do to wealth,
-        work, power, and inequality.
-      </p>
-
+    <div class="archive-label">
+      History of Humanity · 2026
     </div>
-  </section>
+
+    <h1>
+      Will AI Create a Second Gilded Age?
+    </h1>
+
+    <p class="subtitle">
+      What people in 2026 thought artificial intelligence might do to
+      wealth, work, power, and inequality.
+    </p>
+
+    <div class="metadata">
+      Published September 4, 2026 · Looking at the economic future imagined for AI
+    </div>
+
+  </header>
 
 
-  <!-- INTRO -->
+  <!-- ARTICLE -->
 
-  <article class="article-content">
+  <article>
 
-    <div class="container">
 
-      <p class="lead">
-        In 2026, artificial intelligence was no longer simply a technological
-        curiosity. It was becoming part of businesses, workplaces, education,
-        entertainment, research, and everyday life.
-      </p>
+    <p class="lead">
+      In 2026, artificial intelligence was becoming one of the most
+      important technologies in the world.
+    </p>
+
+    <p>
+      AI systems were being used for writing, programming, research,
+      customer service, education, design, science, entertainment, and
+      countless other tasks.
+    </p>
+
+    <p>
+      At the same time, people were beginning to ask a much larger
+      question.
+    </p>
+
+    <div class="quote">
 
       <p>
-        At the same time, a question increasingly appeared in discussions about
-        the future:
-      </p>
-
-      <blockquote>
         Could AI create another Gilded Age?
-      </blockquote>
-
-      <p>
-        The comparison was not necessarily a prediction that the future would
-        repeat the late nineteenth century. Instead, it came from a concern
-        that a technology capable of producing enormous amounts of wealth could
-        also concentrate that wealth among the people and companies that owned
-        it.
-      </p>
-
-      <p>
-        Others imagined almost the exact opposite. They believed AI could
-        dramatically increase productivity, lower the cost of goods and
-        services, create new industries, and eventually make ordinary people
-        substantially wealthier.
-      </p>
-
-      <p>
-        In 2026, neither future had arrived.
-      </p>
-
-      <p>
-        That uncertainty is what makes the debate worth preserving.
-      </p>
-
-
-      <!-- FIRST GILDED AGE -->
-
-      <h2>The First Gilded Age</h2>
-
-      <p>
-        The term <em>Gilded Age</em> usually refers to the period of rapid
-        economic and industrial growth in the United States during the late
-        nineteenth century.
-      </p>
-
-      <p>
-        Railroads expanded across the country. Factories grew larger.
-        Industrial production accelerated. New fortunes were created on an
-        enormous scale.
-      </p>
-
-      <p>
-        But the wealth created by industrialization was distributed extremely
-        unevenly.
-      </p>
-
-      <p>
-        A small number of industrialists accumulated extraordinary fortunes
-        while many workers faced low wages, dangerous working conditions, long
-        hours, and limited economic security.
-      </p>
-
-      <p>
-        The era became associated with both extraordinary technological and
-        economic growth and the enormous concentration of wealth and power that
-        accompanied it.
-      </p>
-
-      <p>
-        That history gave people in 2026 a familiar comparison when thinking
-        about artificial intelligence.
-      </p>
-
-
-      <!-- WHY AI -->
-
-      <h2>Why Compare AI to the Gilded Age?</h2>
-
-      <p>
-        AI was different from the technologies of the nineteenth century, but
-        there were similarities that made the comparison appealing.
-      </p>
-
-      <ul>
-        <li>New technology was developing extremely quickly.</li>
-        <li>Huge amounts of capital were being invested into it.</li>
-        <li>A relatively small number of companies controlled important parts of the technology.</li>
-        <li>Businesses were attempting to use it to increase productivity.</li>
-        <li>Workers were uncertain about how automation would affect their jobs.</li>
-        <li>Large fortunes were being created around technology companies and infrastructure.</li>
-        <li>Governments were struggling to determine how the technology should be regulated.</li>
-      </ul>
-
-      <p>
-        By 2026, AI had also become a major industrial investment story.
-        The Bank for International Settlements reported that the five largest
-        hyperscalers were on track to spend more than $1 trillion on
-        AI-related capital expenditure across 2025 and 2026. :contentReference[oaicite:1]{index=1}
-      </p>
-
-      <p>
-        The comparison therefore was not simply about chatbots or software.
-        AI was becoming an enormous physical and economic system involving
-        computer chips, data centers, electricity, networks, software,
-        research laboratories, and financial investment.
-      </p>
-
-
-      <!-- THE CONCERN -->
-
-      <h2>The Fear of an AI Gilded Age</h2>
-
-      <p>
-        The central concern was relatively simple:
-      </p>
-
-      <blockquote>
-        What happens if AI becomes extraordinarily productive, but most of the
-        wealth it creates belongs to the people who own the AI?
-      </blockquote>
-
-      <p>
-        If a company could use AI to perform work that previously required
-        hundreds or thousands of employees, the company might become
-        dramatically more productive.
-      </p>
-
-      <p>
-        If the company also owned the technology, infrastructure, data, or
-        intellectual property that made this possible, much of the resulting
-        economic value could potentially flow toward its owners.
-      </p>
-
-      <p>
-        This possibility became one of the major economic concerns surrounding
-        AI.
-      </p>
-
-      <p>
-        A 2026 analysis from the Washington Post described growing evidence
-        that AI was helping some already wealthy people and cities pull further
-        ahead. :contentReference[oaicite:2]{index=2}
-      </p>
-
-      <p>
-        Academic research had also examined relationships between AI adoption,
-        AI-related capital accumulation, and wealth inequality. :contentReference[oaicite:3]{index=3}
-      </p>
-
-      <p>
-        None of this proved that AI would create a new Gilded Age.
-        It did, however, give people a reason to ask whether the distribution
-        of AI's benefits could become as important as the technology itself.
-      </p>
-
-
-      <!-- WORK -->
-
-      <h2>What Would Happen to Work?</h2>
-
-      <p>
-        The question of employment was at the center of the debate.
-      </p>
-
-      <p>
-        AI could make individual workers much more productive. A programmer
-        could produce more code. A designer could create more images. A
-        researcher could analyze more information. A small business could
-        perform work that previously required an entire department.
-      </p>
-
-      <p>
-        But productivity and employment are not the same thing.
-      </p>
-
-      <p>
-        If one worker using AI could accomplish the work previously performed
-        by several workers, businesses might need fewer employees.
-      </p>
-
-      <p>
-        This possibility made AI fundamentally different from a simple tool
-        that merely helped people work faster.
-      </p>
-
-      <p>
-        In a 2026 survey summarized by Stanford's AI Index, experts were much
-        more optimistic than the public about AI's effect on jobs. Seventy-three
-        percent of AI experts expected AI to have a positive impact on how
-        people did their jobs, compared with only 23% of the public. :contentReference[oaicite:4]{index=4}
-      </p>
-
-      <p>
-        The gap was striking.
-      </p>
-
-      <p>
-        People building and studying AI were often more optimistic about its
-        economic effects than the people who expected to live through those
-        effects.
-      </p>
-
-
-      <!-- JOB FEARS -->
-
-      <h2>The Fear of Becoming Economically Unnecessary</h2>
-
-      <p>
-        Some of the most pessimistic visions went beyond unemployment.
-      </p>
-
-      <p>
-        They imagined a world in which AI could perform such a large portion of
-        economically valuable work that human labor itself became less
-        important.
-      </p>
-
-      <p>
-        In that scenario, simply having a job might no longer be enough to
-        guarantee economic security.
-      </p>
-
-      <p>
-        A person could still be educated, talented, and willing to work while
-        finding that the economy needed fewer people to perform the work they
-        were trained to do.
-      </p>
-
-      <p>
-        This raised a much larger question:
-      </p>
-
-      <blockquote>
-        If machines produce most of the wealth, how should that wealth be
-        distributed?
-      </blockquote>
-
-      <p>
-        Some people discussed stronger social safety nets. Others discussed
-        universal basic income, wealth taxes, worker ownership, or entirely new
-        ways of distributing economic resources.
-      </p>
-
-      <p>
-        Others argued that technological revolutions had repeatedly created new
-        industries and jobs that were difficult to imagine beforehand.
-      </p>
-
-
-      <!-- THE OPTIMISTIC FUTURE -->
-
-      <h2>The Other Possible Future</h2>
-
-      <p>
-        The Gilded Age comparison was not the only way people imagined AI's
-        economic future.
-      </p>
-
-      <p>
-        There was also an optimistic vision.
-      </p>
-
-      <p>
-        In this version of the future, AI would become a general-purpose tool
-        that allowed ordinary people to accomplish dramatically more.
-      </p>
-
-      <ul>
-        <li>Small businesses could compete with much larger companies.</li>
-        <li>Individuals could build products with tiny teams.</li>
-        <li>Scientific research could accelerate.</li>
-        <li>Education could become more personalized.</li>
-        <li>Professional services could become cheaper.</li>
-        <li>New industries could emerge.</li>
-        <li>Workers could spend less time performing repetitive tasks.</li>
-        <li>Productivity could increase throughout the economy.</li>
-      </ul>
-
-      <p>
-        From this perspective, AI would not create a new Gilded Age.
-      </p>
-
-      <p>
-        It could instead create an age of abundance.
-      </p>
-
-      <p>
-        The technology itself would not determine the outcome. The important
-        question would be whether the productivity gains became broadly
-        available.
-      </p>
-
-
-      <!-- WHO OWNS -->
-
-      <h2>The Question of Ownership</h2>
-
-      <p>
-        This was perhaps the most important question underneath the entire
-        debate.
-      </p>
-
-      <p>
-        <strong>Who owns the machines?</strong>
-      </p>
-
-      <p>
-        In the original Gilded Age, industrial fortunes were closely connected
-        to ownership of railroads, factories, mines, oil companies, steel
-        production, and other productive assets.
-      </p>
-
-      <p>
-        In an AI-driven economy, the equivalent assets could look very
-        different.
-      </p>
-
-      <table>
-        <thead>
-          <tr>
-            <th>First Gilded Age</th>
-            <th>Possible AI Era</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <tr>
-            <td>Railroads</td>
-            <td>AI infrastructure and networks</td>
-          </tr>
-
-          <tr>
-            <td>Factories</td>
-            <td>Automated production systems</td>
-          </tr>
-
-          <tr>
-            <td>Oil and steel</td>
-            <td>Chips, computing, energy, and data centers</td>
-          </tr>
-
-          <tr>
-            <td>Industrial corporations</td>
-            <td>Technology and AI companies</td>
-          </tr>
-
-          <tr>
-            <td>Factory workers</td>
-            <td>Workers affected by AI automation</td>
-          </tr>
-
-          <tr>
-            <td>Industrial monopolies</td>
-            <td>AI platforms and concentrated infrastructure</td>
-          </tr>
-
-          <tr>
-            <td>Mass production</td>
-            <td>AI-assisted and automated production</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <p>
-        This comparison was only an analogy, not a prediction.
-      </p>
-
-      <p>
-        But it revealed what many people were actually worried about:
-        not that AI existed, but that control over an extraordinarily productive
-        technology could become concentrated.
-      </p>
-
-
-      <!-- 2026 ALREADY -->
-
-      <h2>Was 2026 Already a New Gilded Age?</h2>
-
-      <p>
-        Some people in 2026 went further than asking whether AI might create a
-        future Gilded Age.
-      </p>
-
-      <p>
-        They argued that the conditions for another Gilded Age were already
-        appearing.
-      </p>
-
-      <p>
-        Contemporary commentary explicitly described the period as a
-        "Second Gilded Age," while other reporting connected the enormous
-        fortunes surrounding technology and AI with the older historical
-        comparison. :contentReference[oaicite:5]{index=5}
-      </p>
-
-      <p>
-        Global billionaire wealth was also reaching extraordinary levels.
-        UBS figures reported in 2026 showed the global billionaire population
-        reaching a record 3,302 people, while billionaire wealth increased much
-        faster than average personal wealth during the measured period. :contentReference[oaicite:6]{index=6}
-      </p>
-
-      <p>
-        At the same time, AI was becoming an increasingly important part of the
-        technology sector's economic expansion.
-      </p>
-
-      <p>
-        This created an unusual historical moment.
-      </p>
-
-      <p>
-        People were simultaneously watching a new technological revolution
-        unfold and wondering whether the distribution of wealth surrounding it
-        resembled an older period of extreme economic concentration.
-      </p>
-
-
-      <!-- PUBLIC OPINION -->
-
-      <h2>What Ordinary People Thought</h2>
-
-      <p>
-        The debate was not limited to economists and technology executives.
-      </p>
-
-      <p>
-        Public opinion was often substantially more cautious.
-      </p>
-
-      <p>
-        A 2026 survey reported that a majority of voters believed AI would
-        widen inequality, increasing the wealth of billionaires without
-        necessarily increasing wealth for ordinary people. :contentReference[oaicite:7]{index=7}
-      </p>
-
-      <p>
-        Another 2026 survey found that 71% of U.S. adults expected AI to reduce
-        job availability over the following twenty years, while only 5%
-        expected it to create more jobs. :contentReference[oaicite:8]{index=8}
-      </p>
-
-      <p>
-        These beliefs are important historical evidence.
-      </p>
-
-      <p>
-        They show that the future of AI was not viewed in 2026 as a simple
-        story of technological progress. A significant portion of the public
-        was asking whether the benefits would actually reach them.
-      </p>
-
-
-      <!-- THE GREAT DIVIDE -->
-
-      <h2>The Great Divide in the AI Future</h2>
-
-      <p>
-        By 2026, two broad visions of the future had emerged.
-      </p>
-
-      <div class="archive-box">
-
-        <h3>The Abundance Future</h3>
-
-        <p>
-          AI dramatically increases productivity, lowers prices, creates new
-          industries, gives individuals powerful tools, and eventually raises
-          living standards for most people.
-        </p>
-
-      </div>
-
-      <div class="archive-box">
-
-        <h3>The AI Gilded Age</h3>
-
-        <p>
-          AI dramatically increases productivity, but ownership of the
-          technology remains concentrated. Wealth and political influence move
-          toward the owners of AI systems while the bargaining power of ordinary
-          workers declines.
-        </p>
-
-      </div>
-
-      <p>
-        Both futures could begin with exactly the same technological
-        breakthrough.
-      </p>
-
-      <p>
-        The difference would come from what society did with the wealth and
-        power that followed.
-      </p>
-
-
-      <!-- NOT JUST TECHNOLOGY -->
-
-      <h2>AI Would Not Decide the Outcome Alone</h2>
-
-      <p>
-        One of the most important observations from the 2026 debate was that
-        technology itself did not determine how wealth was distributed.
-      </p>
-
-      <p>
-        Laws mattered.
-      </p>
-
-      <p>
-        Taxes mattered.
-      </p>
-
-      <p>
-        Labor markets mattered.
-      </p>
-
-      <p>
-        Competition policy mattered.
-      </p>
-
-      <p>
-        Education mattered.
-      </p>
-
-      <p>
-        Ownership mattered.
-      </p>
-
-      <p>
-        The choices governments, businesses, workers, and voters made around
-        AI could influence whether its economic benefits became concentrated
-        or widespread.
-      </p>
-
-      <p>
-        That was one reason the Gilded Age comparison was useful. It shifted
-        the question away from simply asking what AI could do and toward asking
-        <em>who would benefit from what AI could do.</em>
-      </p>
-
-
-      <!-- WHAT PEOPLE FEARED -->
-
-      <h2>What People in 2026 Were Afraid Of</h2>
-
-      <p>
-        The concerns surrounding an AI-driven Gilded Age included:
-      </p>
-
-      <ul>
-        <li>Mass unemployment</li>
-        <li>Extreme wealth concentration</li>
-        <li>Declining bargaining power for workers</li>
-        <li>AI monopolies</li>
-        <li>Technology companies gaining excessive political influence</li>
-        <li>A shrinking middle class</li>
-        <li>Winner-take-all markets</li>
-        <li>Economic inequality between people who owned AI-related assets and those who did not</li>
-        <li>Unequal access to powerful AI systems</li>
-        <li>Entire professions being transformed faster than workers could adapt</li>
-      </ul>
-
-      <p>
-        Some people feared a world where a small group of companies controlled
-        systems capable of performing enormous amounts of economically valuable
-        work.
-      </p>
-
-      <p>
-        Others feared something even larger: a future in which economic power
-        became increasingly disconnected from human labor.
-      </p>
-
-
-      <!-- WHAT PEOPLE HOPED FOR -->
-
-      <h2>What People in 2026 Hoped For</h2>
-
-      <p>
-        The same technology also inspired remarkably optimistic predictions.
-      </p>
-
-      <ul>
-        <li>Higher productivity</li>
-        <li>Lower costs</li>
-        <li>Shorter working hours</li>
-        <li>Higher living standards</li>
-        <li>New industries</li>
-        <li>New forms of entrepreneurship</li>
-        <li>Faster scientific discovery</li>
-        <li>Better healthcare</li>
-        <li>More accessible education</li>
-        <li>More leisure time</li>
-        <li>Greater individual economic power</li>
-      </ul>
-
-      <p>
-        The optimistic argument was that previous technological revolutions had
-        repeatedly destroyed some jobs while creating entirely new forms of
-        work and wealth.
-      </p>
-
-      <p>
-        AI could eventually do the same on an even larger scale.
       </p>
-
-      <p>
-        Instead of creating a society divided between a tiny technological
-        elite and everyone else, AI could potentially give individuals
-        unprecedented economic capabilities.
-      </p>
-
-
-      <!-- THE UNANSWERED QUESTION -->
-
-      <h2>The Question Nobody Could Answer</h2>
-
-      <p>
-        The debate ultimately came down to a question that 2026 could not yet
-        answer:
-      </p>
-
-      <blockquote>
-        If AI creates enormous wealth, who will own it?
-      </blockquote>
-
-      <p>
-        The answer could determine much more than the future of artificial
-        intelligence.
-      </p>
-
-      <p>
-        It could determine the future of work, the structure of companies, the
-        distribution of wealth, the strength of governments, and the balance of
-        political power.
-      </p>
-
-      <p>
-        That was why the idea of an AI Gilded Age was so compelling.
-      </p>
-
-      <p>
-        It was not really a question about robots.
-      </p>
-
-      <p>
-        It was a question about economics.
-      </p>
-
-      <p>
-        And ultimately, it was a question about society.
-      </p>
-
-
-      <!-- FUTURE READER -->
-
-      <h2>What a Future Reader Will Know</h2>
-
-      <p>
-        Someone reading this article decades or centuries from now will have an
-        advantage that nobody in 2026 possessed.
-      </p>
-
-      <p>
-        They will know what happened.
-      </p>
-
-      <p>
-        They may know whether AI created enormous unemployment or millions of
-        new jobs.
-      </p>
-
-      <p>
-        They may know whether AI wealth became concentrated among a small group
-        of companies or spread throughout society.
-      </p>
-
-      <p>
-        They may know whether governments introduced new forms of taxation,
-        welfare, regulation, or ownership.
-      </p>
-
-      <p>
-        They may know whether the phrase <em>AI Gilded Age</em> became a
-        historical term or disappeared as a failed prediction.
-      </p>
-
-      <p>
-        We do not have those answers yet.
-      </p>
-
-      <p>
-        In 2026, they were still being debated.
-      </p>
-
-
-      <!-- HISTORICAL ARTIFACT -->
-
-      <section class="dark-section">
-
-        <h2>One Day, This Debate Will Be History</h2>
-
-        <p>
-          The people of 2026 were living through the beginning of an enormous
-          technological transition.
-        </p>
-
-        <p>
-          They did not know whether AI would produce abundance, disruption,
-          inequality, or some combination of all three.
-        </p>
-
-        <p>
-          They could only look at the technology developing around them and
-          imagine what might come next.
-        </p>
-
-        <p>
-          Some imagined an age of abundance.
-        </p>
-
-        <p>
-          Others imagined another Gilded Age.
-        </p>
-
-        <p>
-          Perhaps the most important historical fact is that, in 2026,
-          <strong>nobody yet knew which future they were living toward.</strong>
-        </p>
-
-      </section>
-
-
-      <!-- ADD TO ARCHIVE -->
-
-      <section class="archive-contribution">
-
-        <h2>Add to the Archive</h2>
-
-        <p>
-          What did you think AI would do to wealth and inequality?
-          Did you think AI would create a second Gilded Age, an age of
-          abundance, or something completely different?
-        </p>
-
-        <p>
-          Your perspective is part of the historical record.
-        </p>
-
-        <a
-          class="button"
-          href="https://github.com/fluryjanis/History-of-Humanity/issues/new?title=2026%20Prediction%3A%20Will%20AI%20Create%20a%20Second%20Gilded%20Age%3F&body=What%20did%20you%20think%20AI%20would%20do%20to%20wealth%2C%20work%2C%20and%20inequality%3F%0A%0ADid%20you%20think%20AI%20would%20create%20a%20second%20Gilded%20Age%2C%20an%20age%20of%20abundance%2C%20or%20something%20else%3F%0A%0AWhy%3F"
-        >
-          Add Your Idea
-        </a>
-
-      </section>
-
-
-      <!-- SOURCES -->
-
-      <section class="sources">
-
-        <h2>Sources & Methodology</h2>
-
-        <p>
-          This article documents the debate surrounding AI, wealth, work, and
-          inequality as it existed in 2026. It does not attempt to predict
-          whether a second Gilded Age will actually occur.
-        </p>
-
-        <p>
-          Contemporary evidence includes economic research, public opinion
-          surveys, reporting on AI investment and inequality, and historical
-          comparisons made during 2026.
-        </p>
-
-        <ul>
-
-          <li>
-            Stanford Institute for Human-Centered AI —
-            <em>2026 AI Index Report</em>
-          </li>
-
-          <li>
-            Bank for International Settlements —
-            <em>2026 Annual Economic Report</em>
-          </li>
-
-          <li>
-            Washington Post —
-            <em>A new force is increasing inequality in America</em>,
-            August 2026
-          </li>
-
-          <li>
-            Data for Progress —
-            <em>Voters Increasingly Think Artificial Intelligence Will Hurt the Economy</em>,
-            March 2026
-          </li>
-
-          <li>
-            UBS research on global billionaire wealth, reported in 2026
-          </li>
-
-          <li>
-            Contemporary economic research examining artificial intelligence
-            and wealth inequality
-          </li>
-
-        </ul>
-
-        <p class="methodology-note">
-          Historical comparisons in this article are presented as ideas and
-          arguments that existed in 2026, not as claims that the future will
-          necessarily repeat the past.
-        </p>
 
-      </section>
+      <cite>
+        A question increasingly raised in economic and political debates around AI
+      </cite>
 
     </div>
+
+    <p>
+      The comparison was not necessarily a prediction that history would
+      repeat itself.
+    </p>
+
+    <p>
+      It came from a concern that a technology capable of creating enormous
+      amounts of economic value could also concentrate that value among the
+      people and companies that controlled it.
+    </p>
+
+    <p>
+      Other people imagined almost the exact opposite.
+    </p>
+
+    <p>
+      They believed AI could make individuals dramatically more productive,
+      lower the cost of goods and services, create new industries, and
+      eventually produce an era of widespread prosperity.
+    </p>
+
+    <p>
+      In 2026, nobody knew which future would emerge.
+    </p>
+
+    <div class="archive-note">
+
+      <strong>Archive note</strong>
+
+      This article does not attempt to predict whether an AI-driven
+      Gilded Age will actually happen.
+
+      <br><br>
+
+      It preserves the arguments, research, concerns, hopes, and
+      predictions that existed in 2026.
+
+    </div>
+
+
+    <!-- FIRST GILDED AGE -->
+
+    <h2>
+      The First Gilded Age
+    </h2>
+
+    <p>
+      The term <em>Gilded Age</em> usually refers to the period of rapid
+      industrial and economic growth in the United States during the late
+      nineteenth century.
+    </p>
+
+    <p>
+      Railroads expanded. Factories grew. Industrial production increased.
+      New industries emerged and enormous fortunes were created.
+    </p>
+
+    <p>
+      But the economic gains were distributed unevenly.
+    </p>
+
+    <p>
+      A relatively small number of industrialists accumulated extraordinary
+      fortunes while many workers faced low wages, dangerous working
+      conditions, long hours, and limited economic security.
+    </p>
+
+    <p>
+      The period therefore became associated with two things at once:
+      enormous technological and economic growth, and extraordinary
+      concentrations of wealth and power.
+    </p>
+
+    <p>
+      More than a century later, people in 2026 saw some similarities in
+      the rise of artificial intelligence.
+    </p>
+
+
+    <!-- WHY AI -->
+
+    <h2>
+      Why Compare AI to the Gilded Age?
+    </h2>
+
+    <p>
+      AI was obviously not the same as railroads, steel, or oil.
+    </p>
+
+    <p>
+      But the economic structure surrounding AI created familiar questions.
+    </p>
+
+    <ul>
+
+      <li>
+        Who owns the technology?
+      </li>
+
+      <li>
+        Who controls the infrastructure?
+      </li>
+
+      <li>
+        Who receives the productivity gains?
+      </li>
+
+      <li>
+        What happens to workers whose tasks become automated?
+      </li>
+
+      <li>
+        Does technological progress spread wealth or concentrate it?
+      </li>
+
+      <li>
+        How much economic power should a small number of companies have?
+      </li>
+
+    </ul>
+
+    <p>
+      These questions became increasingly important as AI required enormous
+      amounts of computing power, investment, electricity, data-center
+      infrastructure, and specialized hardware.
+    </p>
+
+    <p>
+      The issue was therefore larger than chatbots.
+    </p>
+
+    <p>
+      AI was becoming an economic infrastructure.
+    </p>
+
+
+    <!-- RESEARCH -->
+
+    <h2>
+      What the Research Was Saying
+    </h2>
+
+    <p>
+      Research available to people in 2026 did not produce a simple answer.
+    </p>
+
+    <p>
+      An International Monetary Fund working paper on AI adoption and
+      inequality found that AI could reduce some forms of wage inequality
+      because higher-income occupations may be more exposed to displacement.
+      But it also found an important counter-effect: higher-income workers
+      could benefit more from AI through increased productivity and returns
+      on capital.
+    </p>
+
+    <div class="source">
+
+      <strong>Research</strong>
+
+      <a
+        href="https://www.imf.org/en/publications/wp/issues/2025/04/04/ai-adoption-and-inequality-565729"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        IMF — AI Adoption and Inequality
+      </a>
+
+    </div>
+
+    <p>
+      The researchers concluded that when companies choose how much AI to
+      adopt, the resulting wealth inequality could become particularly
+      pronounced.
+    </p>
+
+    <p>
+      In other words, AI could theoretically reduce one kind of inequality
+      while increasing another.
+    </p>
+
+    <p>
+      That distinction mattered.
+    </p>
+
+    <p>
+      A society could have less wage inequality while simultaneously having
+      greater inequality in who owns the assets generating economic wealth.
+    </p>
+
+    <div class="source">
+
+      <strong>Additional research</strong>
+
+      <a
+        href="https://www.imf.org/en/publications/wp/issues/2025/04/11/the-global-impact-of-ai-mind-the-gap-566129"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        IMF — The Global Impact of AI: Mind the Gap
+      </a>
+
+    </div>
+
+    <p>
+      Other IMF research warned that AI could also increase economic
+      differences between countries because advanced economies were generally
+      better prepared to adopt the technology.
+    </p>
+
+
+    <!-- PUBLIC -->
+
+    <h2>
+      The Public Was Worried
+    </h2>
+
+    <p>
+      The economic debate was not limited to economists.
+    </p>
+
+    <p>
+      Public opinion surveys showed that many people were considerably more
+      worried about AI's effects on work than AI researchers were.
+    </p>
+
+    <p>
+      Stanford's 2026 AI Index found a striking difference between AI experts
+      and the U.S. public.
+    </p>
+
+    <p>
+      Seventy-three percent of AI experts expected AI to have a positive
+      impact on how people do their jobs, compared with only 23% of the
+      public.
+    </p>
+
+    <p>
+      The report also found that 64% of Americans expected AI to lead to
+      fewer jobs over the following twenty years, while only 5% expected it
+      to lead to more jobs.
+    </p>
+
+    <div class="source">
+
+      <strong>Public opinion research</strong>
+
+      <a
+        href="https://hai.stanford.edu/ai-index/2026-ai-index-report/public-opinion"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Stanford HAI — 2026 AI Index: Public Opinion
+      </a>
+
+    </div>
+
+    <p>
+      This disagreement became one of the defining features of the
+      conversation surrounding AI.
+    </p>
+
+
+    <!-- QUOTE -->
+
+    <div class="quote">
+
+      <p>
+        "73% of experts expect a positive impact compared to just 23% of the public."
+      </p>
+
+      <cite>
+        Stanford Institute for Human-Centered AI, 2026 AI Index
+      </cite>
+
+    </div>
+
+    <p>
+      The difference did not prove that the public was right or that experts
+      were right.
+    </p>
+
+    <p>
+      It showed that the future economic effects of AI were uncertain enough
+      for people closest to the technology and people living with its effects
+      to have dramatically different expectations.
+    </p>
+
+
+    <!-- WORK -->
+
+    <h2>
+      What Would Happen to Work?
+    </h2>
+
+    <p>
+      The future of employment was at the center of the debate.
+    </p>
+
+    <p>
+      AI could make workers much more productive.
+    </p>
+
+    <p>
+      A programmer could use AI to write and debug code. A researcher could
+      process enormous quantities of information. A designer could produce
+      more concepts. A small business could perform work that previously
+      required an entire department.
+    </p>
+
+    <p>
+      But productivity and employment were not the same thing.
+    </p>
+
+    <p>
+      If one worker using AI could accomplish the work previously performed
+      by several people, companies might need fewer workers to produce the
+      same amount of output.
+    </p>
+
+    <p>
+      That created a difficult possibility:
+    </p>
+
+    <div class="future-box">
+
+      <h3>
+        A More Productive Economy
+      </h3>
+
+      <p>
+        Companies produce more with fewer workers, creating more economic
+        output while potentially reducing the amount of labor required.
+      </p>
+
+    </div>
+
+    <p>
+      Whether that would be good or bad depended largely on what happened to
+      the wealth created by the additional productivity.
+    </p>
+
+
+    <!-- OWNERSHIP -->
+
+    <h2>
+      The Question of Ownership
+    </h2>
+
+    <p>
+      This was perhaps the deepest question underneath the entire Gilded Age
+      comparison.
+    </p>
+
+    <div class="quote">
+
+      <p>
+        If AI creates enormous wealth, who will own it?
+      </p>
+
+      <cite>
+        The central economic question behind the 2026 debate
+      </cite>
+
+    </div>
+
+    <p>
+      In the original Gilded Age, enormous fortunes were connected to
+      ownership of railroads, factories, mines, oil companies, and other
+      productive assets.
+    </p>
+
+    <p>
+      In an AI-driven economy, the important assets could look very
+      different.
+    </p>
+
+    <ul>
+
+      <li>AI models</li>
+      <li>Computer chips</li>
+      <li>Data centers</li>
+      <li>Cloud computing infrastructure</li>
+      <li>Energy infrastructure</li>
+      <li>AI software platforms</li>
+      <li>Data</li>
+      <li>Intellectual property</li>
+      <li>Companies that deploy AI at enormous scale</li>
+
+    </ul>
+
+    <p>
+      If these assets became extraordinarily productive, controlling them
+      could become one of the most important sources of economic power in the
+      world.
+    </p>
+
+
+    <!-- COMPARISON -->
+
+    <h2>
+      The AI Gilded Age vs. the Original
+    </h2>
+
+    <p>
+      The comparison people in 2026 sometimes made looked roughly like this.
+    </p>
+
+    <table class="comparison">
+
+      <thead>
+
+        <tr>
+          <th>Original Gilded Age</th>
+          <th>Possible AI Era</th>
+        </tr>
+
+      </thead>
+
+      <tbody>
+
+        <tr>
+          <td>Railroads</td>
+          <td>AI infrastructure and computing networks</td>
+        </tr>
+
+        <tr>
+          <td>Factories</td>
+          <td>AI-powered production systems</td>
+        </tr>
+
+        <tr>
+          <td>Oil and steel</td>
+          <td>Chips, computing, energy, and data centers</td>
+        </tr>
+
+        <tr>
+          <td>Industrial corporations</td>
+          <td>Technology and AI companies</td>
+        </tr>
+
+        <tr>
+          <td>Factory workers</td>
+          <td>Workers affected by AI automation</td>
+        </tr>
+
+        <tr>
+          <td>Industrial monopolies</td>
+          <td>AI platforms and concentrated infrastructure</td>
+        </tr>
+
+        <tr>
+          <td>Mass production</td>
+          <td>AI-assisted and automated production</td>
+        </tr>
+
+      </tbody>
+
+    </table>
+
+    <p>
+      The two eras were obviously not identical.
+    </p>
+
+    <p>
+      The comparison was useful because it focused attention on the
+      relationship between technological progress and ownership.
+    </p>
+
+
+    <!-- OPTIMISTIC -->
+
+    <h2>
+      The Other Possible Future
+    </h2>
+
+    <p>
+      The Gilded Age comparison represented only one possible future.
+    </p>
+
+    <p>
+      There was another vision: an age of abundance.
+    </p>
+
+    <p>
+      In this version, AI would not primarily make a small group of companies
+      richer. Instead, it would give individuals and small organizations
+      extraordinary productive capabilities.
+    </p>
+
+    <ul>
+
+      <li>Small businesses could compete with much larger companies.</li>
+
+      <li>Individuals could build products with tiny teams.</li>
+
+      <li>Scientific research could accelerate.</li>
+
+      <li>Education could become more personalized.</li>
+
+      <li>Professional services could become cheaper.</li>
+
+      <li>New industries could emerge.</li>
+
+      <li>Workers could spend less time on repetitive tasks.</li>
+
+      <li>Productivity could rise throughout the economy.</li>
+
+    </ul>
+
+    <p>
+      Economists Ajay Agrawal, Joshua Gans, and Avi Goldfarb described a
+      similar possibility in an IMF Finance & Development article about
+      machine intelligence.
+    </p>
+
+    <div class="quote">
+
+      <p>
+        "AI could reverse the widening inequality driven by technology, or aggravate it."
+      </p>
+
+      <cite>
+        Ajay Agrawal, Joshua Gans, and Avi Goldfarb, 2025
+      </cite>
+
+    </div>
+
+    <div class="source">
+
+      <strong>Economic perspective</strong>
+
+      <a
+        href="https://www.imf.org/en/publications/fandd/issues/2025/06/machine-intelligence-and-human-judgement-ajay-agrawal"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        IMF Finance & Development — Machine Intelligence and Human Judgment
+      </a>
+
+    </div>
+
+    <p>
+      Their argument captured an important feature of the debate: the same
+      technology could potentially produce either broad prosperity or greater
+      inequality depending partly on how society responded to it.
+    </p>
+
+
+    <!-- CONCENTRATION -->
+
+    <h2>
+      Why Concentration Mattered
+    </h2>
+
+    <p>
+      AI was not simply software running on an ordinary computer.
+    </p>
+
+    <p>
+      The most advanced systems required enormous amounts of computing power,
+      specialized chips, energy, data, engineering talent, and capital.
+    </p>
+
+    <p>
+      This created a natural concern about concentration.
+    </p>
+
+    <p>
+      If only a small number of companies could afford to build and operate
+      the most powerful systems, those companies could potentially capture a
+      large portion of the economic value created by AI.
+    </p>
+
+    <p>
+      Stanford's 2026 AI Index noted that frontier model production remained
+      concentrated in the United States and China, even as open-source
+      development expanded participation around the world.
+    </p>
+
+    <div class="source">
+
+      <strong>Research and data</strong>
+
+      <a
+        href="https://hai.stanford.edu/ai-index/2026-ai-index-report"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Stanford HAI — 2026 AI Index Report
+      </a>
+
+    </div>
+
+    <p>
+      This did not mean that a permanent AI monopoly was inevitable.
+    </p>
+
+    <p>
+      It meant that concentration was already an important part of the
+      economic landscape people were looking at in 2026.
+    </p>
+
+
+    <!-- POLITICAL QUESTION -->
+
+    <h2>
+      The Political Question
+    </h2>
+
+    <p>
+      Once the discussion moved from technology to ownership, it inevitably
+      became political.
+    </p>
+
+    <p>
+      Governments had to decide how to handle competition, taxation, worker
+      protections, education, infrastructure, and the distribution of the
+      economic gains from automation.
+    </p>
+
+    <p>
+      The debate was therefore no longer simply:
+    </p>
+
+    <div class="quote">
+
+      <p>
+        "What can AI do?"
+      </p>
+
+    </div>
+
+    <p>
+      It increasingly became:
+    </p>
+
+    <div class="quote">
+
+      <p>
+        "What should society do with what AI can do?"
+      </p>
+
+    </div>
+
+
+    <!-- FEARS -->
+
+    <h2>
+      What People in 2026 Were Afraid Of
+    </h2>
+
+    <p>
+      The fears surrounding an AI-driven Gilded Age included:
+    </p>
+
+    <ul>
+
+      <li>Mass unemployment</li>
+
+      <li>Extreme wealth concentration</li>
+
+      <li>Declining bargaining power for workers</li>
+
+      <li>AI monopolies</li>
+
+      <li>Technology companies gaining excessive political influence</li>
+
+      <li>A shrinking middle class</li>
+
+      <li>Winner-take-all markets</li>
+
+      <li>Unequal access to powerful AI systems</li>
+
+      <li>Professions changing faster than workers could adapt</li>
+
+      <li>Economic power becoming increasingly disconnected from human labor</li>
+
+    </ul>
+
+
+    <!-- HOPES -->
+
+    <h2>
+      What People in 2026 Hoped For
+    </h2>
+
+    <p>
+      The optimistic vision was just as significant.
+    </p>
+
+    <ul>
+
+      <li>Higher productivity</li>
+
+      <li>Lower costs</li>
+
+      <li>Shorter working hours</li>
+
+      <li>Higher living standards</li>
+
+      <li>New industries</li>
+
+      <li>New forms of entrepreneurship</li>
+
+      <li>Faster scientific discovery</li>
+
+      <li>Better healthcare</li>
+
+      <li>More accessible education</li>
+
+      <li>More leisure time</li>
+
+      <li>Greater individual economic power</li>
+
+    </ul>
+
+    <p>
+      In this vision, AI would become something closer to a universal tool
+      for increasing human capability.
+    </p>
+
+    <p>
+      Instead of concentrating power, it could distribute it.
+    </p>
+
+
+    <!-- TWO FUTURES -->
+
+    <h2>
+      The Two Futures of 2026
+    </h2>
+
+    <div class="future-box">
+
+      <h3>
+        The Abundance Future
+      </h3>
+
+      <p>
+        AI dramatically increases productivity, lowers prices, creates new
+        industries, gives individuals powerful tools, and eventually raises
+        living standards for most people.
+      </p>
+
+    </div>
+
+    <div class="future-box">
+
+      <h3>
+        The AI Gilded Age
+      </h3>
+
+      <p>
+        AI dramatically increases productivity, but ownership of the
+        technology remains concentrated. Wealth and political influence move
+        toward the owners of AI systems while the bargaining power of ordinary
+        workers declines.
+      </p>
+
+    </div>
+
+    <p>
+      Both futures could begin with exactly the same technological
+      breakthrough.
+    </p>
+
+    <p>
+      The difference could come from what societies do with the wealth and
+      power that follow.
+    </p>
+
+
+    <!-- NOT TECHNOLOGY ALONE -->
+
+    <h2>
+      AI Would Not Decide the Outcome Alone
+    </h2>
+
+    <p>
+      Technology does not determine economic systems by itself.
+    </p>
+
+    <p>
+      Laws matter.
+    </p>
+
+    <p>
+      Taxes matter.
+    </p>
+
+    <p>
+      Labor markets matter.
+    </p>
+
+    <p>
+      Competition policy matters.
+    </p>
+
+    <p>
+      Education matters.
+    </p>
+
+    <p>
+      Ownership matters.
+    </p>
+
+    <p>
+      The choices governments, businesses, workers, and voters make around
+      AI could influence whether its productivity gains become concentrated
+      or widespread.
+    </p>
+
+    <p>
+      That was one reason the Gilded Age comparison was useful.
+    </p>
+
+    <p>
+      It moved the conversation away from simply asking what AI could do and
+      toward asking <em>who would benefit from what AI could do.</em>
+    </p>
+
+
+    <!-- UNKNOWN -->
+
+    <h2>
+      The Question Nobody in 2026 Could Answer
+    </h2>
+
+    <p>
+      The people of 2026 had access to research, economic models, surveys,
+      forecasts, and increasingly powerful AI systems.
+    </p>
+
+    <p>
+      But they did not have the one thing that would ultimately settle the
+      debate.
+    </p>
+
+    <p>
+      They did not have the future.
+    </p>
+
+    <p>
+      Nobody in 2026 knew whether AI would create millions of new jobs,
+      eliminate millions of existing ones, or do both.
+    </p>
+
+    <p>
+      Nobody knew whether AI wealth would spread throughout society or become
+      concentrated among a relatively small group of owners.
+    </p>
+
+    <p>
+      Nobody knew whether the phrase "AI Gilded Age" would become a standard
+      historical term or a forgotten prediction.
+    </p>
+
+
+    <!-- FUTURE READER -->
+
+    <h2>
+      What a Future Reader Will Know
+    </h2>
+
+    <p>
+      A person reading this article decades or centuries from now will have
+      something that nobody in 2026 possessed.
+    </p>
+
+    <p>
+      They will know what happened.
+    </p>
+
+    <p>
+      They may know whether AI transformed employment.
+    </p>
+
+    <p>
+      They may know whether a small number of companies became extraordinarily
+      powerful.
+    </p>
+
+    <p>
+      They may know whether AI created an era of abundance.
+    </p>
+
+    <p>
+      They may know whether inequality increased or decreased.
+    </p>
+
+    <p>
+      They may know whether governments successfully distributed the benefits
+      of automation.
+    </p>
+
+    <p>
+      They may even know whether people in 2026 were completely wrong about
+      the future.
+    </p>
+
+    <p>
+      But this article preserves something different.
+    </p>
+
+    <p>
+      It preserves what people thought <strong>before they knew.</strong>
+    </p>
+
+
+    <!-- ENDING -->
+
+    <div class="ending">
+
+      <p>
+        In 2026, some people saw AI as the beginning of an age of abundance.
+        Others saw the possibility of another Gilded Age.
+      </p>
+
+    </div>
+
+
+    <h2>
+      One Day, This Debate Will Be History
+    </h2>
+
+    <p>
+      The people of 2026 were living through the beginning of a major
+      technological transition.
+    </p>
+
+    <p>
+      They could see AI becoming more capable.
+    </p>
+
+    <p>
+      They could see enormous amounts of money being invested into it.
+    </p>
+
+    <p>
+      They could see companies reorganizing around it.
+    </p>
+
+    <p>
+      They could see workers experimenting with it and worrying about it.
+    </p>
+
+    <p>
+      They could see researchers trying to understand its economic effects.
+    </p>
+
+    <p>
+      What they could not see was the ending.
+    </p>
+
+    <p>
+      Perhaps AI would spread economic power more widely than any previous
+      technology.
+    </p>
+
+    <p>
+      Perhaps it would concentrate wealth and influence on an unprecedented
+      scale.
+    </p>
+
+    <p>
+      Perhaps the future would be somewhere between the two.
+    </p>
+
+    <p>
+      In 2026, the question was still open.
+    </p>
+
+    <p>
+      <strong>
+        One day, the answer will be history.
+      </strong>
+    </p>
+
+
+    <!-- ADD YOUR IDEA -->
+
+    <section class="add-idea">
+
+      <div class="add-idea-label">
+        Contribute to this article
+      </div>
+
+      <h2>
+        Add Your Idea
+      </h2>
+
+      <p>
+        What did you think AI would do to wealth, work, and inequality?
+        Did you think AI would create a second Gilded Age, an age of
+        abundance, or something completely different?
+      </p>
+
+      <form
+        class="idea-form"
+        onsubmit="submitIdea(event)"
+      >
+
+        <textarea
+          name="idea"
+          placeholder="What did you think AI would do to society and the economy?"
+          required
+        ></textarea>
+
+        <select name="type" required>
+
+          <option value="" disabled selected>
+            Select a submission type
+          </option>
+
+          <option value="A new idea">
+            A new idea
+          </option>
+
+          <option value="A prediction from 2026">
+            A prediction from 2026
+          </option>
+
+          <option value="An example from 2026">
+            An example from 2026
+          </option>
+
+          <option value="A correction">
+            A correction
+          </option>
+
+        </select>
+
+        <button type="submit">
+          Submit Your Idea
+        </button>
+
+      </form>
+
+      <p class="approval-note">
+        Your submission will open a GitHub Issue for review.
+        You’ll need a GitHub account to submit it.
+      </p>
+
+    </section>
+
+
+    <!-- SOURCES -->
+
+    <section class="sources">
+
+      <h2>
+        Sources & Methodology
+      </h2>
+
+      <p>
+        This article documents the debate surrounding artificial
+        intelligence, wealth, work, and inequality as it existed around
+        2026.
+      </p>
+
+      <p>
+        Research and commentary are included to preserve the evidence
+        available to people at the time. The sources represent different
+        perspectives and do not establish that a second Gilded Age will
+        actually occur.
+      </p>
+
+      <ul>
+
+        <li>
+
+          <a
+            href="https://www.imf.org/en/publications/wp/issues/2025/04/04/ai-adoption-and-inequality-565729"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            IMF — AI Adoption and Inequality
+          </a>
+
+        </li>
+
+        <li>
+
+          <a
+            href="https://www.imf.org/en/publications/wp/issues/2025/04/11/the-global-impact-of-ai-mind-the-gap-566129"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            IMF — The Global Impact of AI: Mind the Gap
+          </a>
+
+        </li>
+
+        <li>
+
+          <a
+            href="https://www.imf.org/en/publications/fandd/issues/2025/06/machine-intelligence-and-human-judgement-ajay-agrawal"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            IMF Finance & Development — Machine Intelligence and Human Judgment
+          </a>
+
+        </li>
+
+        <li>
+
+          <a
+            href="https://hai.stanford.edu/ai-index/2026-ai-index-report/public-opinion"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Stanford HAI — 2026 AI Index: Public Opinion
+          </a>
+
+        </li>
+
+        <li>
+
+          <a
+            href="https://hai.stanford.edu/ai-index/2026-ai-index-report"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Stanford HAI — 2026 AI Index Report
+          </a>
+
+        </li>
+
+      </ul>
+
+      <p class="methodology-note">
+
+        Quotations in this article are used to preserve statements and
+        arguments that existed during the period. Short quotations are
+        accompanied by their source so future readers can examine the
+        original material.
+
+      </p>
+
+    </section>
+
 
   </article>
 
-</main>
+
+  <footer>
+
+    <strong>
+      HISTORY OF HUMANITY
+    </strong>
+
+    <span>
+      An archive of ordinary human life · 2026
+    </span>
+
+  </footer>
 
 
-<footer class="site-footer">
-  <div class="container">
-    <p>
-      History of Humanity — An archive of ordinary human life, preserved year by year.
-    </p>
+  <script>
 
-    <p>
-      One day, today will be history.
-    </p>
-  </div>
-</footer>
+    function submitIdea(event) {
+
+      event.preventDefault();
+
+      const form = event.target;
+
+      const idea = form.idea.value.trim();
+
+      const type = form.type.value;
+
+      if (!idea || !type) return;
+
+      const title =
+        `[Article Submission] ${type}`;
+
+      const body =
+`## Article Submission
+
+**Article:** Will AI Create a Second Gilded Age?
+
+**Type:** ${type}
+
+### Submitted Idea
+
+${idea}
+
+---
+
+Submitted through the History of Humanity archive.`;
+
+      const issueUrl =
+        "https://github.com/fluryjanis/History-of-Humanity/issues/new" +
+        "?title=" + encodeURIComponent(title) +
+        "&body=" + encodeURIComponent(body);
+
+      window.open(issueUrl, "_blank");
+
+    }
+
+  </script>
 
 </body>
 </html>
