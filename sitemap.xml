@@ -4,7 +4,7 @@
   <!-- Homepage -->
   <url>
     <loc>https://fluryjanis.github.io/History-of-Humanity/</loc>
-    <lastmod>2026-09-04</lastmod>
+    <lastmod>2026-09-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -46,7 +46,7 @@
   </url>
 
   <url>
-    <loc>https://fluryjanis.github.io/History-of-Humanity/blog/Famous-Video-Games-of-2026</loc>
+    <loc>https://fluryjanis.github.io/History-of-Humanity/blog/Famous-Video-Games-of-2026.html</loc>
     <lastmod>2026-09-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -62,6 +62,27 @@
   <url>
     <loc>https://fluryjanis.github.io/History-of-Humanity/blog/Will-AI-Create-a-Second-Gilded-Age.html</loc>
     <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://fluryjanis.github.io/History-of-Humanity/blog/Are-Coders-the-Craftsmen-of-a-New-Industrial-Revolution.html</loc>
+    <lastmod>2026-09-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://fluryjanis.github.io/History-of-Humanity/blog/Do-2026-Future-Films-Represent-2026s-Idea-of-the-Future.html</loc>
+    <lastmod>2026-09-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://fluryjanis.github.io/History-of-Humanity/blog/What-Is-History-of-Man.html</loc>
+    <lastmod>2026-09-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
