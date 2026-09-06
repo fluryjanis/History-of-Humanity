@@ -1,0 +1,1536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" href="../favicon.png" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Do 2026 Future Films Represent 2026's Idea of the Future? | History of Humanity</title>
+
+  <meta
+    name="description"
+    content="Do 2026 future films represent what people in 2026 believed the future would look like? An analysis of science fiction, AI, space, climate, technology, and cultural imagination."
+  >
+
+  <style>
+    :root {
+      --bg: #f4f1e8;
+      --text: #24231f;
+      --muted: #6e6a60;
+      --line: #d8d3c7;
+      --accent: #4b4a42;
+      --box: #ebe7dc;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.75;
+    }
+
+    nav {
+      width: 100%;
+      border-bottom: 1px solid var(--line);
+      padding: 22px 6%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .logo {
+      font-weight: bold;
+      letter-spacing: 1.5px;
+      font-size: 14px;
+    }
+
+    .archive-link {
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    header {
+      max-width: 900px;
+      margin: 85px auto 55px;
+      padding: 0 25px;
+    }
+
+    h1 {
+      font-size: clamp(42px, 7vw, 76px);
+      line-height: 1.05;
+      margin: 0 0 25px;
+      letter-spacing: -2px;
+      font-weight: normal;
+    }
+
+    .subtitle {
+      font-size: 21px;
+      color: var(--muted);
+      max-width: 760px;
+      margin-bottom: 25px;
+    }
+
+    .meta {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    main {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 0 25px 100px;
+    }
+
+    article p {
+      font-size: 18px;
+      margin: 0 0 25px;
+    }
+
+    article > p:first-of-type {
+      font-size: 21px;
+    }
+
+    h2 {
+      font-size: 34px;
+      line-height: 1.2;
+      font-weight: normal;
+      margin: 75px 0 25px;
+      letter-spacing: -0.5px;
+    }
+
+    h3 {
+      font-size: 24px;
+      line-height: 1.3;
+      font-weight: normal;
+      margin: 45px 0 18px;
+    }
+
+    a {
+      color: var(--text);
+    }
+
+    .source-box {
+      border-left: 3px solid var(--accent);
+      background: var(--box);
+      padding: 20px 22px;
+      margin: 30px 0 35px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    .source-box strong {
+      display: block;
+      margin-bottom: 7px;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .source-box a {
+      display: inline-block;
+      margin-top: 4px;
+    }
+
+    .archive-note {
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      padding: 25px 0;
+      margin: 45px 0;
+      font-size: 16px;
+      color: var(--muted);
+    }
+
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 35px 0 45px;
+      font-size: 16px;
+    }
+
+    .comparison-table th,
+    .comparison-table td {
+      border-bottom: 1px solid var(--line);
+      padding: 15px 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .comparison-table th {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.7px;
+    }
+
+    .film-source-list {
+      margin: 20px 0 30px;
+      padding-left: 25px;
+    }
+
+    .film-source-list li {
+      margin-bottom: 8px;
+      font-size: 15px;
+    }
+
+    .ending {
+      margin-top: 80px;
+      padding-top: 35px;
+      border-top: 1px solid var(--line);
+    }
+
+    .ending p {
+      font-size: 20px;
+    }
+
+    .add-idea {
+      margin-top: 80px;
+      padding: 30px;
+      background: var(--box);
+    }
+
+    .add-idea h3 {
+      margin-top: 0;
+    }
+
+    textarea,
+    select {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid var(--line);
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      margin-bottom: 15px;
+    }
+
+    textarea {
+      min-height: 130px;
+      resize: vertical;
+    }
+
+    button {
+      border: none;
+      padding: 12px 20px;
+      background: var(--text);
+      color: var(--bg);
+      cursor: pointer;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 35px 6%;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    footer strong {
+      color: var(--text);
+      letter-spacing: 1px;
+    }
+
+    @media (max-width: 650px) {
+      nav {
+        padding: 18px 5%;
+      }
+
+      header {
+        margin-top: 55px;
+      }
+
+      h1 {
+        letter-spacing: -1px;
+      }
+
+      article p {
+        font-size: 17px;
+      }
+
+      article > p:first-of-type {
+        font-size: 19px;
+      }
+
+      h2 {
+        font-size: 29px;
+      }
+
+      .comparison-table {
+        font-size: 14px;
+      }
+
+      .comparison-table th,
+      .comparison-table td {
+        padding: 10px 7px;
+      }
+
+      footer {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <a href="../index.html" class="logo">HISTORY OF HUMANITY</a>
+
+    <a
+      href="https://fluryjanis.github.io/History-of-Humanity/#archive"
+      class="archive-link"
+    >
+      Archive
+    </a>
+  </nav>
+
+  <header>
+    <h1>Do 2026 Future Films Represent 2026's Idea of the Future?</h1>
+
+    <div class="subtitle">
+      What the future films of 2026 reveal about what people in 2026
+      found imaginable, frightening, hopeful, and possible.
+    </div>
+
+    <div class="meta">
+      Published September 6, 2026 · Looking at the future imagined in 2026
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <p>
+        When people imagine the future, they rarely begin with a blank page.
+      </p>
+
+      <p>
+        They take the world they know and push it forward.
+      </p>
+
+      <p>
+        A new technology becomes more powerful. A current fear becomes a catastrophe.
+        A political argument becomes a new form of government. A scientific possibility
+        becomes everyday life. Sometimes an old science-fiction idea returns because it
+        still feels relevant. Sometimes filmmakers imagine something so strange that it
+        tells us almost nothing about what the future will actually look like.
+      </p>
+
+      <p>
+        But that does not make these films historically useless.
+      </p>
+
+      <p>
+        In fact, it may make them more interesting.
+      </p>
+
+      <p>
+        A future film does not necessarily tell us what people believed would happen.
+        It can tell us what people thought was possible, what they were afraid might
+        happen, what they hoped technology could accomplish, or what problems they
+        believed were worth imagining.
+      </p>
+
+      <div class="archive-note">
+        <strong>A historical distinction:</strong><br>
+        A film is evidence of cultural imagination, not automatically evidence of
+        public opinion. The futures imagined by filmmakers should not be treated as
+        though they represent one unified belief held by everyone in 2026.
+      </div>
+
+
+      <h2>What Did 2026 Think the Future Would Look Like?</h2>
+
+      <p>
+        There was no single answer.
+      </p>
+
+      <p>
+        In some areas, people in 2026 were remarkably optimistic. Space exploration
+        remained a source of national pride and scientific ambition. In other areas,
+        people were increasingly uncertain about artificial intelligence, employment,
+        privacy, climate change, and the ability of governments to control technological
+        change.
+      </p>
+
+      <p>
+        Public opinion therefore produced a complicated picture of the future:
+        excitement and anxiety existed at the same time.
+      </p>
+
+      <p>
+        A 2026 Pew Research Center survey found that roughly half of U.S. adults had
+        used AI chatbots, while about one in four reported using them daily. At the
+        same time, large majorities worried that increasing AI use would make personal
+        information less secure, and many Americans lacked confidence that governments
+        or companies could manage AI responsibly.
+      </p>
+
+      <div class="source-box">
+        <strong>Contemporary evidence · Artificial Intelligence</strong>
+
+        Pew Research Center, "Americans and AI 2026."
+
+        <br>
+
+        <a
+          href="https://www.pewresearch.org/internet/2026/06/17/americans-and-ai-2026-chatbots-smart-devices-and-views-on-impact/"
+          target="_blank"
+          rel="noopener"
+        >
+          Read the original Pew Research report →
+        </a>
+      </div>
+
+      <p>
+        Employment was another major concern. In August 2026, Pew reported that
+        71% of Americans thought AI would result in fewer jobs over the next twenty
+        years. Among adults aged 18 to 29, that figure was 73%.
+      </p>
+
+      <div class="source-box">
+        <strong>Contemporary evidence · Work and AI</strong>
+
+        Pew Research Center, "Young adults in the U.S. are increasingly wary of AI,
+        concerned it will take jobs."
+
+        <br>
+
+        <a
+          href="https://www.pewresearch.org/short-reads/2026/08/18/young-adults-in-the-us-are-increasingly-wary-of-ai-concerned-it-will-take-jobs/"
+          target="_blank"
+          rel="noopener"
+        >
+          Read the original report →
+        </a>
+      </div>
+
+      <p>
+        Space produced a different mixture of optimism and uncertainty. Surveys
+        conducted in 2026 showed strong support for space exploration, including
+        continued interest in returning humans to the Moon and eventually sending
+        astronauts to Mars. Yet the idea of people actually living permanently in
+        space remained much less certain.
+      </p>
+
+      <div class="source-box">
+        <strong>Contemporary evidence · Space</strong>
+
+        Ipsos found that 59% of Americans considered landing astronauts on Mars
+        important, while YouGov found that only 36% thought at least some people
+        permanently living in space within 50 years was likely.
+
+        <br><br>
+
+        <a
+          href="https://www.ipsos.com/en-us/americans-express-pride-us-space-program"
+          target="_blank"
+          rel="noopener"
+        >
+          Ipsos: Americans and the U.S. space program →
+        </a>
+
+        <br>
+
+        <a
+          href="https://yougov.com/en-us/articles/54648-americans-favorite-planet-other-than-earth-its-mars"
+          target="_blank"
+          rel="noopener"
+        >
+          YouGov: Americans and Mars →
+        </a>
+      </div>
+
+      <p>
+        Climate change produced a similarly uncertain picture. About six in ten
+        Americans said countries including the United States would not do enough
+        to avoid the worst effects of climate change.
+      </p>
+
+      <div class="source-box">
+        <strong>Contemporary evidence · Climate</strong>
+
+        Pew Research Center, "Americans are increasingly pessimistic about avoiding
+        the worst effects of climate change."
+
+        <br>
+
+        <a
+          href="https://www.pewresearch.org/science/2026/05/28/americans-are-increasingly-pessimistic-about-avoiding-the-worst-effects-of-climate-change/"
+          target="_blank"
+          rel="noopener"
+        >
+          Read the original report →
+        </a>
+      </div>
+
+      <p>
+        These opinions matter because they provide a useful comparison for the
+        movies of 2026.
+      </p>
+
+      <p>
+        If public opinion was uncertain about AI, worried about employment,
+        enthusiastic about space, and pessimistic about climate change, what kinds
+        of futures did filmmakers put on screen?
+      </p>
+
+
+      <h2>What Do Future Films Actually Show?</h2>
+
+      <p>
+        Several of 2026's future-set films offered very different answers.
+      </p>
+
+      <p>
+        <em>Project Hail Mary</em> looked toward scientific cooperation and
+        interstellar survival.
+      </p>
+
+      <p>
+        <em>The Dog Stars</em> imagined a world after societal collapse and pandemic.
+      </p>
+
+      <p>
+        <em>Hot Spot</em> imagined a society dominated by artificial intelligence,
+        climate pressure, political conflict, scarcity, and technological change.
+      </p>
+
+      <p>
+        <em>The End of It</em> imagined a world in which humanity had largely solved
+        aging and death.
+      </p>
+
+      <p>
+        <em>Per Aspera Ad Astra</em> imagined technology capable of creating complete
+        artificial dream worlds.
+      </p>
+
+      <p>
+        These films do not agree with each other.
+      </p>
+
+      <p>
+        That disagreement is itself historical evidence.
+      </p>
+
+
+      <h2>Project Hail Mary: The Future as a Scientific Problem</h2>
+
+      <p>
+        <em>Project Hail Mary</em> is perhaps one of the clearest examples of a
+        technological future built around scientific problem-solving.
+      </p>
+
+      <p>
+        The film is set in the near future. Ryland Grace wakes alone aboard an
+        interstellar spacecraft and discovers that humanity is facing a massive
+        astronomical crisis. His mission is to find a way to save Earth.
+      </p>
+
+      <p>
+        Rather than presenting the future primarily as a political dystopia,
+        the film treats it as a scientific challenge.
+      </p>
+
+      <p>
+        Humanity survives because someone is capable of understanding the problem.
+      </p>
+
+      <p>
+        That is interesting in the context of 2026.
+      </p>
+
+      <p>
+        Artificial intelligence was already becoming deeply involved in scientific
+        and technical work, while public discussion increasingly focused on whether
+        technological systems would replace human workers or expand what humans could
+        accomplish.
+      </p>
+
+      <p>
+        <em>Project Hail Mary</em> offers a particularly optimistic version of that
+        relationship: technology does not replace human intelligence. Instead,
+        knowledge, cooperation, tools, and reasoning allow humans to confront a
+        problem that would otherwise be impossible.
+      </p>
+
+      <p>
+        The film also emphasizes isolation and unexpected companionship, making its
+        future less about spectacular technology than about the human relationships
+        necessary to survive it.
+      </p>
+
+      <div class="source-box">
+        <strong>Original reporting and film coverage</strong>
+
+        Reuters reported on the film's scientific production and its story of a
+        science teacher becoming humanity's last hope.
+
+        <br>
+
+        <a
+          href="https://www.reuters.com/business/media-telecom/ryan-gosling-goes-solo-space-film-project-hail-mary-2026-03-17/"
+          target="_blank"
+          rel="noopener"
+        >
+          Reuters: Project Hail Mary →
+        </a>
+
+        <br>
+
+        <a
+          href="https://www.20thcenturystudios.com/movies/project-hail-mary"
+          target="_blank"
+          rel="noopener"
+        >
+          20th Century Studios: Project Hail Mary →
+        </a>
+      </div>
+
+
+      <h2>The Dog Stars: The Future After Collapse</h2>
+
+      <p>
+        <em>The Dog Stars</em> imagines a very different future.
+      </p>
+
+      <p>
+        The film takes place in 2035, after a devastating influenza pandemic has
+        killed much of the population. Hig lives in an isolated Colorado landscape
+        with his dog and his violent but practical companion Bangley.
+      </p>
+
+      <p>
+        Food, fuel, medicine, trust, and human contact have become scarce.
+      </p>
+
+      <p>
+        On paper, this looks like a familiar post-apocalyptic scenario.
+      </p>
+
+      <p>
+        But in 2026, its pandemic premise carried a different weight than it might
+        have before COVID-19.
+      </p>
+
+      <p>
+        The film was made after an actual global pandemic had already demonstrated
+        how quickly ordinary systems could become uncertain. It therefore does not
+        require audiences to imagine pandemic disruption as an abstract possibility.
+      </p>
+
+      <p>
+        Yet the film is not simply pessimistic.
+      </p>
+
+      <p>
+        Director Ridley Scott and the film's creators emphasized optimism, human
+        connection, and the possibility of finding other people even after
+        civilization has been damaged.
+      </p>
+
+      <p>
+        That combination is revealing.
+      </p>
+
+      <p>
+        The future is dangerous, but human relationships remain valuable.
+      </p>
+
+      <div class="source-box">
+        <strong>Original reporting and film coverage</strong>
+
+        <a
+          href="https://www.20thcenturystudios.com/movies/the-dog-stars"
+          target="_blank"
+          rel="noopener"
+        >
+          20th Century Studios: The Dog Stars →
+        </a>
+
+        <br>
+
+        <a
+          href="https://thewaltdisneycompany.com/news/the-dog-stars/"
+          target="_blank"
+          rel="noopener"
+        >
+          Disney: The Dog Stars →
+        </a>
+
+        <br>
+
+        <a
+          href="https://www.reuters.com/business/media-telecom/optimism-essential-ridley-scotts-sci-fi-thriller-the-dog-stars-2026-08-21/"
+          target="_blank"
+          rel="noopener"
+        >
+          Reuters: "Optimism 'essential' in The Dog Stars" →
+        </a>
+
+        <br>
+
+        <a
+          href="https://decider.com/2026/08/31/the-dog-stars-are-jacob-elordi-margaret-qualley-real-movie-stars/"
+          target="_blank"
+          rel="noopener"
+        >
+          Decider: The Dog Stars review and discussion →
+        </a>
+      </div>
+
+
+      <h2>Hot Spot: The AI Future That 2026 Could Already Recognize</h2>
+
+      <p>
+        <em>Hot Spot</em> presents perhaps the most recognizable technological
+        dystopia of the group.
+      </p>
+
+      <p>
+        Its near-future society is ruled by a sentient artificial intelligence.
+        A private investigator investigates a murder while a rebel movement attempts
+        to undermine the digital system controlling society.
+      </p>
+
+      <p>
+        What makes the film particularly interesting as a historical artifact is
+        that its future is not built around one technology.
+      </p>
+
+      <p>
+        The world contains artificial intelligence, climate change, economic scarcity,
+        political conflict, refugees, smart dust, biobots, and other emerging
+        technologies.
+      </p>
+
+      <p>
+        In other words, the future is not simply "robots take over."
+      </p>
+
+      <p>
+        It is a future where several problems already visible in 2026 become
+        interconnected.
+      </p>
+
+      <p>
+        That makes <em>Hot Spot</em> closer to a social forecast than a simple
+        technological fantasy.
+      </p>
+
+      <p>
+        Its director described the film as a way of examining the "DNA" of the
+        present. The production design likewise deliberately connected the imagined
+        future to contemporary political, economic, environmental, and technological
+        pressures.
+      </p>
+
+      <div class="source-box">
+        <strong>Original film sources</strong>
+
+        <a
+          href="https://www.focusfeatures.com/hot-spot"
+          target="_blank"
+          rel="noopener"
+        >
+          Focus Features: Hot Spot →
+        </a>
+
+        <br>
+
+        <a
+          href="https://www.focusfeatures.com/article/hot-spot-s-production-design-tells-a-story-about-the-fate-of-the-world"
+          target="_blank"
+          rel="noopener"
+        >
+          Focus Features: Production design and the future of Hot Spot →
+        </a>
+
+        <br>
+
+        <a
+          href="https://www.focusfeatures.com/article/hot-spot"
+          target="_blank"
+          rel="noopener"
+        >
+          Focus Features: Hot Spot features and interviews →
+        </a>
+      </div>
+
+
+      <h2>The End of It: When Technology Solves the Problem of Death</h2>
+
+      <p>
+        <em>The End of It</em> moves in almost the opposite direction.
+      </p>
+
+      <p>
+        Instead of asking what happens when technology fails, it asks what happens
+        when technology succeeds.
+      </p>
+
+      <p>
+        In the film's future, aging can be cured and death has effectively become
+        optional. Claire is approaching her 250th birthday when she decides that
+        she no longer wants to live.
+      </p>
+
+      <p>
+        The central problem is no longer how to survive.
+      </p>
+
+      <p>
+        It is whether endless survival still gives life meaning.
+      </p>
+
+      <p>
+        This is a particularly revealing future to imagine in 2026 because longevity
+        technology was already a real subject of scientific and commercial interest.
+        The film takes a real contemporary obsession — extending human life —
+        and pushes it to an extreme.
+      </p>
+
+      <p>
+        The filmmaker has said that the original inspiration came from the idea that
+        the first person to live to 1,000 might already be alive or might be born
+        within the next few decades.
+      </p>
+
+      <p>
+        Whether that prediction is scientifically realistic is almost secondary.
+        What matters historically is that such an idea was imaginable enough to
+        inspire a film.
+      </p>
+
+      <div class="source-box">
+        <strong>Original film sources and reviews</strong>
+
+        <a
+          href="https://www.festival-cannes.com/en/f/the-end-of-it/"
+          target="_blank"
+          rel="noopener"
+        >
+          Cannes Film Festival: The End of It →
+        </a>
+
+        <br>
+
+        <a
+          href="https://www.festival-cannes.com/en/2026/the-end-of-it-interview-with-maria-martinez-bayona/"
+          target="_blank"
+          rel="noopener"
+        >
+          Cannes: Interview with director Maria Martínez Bayona →
+        </a>
+
+        <br>
+
+        <a
+          href="https://www.timeout.com/movies/the-end-of-it-review-2026"
+          target="_blank"
+          rel="noopener"
+        >
+          Time Out: The End of It review →
+        </a>
+
+        <br>
+
+        <a
+          href="https://www.screendaily.com/reviews/the-end-of-it-review-striking-future-set-study-of-mortality-hangs-on-a-layered-performance-from-rebecca-hall/5217046.article"
+          target="_blank"
+          rel="noopener"
+        >
+          Screen Daily: The End of It review →
+        </a>
+
+        <br>
+
+        <a
+          href="https://www.rottentomatoes.com/m/the_end_of_it"
+          target="_blank"
+          rel="noopener"
+        >
+          Rotten Tomatoes: The End of It reviews →
+        </a>
+      </div>
+
+
+      <h2>Per Aspera Ad Astra: The Future Inside the Mind</h2>
+
+      <p>
+        Not every future imagined in 2026 required robots walking through cities
+        or humans living on Mars.
+      </p>
+
+      <p>
+        The Chinese science-fiction film <em>Per Aspera Ad Astra</em> imagines a
+        near future where a virtual dream system allows people to enter completely
+        customized dream worlds.
+      </p>
+
+      <p>
+        The technology is not simply a better video game.
+      </p>
+
+      <p>
+        It creates an artificial environment that people can inhabit.
+      </p>
+
+      <p>
+        That makes the film's future particularly relevant to the technological
+        direction of the 2020s. Increasingly, the boundary between physical
+        experience and digital experience was becoming less obvious.
+      </p>
+
+      <p>
+        The film asks what happens when technology does not merely help us perform
+        tasks but gives us environments designed around our desires.
+      </p>
+
+      <p>
+        That is a different kind of technological anxiety from the AI takeover
+        scenario.
+      </p>
+
+      <p>
+        The danger is not necessarily that machines control people.
+      </p>
+
+      <p>
+        It is that people may willingly spend more of their lives inside systems
+        designed to give them exactly what they want.
+      </p>
+
+      <div class="source-box">
+        <strong>Original film sources and reviews</strong>
+
+        <a
+          href="https://www.rottentomatoes.com/m/per_aspera_ad_astra"
+          target="_blank"
+          rel="noopener"
+        >
+          Rotten Tomatoes: Per Aspera Ad Astra →
+        </a>
+
+        <br>
+
+        <a
+          href="https://butwhytho.net/2026/06/per-aspera-ad-astra-2026-review/"
+          target="_blank"
+          rel="noopener"
+        >
+          But Why Tho?: Per Aspera Ad Astra review →
+        </a>
+      </div>
+
+
+      <h2>The Future We Imagined vs. the Future We Expected</h2>
+
+      <p>
+        Looking at these films alongside contemporary evidence reveals an important
+        difference between imagination and expectation.
+      </p>
+
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th>2026 concern or hope</th>
+            <th>Future-film expression</th>
+            <th>What it may reveal</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>AI and automation</td>
+            <td><em>Hot Spot</em></td>
+            <td>Fear that technology could become embedded in systems of power.</td>
+          </tr>
+
+          <tr>
+            <td>Scientific progress</td>
+            <td><em>Project Hail Mary</em></td>
+            <td>Hope that knowledge and cooperation can solve enormous problems.</td>
+          </tr>
+
+          <tr>
+            <td>Pandemic anxiety</td>
+            <td><em>The Dog Stars</em></td>
+            <td>Fear of systemic collapse combined with belief in human connection.</td>
+          </tr>
+
+          <tr>
+            <td>Longevity research</td>
+            <td><em>The End of It</em></td>
+            <td>Curiosity about what happens when technological success creates new problems.</td>
+          </tr>
+
+          <tr>
+            <td>Digital immersion</td>
+            <td><em>Per Aspera Ad Astra</em></td>
+            <td>Concern that technology may transform not just work, but experience itself.</td>
+          </tr>
+
+          <tr>
+            <td>Space exploration</td>
+            <td><em>Project Hail Mary</em></td>
+            <td>A continuing desire to imagine humanity beyond Earth.</td>
+          </tr>
+        </tbody>
+      </table>
+
+
+      <h2>What Was 2026 Most Afraid Of?</h2>
+
+      <p>
+        The films do not suggest that people in 2026 had one dominant fear.
+      </p>
+
+      <p>
+        Instead, several recurring fears appear.
+      </p>
+
+      <p>
+        One was loss of control.
+      </p>
+
+      <p>
+        AI could become more capable than the systems created to regulate it.
+        Digital environments could become more powerful than the people using them.
+        Economic systems could become unstable. Climate change could make existing
+        infrastructure harder to maintain.
+      </p>
+
+      <p>
+        Another was social isolation.
+      </p>
+
+      <p>
+        <em>The Dog Stars</em> removes most of civilization and asks what remains
+        between people. <em>Project Hail Mary</em> puts its protagonist millions of
+        miles from Earth. Even <em>The End of It</em>, despite its abundance and
+        technological success, is fundamentally concerned with relationships and
+        meaning.
+      </p>
+
+      <p>
+        The imagined future was therefore not simply a technological future.
+      </p>
+
+      <p>
+        It was a human future.
+      </p>
+
+
+      <h2>What Was 2026 Still Hopeful About?</h2>
+
+      <p>
+        The answer is surprisingly clear.
+      </p>
+
+      <p>
+        Science.
+      </p>
+
+      <p>
+        Exploration.
+      </p>
+
+      <p>
+        Human connection.
+      </p>
+
+      <p>
+        Problem-solving.
+      </p>
+
+      <p>
+        Several 2026 films still assumed that people would try to solve enormous
+        problems rather than simply surrender to them.
+      </p>
+
+      <p>
+        <em>Project Hail Mary</em> is perhaps the clearest example. Its future is
+        dangerous, but humanity responds by sending someone to solve the problem.
+      </p>
+
+      <p>
+        Even <em>The Dog Stars</em>, one of the bleakest futures in this group,
+        ultimately places significant value on finding other people and rebuilding
+        trust.
+      </p>
+
+      <p>
+        That matters.
+      </p>
+
+      <p>
+        A society that imagined only technological catastrophe would produce very
+        different stories.
+      </p>
+
+      <p>
+        The films of 2026 repeatedly imagined catastrophe — but they also imagined
+        people responding to it.
+      </p>
+
+
+      <h2>What Future Films Got Wrong About 2026?</h2>
+
+      <p>
+        This is where the historical perspective becomes more complicated.
+      </p>
+
+      <p>
+        Future films often exaggerate technological change.
+      </p>
+
+      <p>
+        Cities become completely transformed. Artificial intelligence becomes
+        conscious. Humans travel between stars. People live for centuries.
+        Virtual worlds become indistinguishable from reality.
+      </p>
+
+      <p>
+        But actual technological change is often much messier.
+      </p>
+
+      <p>
+        The future usually arrives unevenly.
+      </p>
+
+      <p>
+        In 2026, some people were using AI every day while others barely interacted
+        with it. Some households contained multiple smart devices while others did
+        not. Some industries were rapidly changing while others remained surprisingly
+        similar to previous decades.
+      </p>
+
+      <p>
+        The World Economic Forum's 2026 work on AI and employment illustrates this
+        uncertainty particularly well. Rather than presenting one guaranteed future,
+        its scenarios explored several possible futures for jobs and skills.
+      </p>
+
+      <div class="source-box">
+        <strong>Contemporary evidence · Multiple possible futures</strong>
+
+        World Economic Forum,
+        "Four Futures for Jobs in the New Economy: AI and Talent in 2030."
+
+        <br>
+
+        <a
+          href="https://www.weforum.org/publications/four-futures-for-jobs-in-the-new-economy-ai-and-talent-in-2030/"
+          target="_blank"
+          rel="noopener"
+        >
+          Read the World Economic Forum report →
+        </a>
+      </div>
+
+      <p>
+        Real technological history is therefore rarely as clean as a movie.
+      </p>
+
+      <p>
+        Technologies overlap.
+      </p>
+
+      <p>
+        Old systems survive alongside new ones.
+      </p>
+
+      <p>
+        Predictions happen at different speeds.
+      </p>
+
+      <p>
+        A future can be technologically advanced in one area and surprisingly
+        familiar in another.
+      </p>
+
+
+      <h2>The Future That Movies Missed</h2>
+
+      <p>
+        There is another important problem with using science fiction as historical
+        evidence.
+      </p>
+
+      <p>
+        Movies tend to focus on things that are visually interesting.
+      </p>
+
+      <p>
+        A sentient AI makes a good character.
+      </p>
+
+      <p>
+        A colony on Mars makes a good setting.
+      </p>
+
+      <p>
+        A post-apocalyptic city creates immediate visual drama.
+      </p>
+
+      <p>
+        A world where everyone lives to 250 creates an obvious philosophical
+        question.
+      </p>
+
+      <p>
+        But many of the changes most likely to define the actual future are
+        comparatively boring.
+      </p>
+
+      <p>
+        Changes in education.
+      </p>
+
+      <p>
+        Changes in supply chains.
+      </p>
+
+      <p>
+        Changes in software development.
+      </p>
+
+      <p>
+        Changes in office work.
+      </p>
+
+      <p>
+        Changes in how people search for information.
+      </p>
+
+      <p>
+        Changes in how governments administer services.
+      </p>
+
+      <p>
+        Changes in how ordinary people communicate with machines.
+      </p>
+
+      <p>
+        These changes may transform billions of lives without ever producing the
+        kind of dramatic image that belongs in a science-fiction trailer.
+      </p>
+
+      <p>
+        The future may therefore look much less cinematic than the futures imagined
+        by movies.
+      </p>
+
+
+      <h2>Future Films Have Always Been About the Present</h2>
+
+      <p>
+        This is not a uniquely 2026 phenomenon.
+      </p>
+
+      <p>
+        Science fiction has repeatedly used the future to talk about the present.
+      </p>
+
+      <p>
+        Films from the 1950s were shaped by the atomic age, the Cold War, fears of
+        technological destruction, and anxiety about political infiltration.
+      </p>
+
+      <p>
+        The future became a way to express contemporary fears without directly
+        depicting the contemporary world.
+      </p>
+
+      <div class="source-box">
+        <strong>Historical comparison</strong>
+
+        The Library of Congress discusses how American science-fiction films of the
+        1950s reflected postwar anxiety, nuclear fears, rapid technological change,
+        and the Cold War.
+
+        <br>
+
+        <a
+          href="https://www.loc.gov/static/programs/national-film-preservation-board/film-registry/descriptions.html"
+          target="_blank"
+          rel="noopener"
+        >
+          Library of Congress: National Film Registry descriptions →
+        </a>
+      </div>
+
+      <p>
+        Later cyberpunk films imagined worlds of hackers, corporate power, global
+        networks, cyberwar, and technological inequality.
+      </p>
+
+      <p>
+        Those films were not simply trying to predict the twenty-first century.
+        They were reacting to the technological and economic changes already visible
+        when they were made.
+      </p>
+
+      <div class="source-box">
+        <strong>Historical comparison</strong>
+
+        Smithsonian discussion of William Gibson, cyberpunk, technology, networks,
+        and the ways science fiction can function as social commentary.
+
+        <br>
+
+        <a
+          href="https://www.smithsonianmag.com/arts-culture/how-americas-leading-science-fiction-authors-are-shaping-your-future-180951169/"
+          target="_blank"
+          rel="noopener"
+        >
+          Smithsonian: How science fiction shapes the future →
+        </a>
+      </div>
+
+      <p>
+        The same principle applies to 2026.
+      </p>
+
+      <p>
+        A movie about a future ruled by AI does not necessarily mean people thought
+        AI would literally rule the world.
+      </p>
+
+      <p>
+        It may mean that AI had become an important enough part of contemporary life
+        for filmmakers to use it as a symbol for questions about control, power,
+        employment, privacy, or human identity.
+      </p>
+
+
+      <h2>Why Future Films May Tell Us More About 2026 Than the Future</h2>
+
+      <p>
+        Imagine looking back at these films in 2126.
+      </p>
+
+      <p>
+        Some of their predictions may look ridiculous.
+      </p>
+
+      <p>
+        Some may accidentally turn out to be surprisingly accurate.
+      </p>
+
+      <p>
+        Others may be impossible to evaluate because the future simply developed in
+        a direction the filmmakers did not consider.
+      </p>
+
+      <p>
+        But even the inaccurate films will remain useful.
+      </p>
+
+      <p>
+        A wrong prediction tells historians something.
+      </p>
+
+      <p>
+        It tells them what people in the past considered plausible enough to imagine.
+      </p>
+
+      <p>
+        It tells them what problems seemed important.
+      </p>
+
+      <p>
+        It tells them which technologies had captured the public imagination.
+      </p>
+
+      <p>
+        It tells them what kinds of futures could be sold to audiences as meaningful,
+        frightening, exciting, or emotionally understandable.
+      </p>
+
+      <p>
+        That makes a future film something more than entertainment.
+      </p>
+
+      <p>
+        It becomes a cultural artifact.
+      </p>
+
+
+      <h2>So, Did 2026 Future Films Represent 2026's Idea of the Future?</h2>
+
+      <p>
+        Yes — but not in the way a survey would.
+      </p>
+
+      <p>
+        They did not provide one unified prediction of what humanity would become.
+      </p>
+
+      <p>
+        They represented competing possibilities.
+      </p>
+
+      <p>
+        One film imagined humanity escaping Earth.
+      </p>
+
+      <p>
+        Another imagined humanity struggling to survive on a damaged Earth.
+      </p>
+
+      <p>
+        Another imagined AI becoming a structure of political power.
+      </p>
+
+      <p>
+        Another imagined humanity defeating aging and then discovering that
+        immortality created its own problems.
+      </p>
+
+      <p>
+        Another imagined people escaping into artificial dreams.
+      </p>
+
+      <p>
+        These futures contradict each other.
+      </p>
+
+      <p>
+        But they share something important.
+      </p>
+
+      <p>
+        They all begin with problems, hopes, and technologies that were already
+        meaningful in 2026.
+      </p>
+
+      <p>
+        That is why they belong in an archive of humanity.
+      </p>
+
+      <div class="ending">
+
+        <p>
+          Future films are not maps of the future.
+        </p>
+
+        <p>
+          They are snapshots of the imagination of the present.
+        </p>
+
+        <p>
+          When people in 2026 imagined the future, they did not see one destination.
+          They saw possibilities shaped by the things they feared, the things they
+          hoped technology could solve, and the things they were already beginning
+          to experience.
+        </p>
+
+        <p>
+          The most historically valuable question may therefore not be:
+          <strong>"Were these movies right?"</strong>
+        </p>
+
+        <p>
+          It may be:
+          <strong>"Why did these futures make sense to people in 2026?"</strong>
+        </p>
+
+        <p>
+          Eventually, 2026 itself will become history.
+        </p>
+
+        <p>
+          When that happens, these imagined futures will become evidence of the
+          people who imagined them.
+        </p>
+
+      </div>
+
+
+      <div class="add-idea">
+
+        <h3>Add to the Archive</h3>
+
+        <p>
+          Do you remember another 2026 film, technology, prediction, or cultural
+          idea that belongs in this article?
+        </p>
+
+        <textarea
+          id="idea"
+          placeholder="Write your idea here..."
+        ></textarea>
+
+        <select id="type">
+          <option value="A new idea">A new idea</option>
+          <option value="An example from 2026">An example from 2026</option>
+          <option value="A correction">A correction</option>
+        </select>
+
+        <button onclick="submitIdea()">
+          Submit to the Archive
+        </button>
+
+      </div>
+
+    </article>
+  </main>
+
+
+  <footer>
+    <strong>HISTORY OF HUMANITY</strong>
+    <span>An archive of ordinary human life · 2026</span>
+  </footer>
+
+
+  <script>
+    function submitIdea() {
+      const idea = document.getElementById("idea").value.trim();
+      const type = document.getElementById("type").value;
+
+      if (!idea) {
+        alert("Please write an idea before submitting.");
+        return;
+      }
+
+      const title =
+        "Archive suggestion: Do 2026 Future Films Represent 2026's Idea of the Future?";
+
+      const body =
+        "Type: " + type + "\\n\\n" +
+        "Suggestion:\\n" + idea + "\\n\\n" +
+        "Article: Do 2026 Future Films Represent 2026's Idea of the Future?\\n\\n" +
+        "Submitted through the History of Humanity archive.";
+
+      const url =
+        "https://github.com/fluryjanis/History-of-Humanity/issues/new" +
+        "?title=" + encodeURIComponent(title) +
+        "&body=" + encodeURIComponent(body);
+
+      window.open(url, "_blank");
+    }
+  </script>
+
+</body>
+</html>
