@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
   <link rel="icon" type="image/png" href="../favicon.png" />
@@ -10,388 +9,251 @@
 
   <meta
     name="description"
-    content="What is History of Humanity? Learn what the historical archive is, what history of man means, and why preserving the perspectives of people living through each period matters."
+    content="What is history of man? Learn what human history means and what History of Humanity is, an archive focused on preserving the perspectives, experiences, and culture of people living through each period."
   >
 
   <style>
     * {
       box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html {
-      scroll-behavior: smooth;
     }
 
     body {
-      font-family: Georgia, "Times New Roman", serif;
+      margin: 0;
       background: #f4f1e8;
       color: #24231f;
+      font-family: Georgia, "Times New Roman", serif;
       line-height: 1.75;
     }
 
-    a {
-      color: inherit;
-    }
-
-    /* NAV */
-
     nav {
-      border-bottom: 1px solid #d4d0c4;
-      padding: 22px 7%;
+      border-bottom: 1px solid #d8d3c7;
+      padding: 18px 30px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      font-family: Arial, sans-serif;
+      font-size: 14px;
+      letter-spacing: 0.08em;
+    }
+
+    nav a {
+      color: #24231f;
+      text-decoration: none;
     }
 
     .logo {
-      text-decoration: none;
       font-weight: bold;
-      font-size: 0.9rem;
-      letter-spacing: 0.05em;
     }
 
-    .back {
-      font-size: 0.8rem;
-      color: #777268;
+    .archive-link {
+      opacity: 0.7;
     }
 
-    /* ARTICLE HEADER */
-
-    .article-header {
-      max-width: 950px;
-      margin: auto;
-      padding: 110px 25px 90px;
+    header {
+      max-width: 900px;
+      margin: 90px auto 70px;
+      padding: 0 30px;
       text-align: center;
     }
 
     .archive-label {
-      font-family: Arial, sans-serif;
-      text-transform: uppercase;
+      font-size: 13px;
       letter-spacing: 0.18em;
-      font-size: 0.7rem;
-      color: #817b70;
+      text-transform: uppercase;
+      opacity: 0.55;
       margin-bottom: 25px;
     }
 
     h1 {
-      font-size: clamp(3rem, 7vw, 6.5rem);
-      line-height: 0.98;
+      font-size: clamp(44px, 7vw, 76px);
+      line-height: 1.05;
       font-weight: normal;
-      letter-spacing: -0.055em;
-      margin-bottom: 30px;
+      margin: 0 0 25px;
     }
 
     .subtitle {
       max-width: 700px;
-      margin: auto;
-      font-size: 1.35rem;
+      margin: 0 auto 25px;
+      font-size: 21px;
       font-style: italic;
-      color: #666157;
+      color: #5c5951;
     }
 
     .metadata {
-      margin-top: 35px;
-      font-family: Arial, sans-serif;
-      font-size: 0.75rem;
-      color: #817b70;
+      font-size: 13px;
+      opacity: 0.55;
     }
 
-    /* ARTICLE */
-
-    article {
+    main {
       max-width: 780px;
-      margin: auto;
-      padding: 0 25px 120px;
-    }
-
-    article p {
-      font-size: 1.08rem;
-      margin-bottom: 25px;
+      margin: 0 auto;
+      padding: 0 30px 100px;
     }
 
     .lead {
-      font-size: 1.35rem;
-      color: #4f4b43;
-      margin-bottom: 55px;
+      font-size: 21px;
+      line-height: 1.7;
+      margin-bottom: 45px;
+    }
+
+    .archive-note {
+      border-left: 3px solid #aaa396;
+      padding: 5px 0 5px 22px;
+      margin: 45px 0;
+      color: #555149;
+      font-style: italic;
+    }
+
+    .question {
+      margin: 55px 0;
     }
 
     h2 {
-      font-size: 2.6rem;
+      font-size: 29px;
+      line-height: 1.3;
       font-weight: normal;
-      line-height: 1.1;
-      letter-spacing: -0.035em;
-      margin: 90px 0 25px;
-    }
-
-    /* QUESTION */
-
-    .question {
-      margin: 45px 0;
-      padding: 28px 30px;
-      border: 1px solid #bbb6aa;
-      background: #f0ede4;
-    }
-
-    .question h2 {
       margin: 0 0 15px;
-      font-size: 1.8rem;
     }
 
     .question-summary {
-      color: #555148;
-      margin-bottom: 0;
+      font-size: 18px;
+      margin-bottom: 15px;
     }
 
-    /* REVEAL */
-
     details {
-      margin-top: 20px;
-      border-top: 1px solid #c8c3b8;
-      padding-top: 16px;
+      margin-top: 15px;
     }
 
     summary {
       cursor: pointer;
-      font-family: Arial, sans-serif;
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: #5f5a51;
+      font-size: 14px;
+      letter-spacing: 0.04em;
+      color: #5b574f;
       user-select: none;
     }
 
-    summary:hover {
-      text-decoration: underline;
-    }
-
     details p {
-      margin-top: 22px;
+      margin-top: 20px;
     }
-
-    /* ARCHIVE NOTE */
-
-    .archive-note {
-      margin: 55px 0;
-      padding: 30px;
-      border: 1px solid #bbb6aa;
-      background: #e9e5da;
-    }
-
-    .archive-note strong {
-      display: block;
-      font-family: Arial, sans-serif;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      font-size: 0.7rem;
-      margin-bottom: 10px;
-    }
-
-    /* FINAL */
 
     .ending {
-      margin-top: 100px;
-      padding: 55px 0;
-      border-top: 1px solid #aaa59a;
-      border-bottom: 1px solid #aaa59a;
-      text-align: center;
+      border-top: 1px solid #d8d3c7;
+      margin-top: 80px;
+      padding-top: 45px;
+      font-size: 19px;
     }
-
-    .ending p {
-      font-size: 1.4rem;
-      font-style: italic;
-      max-width: 650px;
-      margin: auto;
-    }
-
-    /* FOOTER */
 
     footer {
-      padding: 35px 7%;
-      border-top: 1px solid #d4d0c4;
-      font-family: Arial, sans-serif;
-      font-size: 0.75rem;
-      color: #817b70;
-      display: flex;
-      justify-content: space-between;
+      border-top: 1px solid #d8d3c7;
+      padding: 35px 30px;
+      text-align: center;
+      font-size: 13px;
+      color: #777269;
     }
 
-    @media (max-width: 700px) {
-      .article-header {
-        padding: 80px 20px 65px;
+    footer strong {
+      display: block;
+      color: #24231f;
+      letter-spacing: 0.1em;
+      margin-bottom: 8px;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        padding: 16px 20px;
       }
 
-      article {
-        padding-left: 20px;
-        padding-right: 20px;
+      header {
+        margin: 65px auto 55px;
+        padding: 0 20px;
+      }
+
+      main {
+        padding: 0 20px 80px;
+      }
+
+      .subtitle {
+        font-size: 18px;
       }
 
       h2 {
-        font-size: 2.2rem;
-      }
-
-      .question {
-        padding: 23px 20px;
-      }
-
-      footer {
-        display: block;
+        font-size: 25px;
       }
     }
   </style>
-
 </head>
 
 <body>
 
   <nav>
-
-    <a href="../index.html" class="logo">
-      HISTORY OF HUMANITY
-    </a>
-
-    <a
-      href="https://fluryjanis.github.io/History-of-Humanity/#archive"
-      class="back"
-    >
-      ← Archive
-    </a>
-
+    <a href="../index.html" class="logo">HISTORY OF HUMANITY</a>
+    <a href="../archive.html" class="archive-link">ARCHIVE</a>
   </nav>
 
+  <header>
+    <div class="archive-label">History of Humanity Archive</div>
 
-  <!-- ARTICLE HEADER -->
-
-  <header class="article-header">
-
-    <div class="archive-label">
-      History of Humanity · 2026
-    </div>
-
-    <h1>
-      What Is History of Man?
-    </h1>
+    <h1>What Is History of Man?</h1>
 
     <p class="subtitle">
-      What History of Humanity is, what “history of man” means,
-      and why preserving the perspective of people living through
-      their own time matters.
+      Understanding human history — and the people who lived through it.
     </p>
 
     <div class="metadata">
       Published September 6, 2026 · History of Humanity Archive
     </div>
-
   </header>
 
-
-  <!-- ARTICLE -->
-
-  <article>
+  <main>
 
     <p class="lead">
-      History of Humanity is a historical archive focused on preserving
-      how people experienced and understood the periods they lived through.
-      It records not only what happened, but what people believed,
-      expected, feared, created, and considered ordinary at the time.
+      The history of humanity is more than a record of events. It is the story
+      of people, their societies, their ideas, their creations, and the way
+      they understood the world around them.
     </p>
 
-
     <div class="archive-note">
-
-      <strong>About this page</strong>
-
-      “History of man” traditionally refers to human history or the history
-      of humanity. History of Humanity is also the name of this particular
-      archival project.
-
-      <br><br>
-
-      This page explains that distinction and describes what the project
-      means by preserving history from the perspective of people living
-      through it.
-
+      History is not only what happened. It is also what people living through
+      a period thought was happening, what they believed would happen next,
+      and what they considered ordinary.
     </div>
 
 
-    <!-- QUESTION 1 -->
-
     <section class="question">
 
-      <h2>
-        1. What is History of Humanity?
-      </h2>
-
-      <p>
-        <strong>
-          History of Humanity is a long-term historical archive focused
-          on preserving how people experienced and understood the periods
-          they lived through.
-        </strong>
-      </p>
-
-      <p>
-        The project is interested in more than simply recording what
-        happened. It also attempts to preserve what people believed,
-        what they considered normal, what they feared, what they created,
-        and what they expected the future to become.
-      </p>
-
-      <p>
-        A historical period can look very different depending on when
-        it is viewed. Someone living through a period does not know how
-        it will eventually turn out. They experience the present without
-        the benefit of hindsight.
-      </p>
-
-      <p>
-        History of Humanity exists to preserve some of that perspective
-        while it is still contemporary, creating an archive that future
-        generations can use to better understand not only what happened,
-        but what it was like to live through it.
-      </p>
-
-    </section>
-
-
-    <!-- QUESTION 2 -->
-
-    <section class="question">
-
-      <h2>
-        2. What is history of man?
-      </h2>
+      <h2>1. What is history of man?</h2>
 
       <p class="question-summary">
-        “History of man” traditionally refers to human history—the story
-        of humanity and its development across time.
+        History of man generally means the history of humanity: the study of
+        human beings and the societies, cultures, events, and changes that
+        have shaped human life.
       </p>
 
       <details>
-
-        <summary>
-          Click to reveal more
-        </summary>
+        <summary>Click to reveal more</summary>
 
         <p>
-          The phrase <strong>history of man</strong> is commonly used
-          to refer broadly to the history of humanity. It can include
-          human origins, societies, civilizations, cultures, technology,
-          ideas, conflicts, and everyday life.
+          The phrase <em>history of man</em> is an older expression for what is
+          more commonly called <em>human history</em> or the <em>history of
+          humanity</em>.
         </p>
 
         <p>
-          In that traditional sense, “history of man” and “human history”
-          are broadly describing the same subject.
+          It covers an enormous span of time, beginning with the earliest
+          human ancestors and continuing through the development of societies,
+          civilizations, governments, technologies, cultures, and the modern
+          world.
         </p>
 
         <p>
-          History of Humanity uses this broader concept as the foundation
-          for a specific historical archive. The name refers to this
-          project rather than claiming that the phrase “history of man”
-          has only one meaning.
+          Historians study this past through many kinds of evidence, including
+          written records, archaeological remains, artifacts, images, oral
+          histories, recordings, and other surviving traces of human life.
+        </p>
+
+        <p>
+          In that broad sense, the history of man is simply the history of
+          humanity and the changes that have occurred throughout human
+          existence.
         </p>
 
       </details>
@@ -399,43 +261,42 @@
     </section>
 
 
-    <!-- QUESTION 3 -->
-
     <section class="question">
 
-      <h2>
-        3. Is History of Humanity the same as human history?
-      </h2>
+      <h2>2. What is History of Humanity?</h2>
 
       <p class="question-summary">
-        Human history is the broad subject; History of Humanity is a
-        particular archive dedicated to documenting it from a specific
-        perspective.
+        History of Humanity is a historical archive focused on preserving
+        what humanity looked like from within the periods being documented.
       </p>
 
       <details>
-
-        <summary>
-          Click to reveal more
-        </summary>
+        <summary>Click to reveal more</summary>
 
         <p>
-          <strong>Human history</strong> is the broad study of humanity
-          across time. It includes everything from early human societies
-          to the modern world.
+          <strong>History of Humanity</strong> is the name of this archive and
+          historical project.
         </p>
 
         <p>
-          <strong>History of Humanity</strong> is the name of this
-          particular project. Its focus is narrower: preserving
-          perspectives, experiences, culture, expectations, and ordinary
-          life from within historical periods.
+          Its purpose is to document humanity not only through major events,
+          but through the experiences, beliefs, culture, technology,
+          entertainment, expectations, and ordinary life of people living
+          through each period.
         </p>
 
         <p>
-          The project does not claim to redefine human history or replace
-          established historical resources. It is one approach to
-          documenting humanity's past and present.
+          The goal is not to replace traditional history. Instead, it focuses
+          on preserving something that can easily disappear: the perspective
+          of people who were actually living through a particular moment in
+          time.
+        </p>
+
+        <p>
+          A future historian can study what happened in 2026. But an archive
+          created in 2026 can preserve what people in 2026 believed was going
+          to happen, what they feared, what they considered normal, and what
+          they thought their world might become.
         </p>
 
       </details>
@@ -443,48 +304,34 @@
     </section>
 
 
-    <!-- QUESTION 4 -->
-
     <section class="question">
 
-      <h2>
-        4. What does History of Humanity document?
-      </h2>
+      <h2>3. What does History of Humanity document?</h2>
 
       <p class="question-summary">
-        The archive documents aspects of human life that help future
-        readers understand what a period was actually like.
+        It documents the ideas, experiences, culture, technology, and everyday
+        life that characterize a period.
       </p>
 
       <details>
-
-        <summary>
-          Click to reveal more
-        </summary>
+        <summary>Click to reveal more</summary>
 
         <p>
-          History of Humanity is interested in both major developments
-          and the ordinary experiences surrounding them.
+          Historical periods are often remembered through major events:
+          wars, elections, discoveries, inventions, economic changes, and
+          political movements.
         </p>
 
-        <ul>
-          <li>Everyday life</li>
-          <li>Beliefs and ideas</li>
-          <li>Culture</li>
-          <li>Technology</li>
-          <li>Work</li>
-          <li>Entertainment</li>
-          <li>Social changes</li>
-          <li>Fears and concerns</li>
-          <li>Expectations about the future</li>
-          <li>Things people considered ordinary</li>
-          <li>Perspectives that may look different with hindsight</li>
-        </ul>
+        <p>
+          Those events matter, but they do not describe everything about a
+          society.
+        </p>
 
         <p>
-          The purpose is not to document every detail of every person's
-          life. Instead, the archive attempts to preserve representative
-          pieces of how people understood and experienced their time.
+          History of Humanity also looks at questions such as what people
+          believed, what they created, what they feared, what they considered
+          ordinary, how technology affected daily life, what people watched
+          and listened to, and what they expected from the future.
         </p>
 
       </details>
@@ -492,45 +339,33 @@
     </section>
 
 
-    <!-- QUESTION 5 -->
-
     <section class="question">
 
-      <h2>
-        5. Why preserve perspectives from the present?
-      </h2>
+      <h2>4. Why preserve people's perspectives?</h2>
 
       <p class="question-summary">
-        People living through a period do not know how that period will
-        eventually turn out.
+        Because a period can be understood differently by the people living
+        through it than by people looking back centuries later.
       </p>
 
       <details>
-
-        <summary>
-          Click to reveal more
-        </summary>
+        <summary>Click to reveal more</summary>
 
         <p>
-          Looking backward gives historians something people living in
-          the present do not have: hindsight.
+          Historical hindsight changes how events are understood.
         </p>
 
         <p>
-          A future historian may know which technologies succeeded,
-          which predictions failed, and which events became historically
-          important. Someone living through those same events has none
-          of that information.
+          Once the outcome of an event is known, it can become difficult to
+          reconstruct the uncertainty that existed beforehand. People living
+          through a period did not know which technologies would succeed,
+          which predictions would fail, or which events would eventually
+          become historically important.
         </p>
 
         <p>
-          Their uncertainty is therefore part of the historical record.
-        </p>
-
-        <p>
-          A prediction, photograph, recording, or other contemporary
-          source can preserve something that becomes much harder to
-          reconstruct after the outcome is already known.
+          Preserving contemporary perspectives helps retain that uncertainty
+          rather than reconstructing the past entirely from hindsight.
         </p>
 
       </details>
@@ -538,43 +373,32 @@
     </section>
 
 
-    <!-- QUESTION 6 -->
-
     <section class="question">
 
-      <h2>
-        6. Why preserve ordinary life?
-      </h2>
+      <h2>5. Is History of Humanity traditional history?</h2>
 
       <p class="question-summary">
-        What feels ordinary today may become unfamiliar to future
-        generations.
+        It is a historical archive, but its central focus is contemporary
+        perspective and ordinary human experience.
       </p>
 
       <details>
-
-        <summary>
-          Click to reveal more
-        </summary>
+        <summary>Click to reveal more</summary>
 
         <p>
-          People rarely document everything they consider normal.
-          Everyday habits often seem too obvious to explain.
+          Traditional historical research already uses contemporary sources
+          such as diaries, newspapers, photographs, letters, recordings, and
+          oral histories.
         </p>
 
         <p>
-          Yet ordinary life changes constantly. Technologies disappear,
-          occupations change, entertainment evolves, and cultural
-          assumptions shift.
+          History of Humanity does not claim to have invented the idea of
+          studying people from within their own time.
         </p>
 
         <p>
-          A future reader may understand that something existed without
-          understanding how normal it once felt.
-        </p>
-
-        <p>
-          Preserving ordinary life helps provide that missing context.
+          Its distinction is one of emphasis: preserving the perspective of
+          people living through a period is the central purpose of the archive.
         </p>
 
       </details>
@@ -582,52 +406,28 @@
     </section>
 
 
-    <!-- QUESTION 7 -->
-
     <section class="question">
 
-      <h2>
-        7. What does “history from the perspective of people living through it” mean?
-      </h2>
+      <h2>6. Why record ordinary life?</h2>
 
       <p class="question-summary">
-        It means documenting a period before hindsight changes the way
-        that period is understood.
+        Because ordinary life is part of what makes a historical period
+        recognizable.
       </p>
 
       <details>
-
-        <summary>
-          Click to reveal more
-        </summary>
+        <summary>Click to reveal more</summary>
 
         <p>
-          A historical event can be described in very different ways
-          depending on when it is being described.
+          People do not experience history as a list of textbook events.
+          They experience it through work, school, entertainment, technology,
+          relationships, routines, prices, communication, and countless
+          everyday decisions.
         </p>
 
         <p>
-          Someone looking backward already knows the outcome. Someone
-          living through the event is dealing with uncertainty,
-          incomplete information, competing possibilities, and
-          expectations about what might happen next.
-        </p>
-
-        <p>
-          History of Humanity is particularly interested in preserving
-          that contemporary perspective.
-        </p>
-
-        <p>
-          This does not mean that traditional historians ignore
-          contemporary perspectives. Historical research has long used
-          diaries, newspapers, photographs, letters, recordings,
-          interviews, and other contemporary sources.
-        </p>
-
-        <p>
-          The distinction is that preserving contemporary perspective
-          is a central purpose of this particular archive.
+          These details may seem insignificant while they are happening, but
+          they can become valuable evidence of how a society actually lived.
         </p>
 
       </details>
@@ -635,39 +435,32 @@
     </section>
 
 
-    <!-- QUESTION 8 -->
-
     <section class="question">
 
-      <h2>
-        8. Why document the present?
-      </h2>
+      <h2>7. Why record what people thought the future would look like?</h2>
 
       <p class="question-summary">
-        Every present eventually becomes the past, and things that seem
-        ordinary today can become difficult to reconstruct later.
+        Because predictions reveal what people believed about their own time.
       </p>
 
       <details>
-
-        <summary>
-          Click to reveal more
-        </summary>
+        <summary>Click to reveal more</summary>
 
         <p>
-          People living in the present naturally tend to think of their
-          own time as normal. It is difficult to know which details of
-          everyday life will eventually matter to historians.
+          A prediction about the future is also evidence about the present.
         </p>
 
         <p>
-          Waiting until a period has passed also means losing some of
-          the perspectives that existed within it.
+          When people imagine what the world will look like decades or
+          centuries later, they reveal which technologies they trust, which
+          problems they worry about, which trends they expect to continue,
+          and which possibilities seem realistic to them.
         </p>
 
         <p>
-          Documenting the present creates historical material before
-          that distance develops.
+          Whether those predictions eventually become correct is only part of
+          their historical value. The prediction itself records the mindset of
+          the people who made it.
         </p>
 
       </details>
@@ -675,41 +468,28 @@
     </section>
 
 
-    <!-- QUESTION 9 -->
-
     <section class="question">
 
-      <h2>
-        9. Who is History of Humanity for?
-      </h2>
+      <h2>8. What makes a historical archive valuable?</h2>
 
       <p class="question-summary">
-        It is for anyone interested in understanding humanity across
-        time, especially future readers looking back at periods that
-        have already passed.
+        An archive becomes valuable when it preserves evidence that can help
+        future generations understand a period.
       </p>
 
       <details>
-
-        <summary>
-          Click to reveal more
-        </summary>
+        <summary>Click to reveal more</summary>
 
         <p>
-          The archive is intended to be useful to people who want to
-          understand how human life and perspectives change over time.
+          Historical archives preserve information that would otherwise be
+          lost or become difficult to reconstruct.
         </p>
 
         <p>
-          A future reader might already know the major events of a
-          particular period. What they may not know is what people at
-          the time believed, expected, feared, watched, created, or
-          considered completely ordinary.
-        </p>
-
-        <p>
-          History of Humanity attempts to preserve some of that context
-          for them.
+          The value of an archive can come from many things: the evidence it
+          preserves, the perspectives it represents, the questions it allows
+          future researchers to ask, and the ability to compare contemporary
+          expectations with what eventually happened.
         </p>
 
       </details>
@@ -717,48 +497,32 @@
     </section>
 
 
-    <!-- QUESTION 10 -->
-
     <section class="question">
 
-      <h2>
-        10. What is the purpose of the History of Humanity archive?
-      </h2>
+      <h2>9. Why document the present?</h2>
 
       <p class="question-summary">
-        Its purpose is to preserve more than a record of events: it is
-        an attempt to preserve pieces of how humanity understood its
-        own time.
+        Because the present eventually becomes history, and some parts of it
+        will not be recoverable later.
       </p>
 
       <details>
-
-        <summary>
-          Click to reveal more
-        </summary>
+        <summary>Click to reveal more</summary>
 
         <p>
-          History can be viewed through many different perspectives.
-          Major events, political changes, technological developments,
-          and historical outcomes are important parts of the record.
+          Every historical period was once someone's present.
         </p>
 
         <p>
-          History of Humanity focuses on another part of that record:
-          <strong>what it was like to live through a period before
-          knowing how the story would end.</strong>
+          People living through a period often do not know which details will
+          matter to future generations. Everyday habits, popular culture,
+          common assumptions, emerging technologies, and predictions can
+          disappear surprisingly quickly.
         </p>
 
         <p>
-          The archive cannot perfectly recreate the past, and it cannot
-          represent every person who lived through it. Its purpose is
-          more modest: to preserve contemporary perspectives and pieces
-          of everyday life that might otherwise become difficult to recover.
-        </p>
-
-        <p>
-          The present eventually becomes history. History of Humanity
-          is an attempt to preserve part of that transition.
+          Documenting the present creates a record before hindsight changes
+          the way that period is remembered.
         </p>
 
       </details>
@@ -766,51 +530,71 @@
     </section>
 
 
-    <!-- ENDING -->
+    <section class="question">
+
+      <h2>10. Why is 2026 being documented?</h2>
+
+      <p class="question-summary">
+        2026 is one point in time being preserved as part of the continuing
+        history of humanity.
+      </p>
+
+      <details>
+        <summary>Click to reveal more</summary>
+
+        <p>
+          The year 2026 is not being treated as the endpoint of history.
+          It is simply one period within it.
+        </p>
+
+        <p>
+          The people living in 2026 have their own technologies, cultural
+          habits, concerns, assumptions, entertainment, and expectations for
+          the future.
+        </p>
+
+        <p>
+          Recording those things while they are happening creates a
+          contemporary snapshot that can later be compared with how the world
+          actually developed.
+        </p>
+
+        <p>
+          What seems ordinary today may become historically significant
+          tomorrow.
+        </p>
+
+      </details>
+
+    </section>
+
 
     <div class="ending">
 
       <p>
-        History is not only what happened.
-        It is also what people living through a period believed,
-        expected, experienced, and considered normal.
+        The history of humanity is ultimately the history of people.
+      </p>
+
+      <p>
+        It includes the major events that changed societies, but also the
+        ordinary lives, ideas, fears, creations, expectations, and assumptions
+        of the people who lived through them.
+      </p>
+
+      <p>
+        History of Humanity exists to preserve part of that perspective while
+        it is still contemporary — so that future generations can study not
+        only what happened, but how it looked to the people who were there.
       </p>
 
     </div>
 
-
-    <h2>
-      History of Humanity
-    </h2>
-
-    <p>
-      Every period eventually becomes history.
-    </p>
-
-    <p>
-      By preserving perspectives while they are still contemporary,
-      History of Humanity attempts to leave future readers something
-      that hindsight alone cannot provide.
-    </p>
-
-    <p>
-      Not a perfect recreation of the past, but a record of how the
-      present looked from inside it.
-    </p>
-
-  </article>
+  </main>
 
 
   <footer>
-
-    <strong>
-      HISTORY OF HUMANITY
-    </strong>
-
-    <span>
-      An archive of ordinary human life · 2026
-    </span>
-
+    <strong>HISTORY OF HUMANITY</strong>
+    An archive of ordinary human life · 2026
   </footer>
 
 </body>
