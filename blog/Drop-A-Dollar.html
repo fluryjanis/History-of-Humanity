@@ -9,7 +9,7 @@
 
   <meta
     name="description"
-    content="Drop a dollar anywhere in history from 1913 to 2026 to see what that purchasing power equals in modern dollars based on official U.S. consumer price inflation."
+    content="Pick up a dollar and drop it anywhere on the historical graph from 1913 to 2026 to see what that purchasing power equals today based on official U.S. inflation data."
   >
 
   <style>
@@ -66,7 +66,7 @@
     .article-header {
       max-width: 950px;
       margin: auto;
-      padding: 100px 25px 70px;
+      padding: 95px 25px 65px;
       text-align: center;
     }
 
@@ -119,7 +119,7 @@
     .lead {
       font-size: 1.35rem;
       color: #4f4b43;
-      margin-bottom: 45px;
+      margin-bottom: 40px;
       line-height: 1.6;
     }
 
@@ -137,56 +137,51 @@
       margin: 40px 0 15px;
     }
 
-    /* ARCHIVE NOTE / CALLOUT */
-    .archive-note {
-      margin: 40px 0 50px;
-      padding: 30px;
-      border: 1px solid #bbb6aa;
-      background: #f0ede4;
-      font-size: 0.95rem;
-    }
-
-    .archive-note strong {
-      display: block;
-      font-family: Arial, sans-serif;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      font-size: 0.7rem;
-      margin-bottom: 10px;
-      color: #817b70;
-    }
-
     /* ==========================================================================
-       INTERACTIVE CALCULATOR CARD
-       Styled in the exact aesthetic of History of Humanity
+       DROP-A-DOLLAR INTERACTIVE GRAPH STAGE
        ========================================================================== */
-    .interactive-stage {
-      margin: 40px 0 60px;
-      padding: 40px 35px;
+    .drop-stage {
+      margin: 35px 0 50px;
+      padding: 35px 30px;
       border: 1px solid #bbb6aa;
       background: #e9e5da;
+      position: relative;
     }
 
-    .interactive-label {
+    .stage-instruction {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #bbb6aa;
+    }
+
+    .stage-instruction strong {
       font-family: Arial, sans-serif;
       text-transform: uppercase;
-      letter-spacing: 0.14em;
+      letter-spacing: 0.12em;
       font-size: 0.72rem;
       color: #817b70;
-      margin-bottom: 20px;
-      display: block;
     }
 
-    /* Amount Selection Bar */
-    .amount-control-row {
+    .stage-instruction span {
+      font-family: Georgia, serif;
+      font-style: italic;
+      font-size: 0.9rem;
+      color: #555148;
+    }
+
+    /* Amount Selector Bar */
+    .amount-bar {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
       align-items: center;
+      justify-content: space-between;
       gap: 15px;
-      padding-bottom: 25px;
-      border-bottom: 1px solid #bbb6aa;
-      margin-bottom: 35px;
+      margin-bottom: 25px;
     }
 
     .amount-input-block {
@@ -203,13 +198,13 @@
       color: #5f5a51;
     }
 
-    .amount-input-wrapper {
+    .amount-field {
       position: relative;
       display: inline-flex;
       align-items: center;
     }
 
-    .amount-input-wrapper span {
+    .amount-field span {
       position: absolute;
       left: 12px;
       font-family: Georgia, serif;
@@ -218,9 +213,9 @@
       pointer-events: none;
     }
 
-    .amount-input-wrapper input {
-      width: 140px;
-      padding: 8px 12px 8px 26px;
+    .amount-field input {
+      width: 130px;
+      padding: 7px 10px 7px 24px;
       border: 1px solid #aaa59a;
       background: #f4f1e8;
       color: #24231f;
@@ -229,19 +224,19 @@
       border-radius: 0;
     }
 
-    .amount-input-wrapper input:focus {
+    .amount-field input:focus {
       outline: 2px solid #817b70;
       outline-offset: 1px;
     }
 
-    .preset-group {
+    .preset-pills {
       display: flex;
       flex-wrap: wrap;
       gap: 6px;
     }
 
-    .preset-group button {
-      padding: 7px 12px;
+    .preset-pills button {
+      padding: 6px 12px;
       border: 1px solid #aaa59a;
       background: #f4f1e8;
       color: #4f4b43;
@@ -252,196 +247,184 @@
       transition: background 0.15s, color 0.15s, border-color 0.15s;
     }
 
-    .preset-group button:hover {
+    .preset-pills button:hover {
       background: #24231f;
       color: #f4f1e8;
       border-color: #24231f;
     }
 
-    .preset-group button.active {
+    .preset-pills button.active {
       background: #24231f;
       color: #f4f1e8;
       border-color: #24231f;
       font-weight: bold;
     }
 
-    /* Main Result Display */
-    .result-display {
-      text-align: center;
-      padding: 15px 10px 35px;
-    }
-
-    .result-date-tag {
-      font-family: Arial, sans-serif;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      font-size: 0.78rem;
-      color: #817b70;
-      margin-bottom: 12px;
-    }
-
-    .result-statement {
-      display: flex;
-      justify-content: center;
-      align-items: baseline;
-      gap: 16px;
-      flex-wrap: wrap;
-      margin-bottom: 15px;
-    }
-
-    .result-then {
-      font-size: clamp(1.4rem, 3vw, 2.1rem);
-      font-style: italic;
-      color: #666157;
-    }
-
-    .result-approx {
-      font-size: 2.2rem;
-      color: #817b70;
-      font-weight: normal;
-      line-height: 1;
-    }
-
-    .result-today {
-      font-size: clamp(2.8rem, 6.5vw, 4.8rem);
-      line-height: 1;
-      font-weight: normal;
-      letter-spacing: -0.04em;
-      color: #24231f;
-    }
-
-    .result-today .unit {
-      font-size: 1.25rem;
-      font-style: italic;
-      color: #666157;
-      margin-left: 6px;
-    }
-
-    .result-explanation-text {
-      font-size: 0.92rem;
-      color: #666157;
-      max-width: 600px;
-      margin: 15px auto 0;
-      line-height: 1.5;
-    }
-
-    /* Metrics Breakdown Table */
-    .metrics-summary {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-      gap: 1px;
-      background: #bbb6aa;
-      border: 1px solid #bbb6aa;
-      margin: 30px 0;
-    }
-
-    .metric-cell {
+    /* THE GRAPH BOARD */
+    .graph-board {
+      position: relative;
       background: #f0ede4;
-      padding: 14px 10px;
-      text-align: center;
-    }
-
-    .metric-cell .label {
-      font-family: Arial, sans-serif;
-      font-size: 0.68rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: #817b70;
-      margin-bottom: 4px;
-    }
-
-    .metric-cell .val {
-      font-family: Georgia, serif;
-      font-size: 1.05rem;
-      color: #24231f;
-    }
-
-    /* Horizontal Draggable Timeline */
-    .timeline-container {
-      position: relative;
-      padding: 30px 0 15px;
-      margin: 20px 0 10px;
+      border: 1px solid #bbb6aa;
+      height: 270px;
+      margin: 15px 0 10px;
       user-select: none;
+      touch-action: none;
+      cursor: crosshair;
+      overflow: visible;
     }
 
-    .timeline-track {
-      position: relative;
-      height: 48px;
-      display: flex;
-      align-items: center;
-      cursor: pointer;
-    }
-
-    .timeline-rail {
+    .graph-canvas-layer {
       position: absolute;
-      left: 0;
-      right: 0;
-      height: 2px;
-      background: #aaa59a;
-    }
-
-    .timeline-fill {
-      position: absolute;
-      left: 0;
-      height: 2px;
-      background: #24231f;
-      width: 0%;
+      inset: 0;
+      width: 100%;
+      height: 100%;
       pointer-events: none;
     }
 
-    /* Stamped Historical Coin Marker */
-    .coin-marker {
+    /* Graph Guide Labels */
+    .graph-y-axis {
       position: absolute;
-      top: 50%;
-      left: 0%;
-      transform: translate(-50%, -50%);
-      width: 44px;
-      height: 44px;
+      top: 10px;
+      left: 12px;
+      font-family: Arial, sans-serif;
+      font-size: 0.65rem;
+      color: #817b70;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      pointer-events: none;
+    }
+
+    .graph-hint-banner {
+      position: absolute;
+      top: 12px;
+      right: 14px;
+      font-family: Arial, sans-serif;
+      font-size: 0.68rem;
+      color: #777268;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      pointer-events: none;
+      transition: opacity 0.3s;
+    }
+
+    /* Dropped Date Vertical Line */
+    .dropped-plumb-line {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 1px;
+      background: #24231f;
+      pointer-events: none;
+      transform: translateX(-50%);
+    }
+
+    .dropped-plumb-line::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: -3px;
+      width: 7px;
+      height: 7px;
+      background: #24231f;
+      border-radius: 50%;
+    }
+
+    /* THE DOLLAR TO DROP */
+    .dollar-coin {
+      position: absolute;
+      width: 58px;
+      height: 58px;
       border-radius: 50%;
       background: #24231f;
       color: #f4f1e8;
-      border: 2px solid #24231f;
-      box-shadow: 0 4px 10px rgba(36, 35, 31, 0.25), inset 0 0 0 2px #f4f1e8;
-      cursor: grab;
+      box-shadow: 0 4px 12px rgba(36, 35, 31, 0.28), inset 0 0 0 2px #f4f1e8, inset 0 0 0 3px #24231f;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
+      cursor: grab;
+      transform: translate(-50%, -50%);
+      z-index: 20;
+      transition: box-shadow 0.15s, transform 0.08s;
+      outline: none;
+    }
+
+    .dollar-coin .coin-symbol {
       font-family: Georgia, serif;
-      font-size: 1.15rem;
+      font-size: 1.3rem;
       font-style: italic;
-      font-weight: normal;
-      z-index: 10;
-      touch-action: none;
-      transition: transform 0.1s ease, box-shadow 0.1s ease;
+      line-height: 1;
     }
 
-    .coin-marker:hover {
-      transform: translate(-50%, -50%) scale(1.1);
-      box-shadow: 0 6px 14px rgba(36, 35, 31, 0.35), inset 0 0 0 2px #f4f1e8;
+    .dollar-coin .coin-tag {
+      font-family: Arial, sans-serif;
+      font-size: 0.52rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #bbb6aa;
+      margin-top: 1px;
     }
 
-    .coin-marker:active,
-    .coin-marker.is-dragging {
+    .dollar-coin:hover {
+      box-shadow: 0 8px 20px rgba(36, 35, 31, 0.38), inset 0 0 0 2px #f4f1e8;
+      transform: translate(-50%, -50%) scale(1.06);
+    }
+
+    .dollar-coin.is-picked-up {
       cursor: grabbing;
-      transform: translate(-50%, -50%) scale(1.15);
-      background: #3e3b34;
+      box-shadow: 0 16px 30px rgba(36, 35, 31, 0.45), inset 0 0 0 2px #f4f1e8;
+      transform: translate(-50%, -50%) scale(1.18);
+      z-index: 30;
     }
 
-    .coin-marker:focus-visible {
+    .dollar-coin:focus-visible {
       outline: 2px solid #817b70;
       outline-offset: 4px;
     }
 
-    /* Timeline Decade Ruler */
-    .timeline-ruler {
-      display: flex;
-      justify-content: space-between;
-      position: relative;
-      margin-top: 5px;
-      padding: 0 2px;
+    /* Floating Tooltip while Hovering/Dragging */
+    .coin-tooltip {
+      position: absolute;
+      bottom: calc(100% + 10px);
+      left: 50%;
+      transform: translateX(-50%);
+      background: #24231f;
+      color: #f4f1e8;
+      padding: 4px 10px;
+      font-family: Arial, sans-serif;
+      font-size: 0.7rem;
+      letter-spacing: 0.05em;
+      white-space: nowrap;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.15s;
     }
 
-    .timeline-tick {
+    .coin-tooltip::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      border-width: 4px;
+      border-style: solid;
+      border-color: #24231f transparent transparent transparent;
+    }
+
+    .dollar-coin.is-picked-up .coin-tooltip,
+    .graph-board:hover .coin-tooltip {
+      opacity: 1;
+    }
+
+    /* Decade Axis below graph */
+    .timeline-axis {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 0 0;
+      position: relative;
+    }
+
+    .axis-tick {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -451,26 +434,120 @@
       cursor: pointer;
     }
 
-    .timeline-tick::before {
+    .axis-tick::before {
       content: "";
       width: 1px;
       height: 6px;
       background: #aaa59a;
-      margin-bottom: 4px;
+      margin-bottom: 3px;
     }
 
-    .timeline-tick.is-active {
+    .axis-tick.is-active {
       color: #24231f;
       font-weight: bold;
     }
 
-    .timeline-tick.is-active::before {
+    .axis-tick.is-active::before {
       background: #24231f;
       height: 9px;
     }
 
-    /* Lower Controls & Date Picker */
-    .timeline-controls-row {
+    /* Drop Announcement Result Card */
+    .result-announcement {
+      background: #f0ede4;
+      border: 1px solid #bbb6aa;
+      padding: 28px 24px;
+      text-align: center;
+      margin-top: 25px;
+    }
+
+    .result-date-badge {
+      font-family: Arial, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      font-size: 0.75rem;
+      color: #817b70;
+      margin-bottom: 8px;
+    }
+
+    .result-main-line {
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin: 8px 0 12px;
+    }
+
+    .result-historical-part {
+      font-size: clamp(1.4rem, 3vw, 2.1rem);
+      font-style: italic;
+      color: #666157;
+    }
+
+    .result-tilde {
+      font-size: 2.2rem;
+      color: #817b70;
+      font-weight: normal;
+      line-height: 1;
+    }
+
+    .result-modern-part {
+      font-size: clamp(2.8rem, 6.5vw, 4.8rem);
+      line-height: 1;
+      font-weight: normal;
+      letter-spacing: -0.04em;
+      color: #24231f;
+    }
+
+    .result-modern-part .unit {
+      font-size: 1.25rem;
+      font-style: italic;
+      color: #666157;
+      margin-left: 6px;
+    }
+
+    .result-context-note {
+      font-size: 0.92rem;
+      color: #666157;
+      max-width: 600px;
+      margin: auto;
+      line-height: 1.5;
+    }
+
+    /* Breakdown Grid */
+    .metrics-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+      gap: 1px;
+      background: #bbb6aa;
+      border: 1px solid #bbb6aa;
+      margin-top: 20px;
+    }
+
+    .metric-item {
+      background: #f0ede4;
+      padding: 12px 10px;
+      text-align: center;
+    }
+
+    .metric-item .lbl {
+      font-family: Arial, sans-serif;
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #817b70;
+      margin-bottom: 3px;
+    }
+
+    .metric-item .num {
+      font-family: Georgia, serif;
+      font-size: 1.05rem;
+      color: #24231f;
+    }
+
+    /* Date controls bar */
+    .date-controls-bar {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -481,13 +558,13 @@
       border-top: 1px solid #bbb6aa;
     }
 
-    .specific-date-block {
+    .picker-box {
       display: flex;
       align-items: center;
       gap: 10px;
     }
 
-    .specific-date-block label {
+    .picker-box label {
       font-family: Arial, sans-serif;
       font-size: 0.75rem;
       text-transform: uppercase;
@@ -495,8 +572,8 @@
       color: #5f5a51;
     }
 
-    .specific-date-block input[type="date"] {
-      padding: 7px 10px;
+    .picker-box input[type="date"] {
+      padding: 6px 10px;
       border: 1px solid #aaa59a;
       background: #f4f1e8;
       color: #24231f;
@@ -506,18 +583,18 @@
       cursor: pointer;
     }
 
-    .specific-date-block input[type="date"]:focus {
+    .picker-box input[type="date"]:focus {
       outline: 2px solid #817b70;
       outline-offset: 1px;
     }
 
-    .quick-jump-group {
+    .jump-group {
       display: flex;
       flex-wrap: wrap;
       gap: 5px;
     }
 
-    .quick-jump-group button {
+    .jump-group button {
       padding: 6px 10px;
       border: 1px solid #aaa59a;
       background: transparent;
@@ -529,22 +606,22 @@
       transition: background 0.15s, color 0.15s;
     }
 
-    .quick-jump-group button:hover {
+    .jump-group button:hover {
       background: #24231f;
       color: #f4f1e8;
       border-color: #24231f;
     }
 
-    .accuracy-disclaimer {
+    .monthly-disclaimer {
       font-family: Georgia, serif;
       font-size: 0.85rem;
       font-style: italic;
       color: #777268;
       text-align: center;
-      margin-top: 20px;
+      margin-top: 18px;
     }
 
-    /* Share Bar */
+    /* SHARE STRIP */
     .share-strip {
       display: flex;
       justify-content: space-between;
@@ -559,7 +636,7 @@
       font-size: 0.8rem;
     }
 
-    .share-link-code {
+    .share-code {
       font-family: monospace;
       color: #666157;
       word-break: break-all;
@@ -582,7 +659,26 @@
       opacity: 0.85;
     }
 
-    /* IDEA-LIST FORMAT FOR HISTORICAL PRICES */
+    /* ARCHIVE NOTE */
+    .archive-note {
+      margin: 45px 0 50px;
+      padding: 30px;
+      border: 1px solid #bbb6aa;
+      background: #f0ede4;
+      font-size: 0.95rem;
+    }
+
+    .archive-note strong {
+      display: block;
+      font-family: Arial, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-size: 0.7rem;
+      margin-bottom: 10px;
+      color: #817b70;
+    }
+
+    /* PRICE EXAMPLES LIST */
     .idea-list {
       margin-top: 25px;
       border-top: 1px solid #bbb6aa;
@@ -601,68 +697,6 @@
     .idea span {
       color: #666157;
       font-size: 0.98rem;
-    }
-
-    /* COMPARISON BOX (Compare Two Dates) */
-    .compare-container {
-      margin: 60px 0;
-      padding: 40px 35px;
-      border: 1px solid #bbb6aa;
-      background: #e9e5da;
-    }
-
-    .compare-container h2 {
-      margin: 0 0 15px;
-      font-size: 2.1rem;
-    }
-
-    .compare-container p {
-      color: #555148;
-      font-size: 1rem;
-      margin-bottom: 25px;
-    }
-
-    .compare-form {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 18px;
-      margin-bottom: 25px;
-    }
-
-    .compare-form label {
-      display: block;
-      font-family: Arial, sans-serif;
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      color: #5f5a51;
-      margin-bottom: 7px;
-    }
-
-    .compare-form input {
-      width: 100%;
-      padding: 10px 12px;
-      border: 1px solid #aaa59a;
-      background: #f4f1e8;
-      color: #24231f;
-      font-family: Georgia, serif;
-      font-size: 1rem;
-      border-radius: 0;
-    }
-
-    .compare-form input:focus {
-      outline: 2px solid #817b70;
-      outline-offset: 1px;
-    }
-
-    .compare-result-card {
-      padding: 20px 24px;
-      background: #f0ede4;
-      border: 1px solid #bbb6aa;
-      font-size: 1.05rem;
-      font-style: italic;
-      color: #24231f;
-      line-height: 1.6;
     }
 
     /* SOURCE BOX */
@@ -689,7 +723,69 @@
       text-decoration: underline;
     }
 
-    /* ENDING QUOTE BANNER */
+    /* DUAL DATE COMPARISON */
+    .compare-section {
+      margin: 60px 0;
+      padding: 40px 35px;
+      border: 1px solid #bbb6aa;
+      background: #e9e5da;
+    }
+
+    .compare-section h2 {
+      margin: 0 0 15px;
+      font-size: 2.1rem;
+    }
+
+    .compare-section p {
+      color: #555148;
+      font-size: 1rem;
+      margin-bottom: 25px;
+    }
+
+    .compare-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 18px;
+      margin-bottom: 25px;
+    }
+
+    .compare-grid label {
+      display: block;
+      font-family: Arial, sans-serif;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #5f5a51;
+      margin-bottom: 7px;
+    }
+
+    .compare-grid input {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid #aaa59a;
+      background: #f4f1e8;
+      color: #24231f;
+      font-family: Georgia, serif;
+      font-size: 1rem;
+      border-radius: 0;
+    }
+
+    .compare-grid input:focus {
+      outline: 2px solid #817b70;
+      outline-offset: 1px;
+    }
+
+    .compare-result-box {
+      padding: 20px 24px;
+      background: #f0ede4;
+      border: 1px solid #bbb6aa;
+      font-size: 1.05rem;
+      font-style: italic;
+      color: #24231f;
+      line-height: 1.6;
+    }
+
+    /* ENDING BANNER */
     .ending {
       margin-top: 90px;
       padding: 55px 0;
@@ -718,19 +814,7 @@
       align-items: center;
     }
 
-    /* ACCESSIBILITY & TOAST */
-    .sr-only {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      padding: 0;
-      margin: -1px;
-      overflow: hidden;
-      clip: rect(0, 0, 0, 0);
-      white-space: nowrap;
-      border-width: 0;
-    }
-
+    /* TOAST */
     .toast {
       position: fixed;
       bottom: 25px;
@@ -754,30 +838,26 @@
       transform: translateY(0);
     }
 
-    /* MOBILE ADJUSTMENTS */
     @media (max-width: 700px) {
       .article-header {
-        padding: 75px 20px 50px;
+        padding: 70px 20px 45px;
       }
       article {
         padding-left: 20px;
         padding-right: 20px;
       }
       h2 {
-        font-size: 2.1rem;
+        font-size: 2rem;
       }
-      .interactive-stage {
-        padding: 30px 18px;
+      .drop-stage {
+        padding: 25px 16px;
       }
-      .amount-control-row {
+      .amount-bar,
+      .date-controls-bar {
         flex-direction: column;
         align-items: flex-start;
       }
-      .timeline-controls-row {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      .timeline-ruler span:nth-child(even):not(:last-child) {
+      .timeline-axis span:nth-child(even):not(:last-child) {
         display: none;
       }
       footer {
@@ -800,47 +880,50 @@
     </a>
   </nav>
 
-  <!-- ARTICLE HEADER -->
+  <!-- HEADER -->
   <header class="article-header">
     <div class="archive-label">
-      History of Humanity · Monetary Archive
+      History of Humanity · Interactive Experiment
     </div>
 
     <h1>
-      Drop a Dollar Through History
+      Drop a Dollar Anywhere in History
     </h1>
 
     <p class="subtitle">
-      What was a dollar worth throughout modern history? An interactive exploration of purchasing power, consumer prices, and inflation from 1913 to 2026.
+      Pick up the dollar below and drop it anywhere on the historical graph to calculate what that purchasing power equals in 2026.
     </p>
 
     <div class="metadata">
-      Published September 2026 · Official U.S. Bureau of Labor Statistics CPI Data (1913–2026)
+      Published September 2026 · U.S. Bureau of Labor Statistics CPI Data (1913–2026)
     </div>
   </header>
 
-  <!-- MAIN CONTENT -->
+  <!-- MAIN ARTICLE -->
   <article>
 
     <p class="lead">
-      Drop a dollar anywhere in history. Slide or place the marker on any date in the past century to see what that amount of money would equal in 2026 U.S. dollars based on consumer price inflation.
+      In 2026, a single dollar buys very little. But drop that same dollar into the mid-twentieth century or the 1920s, and it transforms into an entirely different financial unit. Pick up the dollar below and drop it onto any date in the past century.
     </p>
 
-    <!-- INTERACTIVE ENGINE -->
-    <section class="interactive-stage" aria-labelledby="calculator-label">
-      <span class="interactive-label" id="calculator-label">Interactive Timeline · Purchasing Power Calculator</span>
+    <!-- THE DROP-A-DOLLAR STAGE -->
+    <section class="drop-stage" aria-labelledby="stage-title">
+      <div class="stage-instruction">
+        <strong id="stage-title">Historical Purchasing Power Graph (1913–2026)</strong>
+        <span id="dragPrompt">Pick up the dollar and drop it anywhere on the timeline</span>
+      </div>
 
-      <!-- Amount Input Bar -->
-      <div class="amount-control-row">
+      <!-- Amount Selector -->
+      <div class="amount-bar">
         <div class="amount-input-block">
           <label for="amountInput">Dollar Amount:</label>
-          <div class="amount-input-wrapper">
+          <div class="amount-field">
             <span>$</span>
             <input type="number" id="amountInput" min="0.01" step="any" value="1.00" aria-label="Dollar amount">
           </div>
         </div>
 
-        <div class="preset-group" role="toolbar" aria-label="Preset amounts">
+        <div class="preset-pills" role="toolbar" aria-label="Preset dollar amounts">
           <button type="button" data-val="1" class="active">$1</button>
           <button type="button" data-val="5">$5</button>
           <button type="button" data-val="20">$20</button>
@@ -849,79 +932,97 @@
         </div>
       </div>
 
-      <!-- Result Stage -->
-      <div class="result-display">
-        <div class="result-date-tag" id="displayDateText">December 3, 1973</div>
+      <!-- THE INTERACTIVE GRAPH BOARD -->
+      <div class="graph-board" id="graphBoard" role="application" aria-label="Draggable Historical Dollar Graph">
+        <!-- SVG Canvas layer showing the true purchasing power curve of $1 over history -->
+        <svg class="graph-canvas-layer" id="graphSvg" preserveAspectRatio="none" viewBox="0 0 1000 270">
+          <defs>
+            <linearGradient id="curveGradient" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#aaa59a" stop-opacity="0.32" />
+              <stop offset="100%" stop-color="#aaa59a" stop-opacity="0.04" />
+            </linearGradient>
+          </defs>
+          <path id="graphAreaPath" fill="url(#curveGradient)" d="" />
+          <path id="graphLinePath" fill="none" stroke="#666157" stroke-width="2" d="" />
+        </svg>
 
-        <div class="result-statement" aria-live="polite">
-          <div class="result-then" id="displayThenText">$1.00 then</div>
-          <div class="result-approx">≈</div>
-          <div class="result-today" id="displayTodayText">$7.25 <span class="unit">today</span></div>
+        <div class="graph-y-axis">Purchasing Power Curve (Equivalent 2026 $)</div>
+        <div class="graph-hint-banner" id="graphHint">Click or drag anywhere to drop</div>
+
+        <!-- Vertical Plumb Line marking dropped date -->
+        <div class="dropped-plumb-line" id="plumbLine"></div>
+
+        <!-- THE PHYSICAL DOLLAR COIN -->
+        <div
+          class="dollar-coin"
+          id="dollarCoin"
+          role="slider"
+          tabindex="0"
+          aria-label="Dollar marker: Drag across timeline or use arrow keys"
+          aria-valuemin="0"
+          aria-valuemax="1363"
+          aria-valuenow="731"
+          aria-valuetext="December 3, 1973"
+        >
+          <span class="coin-symbol" id="coinSymbol">$1</span>
+          <span class="coin-tag">DROP</span>
+
+          <div class="coin-tooltip" id="coinTooltip">December 1973</div>
+        </div>
+      </div>
+
+      <!-- Decade Axis -->
+      <div class="timeline-axis" id="timelineAxis" aria-hidden="true">
+        <!-- Populated via JavaScript -->
+      </div>
+
+      <!-- Result Announcement Display -->
+      <div class="result-announcement" aria-live="polite">
+        <div class="result-date-badge" id="displayDate">December 3, 1973</div>
+
+        <div class="result-main-line">
+          <div class="result-historical-part" id="displayThen">$1.00 then</div>
+          <div class="result-tilde">≈</div>
+          <div class="result-modern-part" id="displayToday">$7.25 <span class="unit">today</span></div>
         </div>
 
-        <p class="result-explanation-text" id="resultExplanation">
+        <p class="result-context-note" id="displayNote">
           Based on U.S. consumer-price inflation from December 1973 to August 2026.
         </p>
       </div>
 
-      <!-- Summary Metrics Grid -->
-      <div class="metrics-summary">
-        <div class="metric-cell">
-          <div class="label">Historical Amount</div>
-          <div class="val" id="metaHistAmount">$1.00</div>
+      <!-- Metrics Breakdown Grid -->
+      <div class="metrics-row">
+        <div class="metric-item">
+          <div class="lbl">Historical Amount</div>
+          <div class="num" id="metaAmount">$1.00</div>
         </div>
-        <div class="metric-cell">
-          <div class="label">Modern Equivalent</div>
-          <div class="val" id="metaModernAmount">$7.25</div>
+        <div class="metric-item">
+          <div class="lbl">Modern Equivalent</div>
+          <div class="num" id="metaModern">$7.25</div>
         </div>
-        <div class="metric-cell">
-          <div class="label">Historical CPI</div>
-          <div class="val" id="metaHistCpi">46.20</div>
+        <div class="metric-item">
+          <div class="lbl">Historical CPI</div>
+          <div class="num" id="metaHistCpi">46.20</div>
         </div>
-        <div class="metric-cell">
-          <div class="label">Current CPI (Aug 2026)</div>
-          <div class="val" id="metaCurrCpi">334.98</div>
+        <div class="metric-item">
+          <div class="lbl">Current CPI (Aug 2026)</div>
+          <div class="num" id="metaCurrCpi">334.98</div>
         </div>
-        <div class="metric-cell">
-          <div class="label">Price Change</div>
-          <div class="val" id="metaCumulative">+625.1%</div>
-        </div>
-      </div>
-
-      <!-- Draggable Timeline Track -->
-      <div class="timeline-container">
-        <div class="timeline-track" id="timelineTrack" role="region" aria-label="Horizontal Historical Timeline Track">
-          <div class="timeline-rail"></div>
-          <div class="timeline-fill" id="timelineFill"></div>
-
-          <!-- Physical Coin Slider Marker -->
-          <div
-            class="coin-marker"
-            id="coinMarker"
-            role="slider"
-            tabindex="0"
-            aria-label="Historical Date Marker"
-            aria-valuemin="0"
-            aria-valuemax="1363"
-            aria-valuenow="731"
-            aria-valuetext="December 1973"
-          >$</div>
-        </div>
-
-        <!-- Decade Ruler Labels -->
-        <div class="timeline-ruler" id="timelineRuler" aria-hidden="true">
-          <!-- Populated by JS -->
+        <div class="metric-item">
+          <div class="lbl">Cumulative Change</div>
+          <div class="num" id="metaChange">+625.1%</div>
         </div>
       </div>
 
-      <!-- Lower Controls: Date Picker & Quick Jumps -->
-      <div class="timeline-controls-row">
-        <div class="specific-date-block">
-          <label for="specificDatePicker">Specific Date:</label>
-          <input type="date" id="specificDatePicker" min="1913-01-01" max="2026-08-31" value="1973-12-03">
+      <!-- Fine Date Controls -->
+      <div class="date-controls-bar">
+        <div class="picker-box">
+          <label for="datePicker">Jump to Date:</label>
+          <input type="date" id="datePicker" min="1913-01-01" max="2026-08-31" value="1973-12-03">
         </div>
 
-        <div class="quick-jump-group" role="group" aria-label="Jump to benchmark dates">
+        <div class="jump-group" role="group" aria-label="Quick jumps">
           <button type="button" data-jump="100">100 yrs ago (1926)</button>
           <button type="button" data-jump="75">75 yrs ago (1951)</button>
           <button type="button" data-jump="50">50 yrs ago (1976)</button>
@@ -931,52 +1032,51 @@
         </div>
       </div>
 
-      <p class="accuracy-disclaimer">
+      <p class="monthly-disclaimer">
         Historical inflation data is generally reported monthly, so dates within the same month use that month's CPI.
       </p>
     </section>
 
-    <!-- Share Link Strip -->
+    <!-- SHARE BAR -->
     <div class="share-strip">
-      <span>Share this calculation: <span class="share-link-code" id="shareUrlPreview">?date=1973-12-03&amount=1</span></span>
+      <span>Share this calculation: <span class="share-code" id="shareUrlPreview">?date=1973-12-03&amount=1</span></span>
       <button type="button" id="copyShareBtn">Copy Link</button>
     </div>
 
-    <!-- ARCHIVE NOTE ON LIMITATIONS -->
+    <!-- ARCHIVE NOTE -->
     <div class="archive-note">
       <strong>Archive Note on Purchasing Power</strong>
-      This calculation shows how much money would be needed today to command approximately the same purchasing power based on consumer prices.
+      This calculation shows how much money would be needed in 2026 to have approximately the same purchasing power based on consumer prices.
       <br><br>
-      Inflation measures overall changes across a representative basket of everyday goods and services. It does not reflect investment returns, stock market appreciation, housing prices, wage growth, or the specific cost trajectory of individual inventions.
+      Inflation measures changes across an overall basket of everyday consumer goods. It does not measure investment yields, stock market appreciation, housing speculation, or wage progression.
     </div>
 
-    <!-- HISTORICAL CONTEXT: WHAT DID $1 MEAN THEN? -->
+    <!-- HISTORICAL BENCHMARKS -->
     <h2>
-      What Did $<span id="contextTitleAmount">1</span> Mean in <span id="contextPeriodText">December 1973</span>?
+      What Did $<span id="contextTitleAmount">1</span> Mean in <span id="contextDateTitle">December 1973</span>?
     </h2>
 
     <p>
-      Aggregate indices like the Consumer Price Index compress thousands of transactions into a single mathematical ratio. But in everyday life, money is experienced through what it can physically purchase at a shop counter.
+      An aggregate inflation index calculates broad purchasing power, but in daily life, value was felt in what a coin could buy over the counter:
     </p>
 
-    <div class="idea-list" id="historicalPriceList">
-      <!-- Populated dynamically based on selected date -->
+    <div class="idea-list" id="priceExamplesList">
+      <!-- Populated via JS -->
     </div>
 
     <div class="source">
       <strong>Historical Price Sources</strong>
-      Retail figures derived from historical records of the <a href="https://www.eia.gov" target="_blank" rel="noopener noreferrer">U.S. Energy Information Administration</a>, <a href="https://www.bls.gov" target="_blank" rel="noopener noreferrer">U.S. Bureau of Labor Statistics</a> Consumer Expenditure Bulletins, <a href="https://www.dol.gov/agencies/whd" target="_blank" rel="noopener noreferrer">U.S. Department of Labor</a> Historical Minimum Wage Tables, and the <a href="https://about.usps.com/who/profile/history/" target="_blank" rel="noopener noreferrer">USPS Historian</a>.
+      Historical prices are drawn from official records of the <a href="https://www.eia.gov" target="_blank" rel="noopener noreferrer">U.S. Energy Information Administration</a>, <a href="https://www.bls.gov" target="_blank" rel="noopener noreferrer">U.S. Bureau of Labor Statistics</a>, <a href="https://www.dol.gov/agencies/whd" target="_blank" rel="noopener noreferrer">U.S. Department of Labor</a>, and the <a href="https://about.usps.com/who/profile/history/" target="_blank" rel="noopener noreferrer">USPS Historian</a>.
     </div>
 
     <!-- DUAL COMPARISON TOOL -->
-    <section class="compare-container">
-      <span class="interactive-label">Secondary Tool</span>
+    <section class="compare-section">
       <h2>Compare Two Dates in History</h2>
       <p>
-        Compare purchasing power directly between any two calendar dates in modern history without using 2026 as the base.
+        Calculate the change in purchasing power between any two points in history without using 2026 as the base.
       </p>
 
-      <div class="compare-form">
+      <div class="compare-grid">
         <div>
           <label for="cmpAmount">Amount ($)</label>
           <input type="number" id="cmpAmount" value="1.00" min="0.01" step="any">
@@ -991,63 +1091,52 @@
         </div>
       </div>
 
-      <div class="compare-result-card" id="cmpResultText">
+      <div class="compare-result-box" id="cmpResultText">
         $1.00 in December 1973 had approximately the same purchasing power as $3.65 in January 2000.
       </div>
     </section>
 
-    <!-- METHODOLOGY & EDUCATIONAL CONTENT -->
+    <!-- METHODOLOGY EXPLANATION -->
     <h2>
       How the Historical Value of Money is Calculated
     </h2>
 
     <p>
-      Money does not possess a fixed intrinsic scale. Its value is determined by what a given quantity of currency can buy in goods and services at a specific moment in human history. Over decades, general price levels change due to economic output, industrial technology, raw material supply, and changes in the volume of currency in circulation.
+      Money is an invention whose value shifts with the size of an economy, the volume of currency in circulation, and the productivity of human industry. Over decades, currency values dilute through consumer price inflation.
     </p>
 
     <h3>The Consumer Price Index Formula</h3>
 
     <p>
-      To calculate the modern equivalent of historical currency, economists use the official Consumer Price Index for All Urban Consumers (CPI-U):
+      This calculator uses the standard Consumer Price Index for All Urban Consumers (CPI-U) formula certified by the U.S. Bureau of Labor Statistics:
     </p>
 
     <div class="source">
-      <strong>Standard CPI Conversion Formula</strong>
+      <strong>Standard CPI Formula</strong>
       Modern Equivalent = Historical Amount × (Current CPI / Historical CPI)
     </div>
 
     <p>
-      For example, when looking at December 1973, the official CPI-U was <strong>46.20</strong>. By August 2026, the index reached <strong>334.980</strong>. The purchasing power ratio is calculated as:
+      For example, in December 1973, the official CPI-U stood at <strong>46.20</strong>. By August 2026, the index reached <strong>334.980</strong>. The purchasing power ratio is calculated as:
     </p>
 
     <p style="font-style: italic; color: #4f4b43; padding-left: 20px; border-left: 2px solid #aaa59a;">
       $1.00 × (334.980 / 46.20) = $7.2506... ≈ $7.25
     </p>
 
-    <h3>Why Monthly Data Instead of Daily?</h3>
-
+    <h3>Handling 2026 Data</h3>
     <p>
-      The U.S. Bureau of Labor Statistics surveys prices across thousands of retail establishments, rental units, and service providers each month. It aggregates these observations into a single certified monthly number. Because daily CPI measurements do not exist in official government datasets, picking any date within a month applies that month's certified CPI value.
-    </p>
-
-    <h3>The 2026 Anchor</h3>
-
-    <p>
-      Because the year 2026 is incomplete, calculations do not guess an arbitrary full-year average. Instead, all modern comparisons use the latest published official release: <strong>August 2026 (CPI-U: 334.980)</strong>, published by the Bureau of Labor Statistics on September 11, 2026.
+      Because 2026 is currently in progress, calculations do not guess an arbitrary full-year average. Instead, all conversions use the latest certified monthly figure: <strong>August 2026 (CPI-U: 334.980)</strong>, released September 11, 2026 by the Bureau of Labor Statistics.
     </p>
 
     <div class="source">
-      <strong>Official Datasets in This Archive</strong>
+      <strong>Authoritative Data Reference</strong>
       <a href="https://data.bls.gov/timeseries/CUUR0000SA0" target="_blank" rel="noopener noreferrer">
         U.S. Bureau of Labor Statistics — Consumer Price Index (CPI-U), Series CUUR0000SA0 (1913–2026)
       </a>
-      <br><br>
-      <a href="https://fred.stlouisfed.org/series/CPIAUCNS" target="_blank" rel="noopener noreferrer">
-        Federal Reserve Bank of St. Louis (FRED) — Consumer Price Index for All Urban Consumers: All Items (CPIAUCNS)
-      </a>
     </div>
 
-    <!-- ENDING BANNER -->
+    <!-- ENDING QUOTE -->
     <div class="ending">
       <p>
         A dollar is not a permanent unit of human labor or material wealth.
@@ -1063,15 +1152,14 @@
     <span>An archive of ordinary human life · 2026</span>
   </footer>
 
-  <!-- TOAST NOTIFICATION -->
+  <!-- TOAST -->
   <div class="toast" id="toast">Link copied to clipboard</div>
 
-  <!-- JAVASCRIPT & DATASET -->
+  <!-- JAVASCRIPT & CPI ENGINE -->
   <script>
     /**
      * Official U.S. Bureau of Labor Statistics (BLS) Consumer Price Index (CPI-U)
-     * Series: CUUR0000SA0 / CPIAUCNS (1982-84 = 100)
-     * Unadjusted monthly observations from January 1913 through August 2026.
+     * Series: CUUR0000SA0 (1982-84 = 100), Jan 1913 - Aug 2026 (1,364 monthly observations)
      */
     const CPI_DATA = {
       1913: [9.8, 9.8, 9.8, 9.8, 9.7, 9.8, 9.9, 9.9, 10.0, 10.0, 10.1, 10.0],
@@ -1190,97 +1278,82 @@
       2026: [326.800, 328.200, 329.800, 331.200, 332.600, 333.500, 333.918, 334.980]
     };
 
-    // Configuration Anchor: Latest official BLS CPI data available in 2026
+    // Configuration Anchor
     const LATEST_YEAR = 2026;
-    const LATEST_MONTH_INDEX = 7; // August (0-indexed)
+    const LATEST_MONTH_INDEX = 7; // August
     const LATEST_CPI = CPI_DATA[2026][LATEST_MONTH_INDEX]; // 334.980
     const START_YEAR = 1913;
-    const START_MONTH_INDEX = 0; // January 1913
-
-    // Continuous months span from 1913-01 to 2026-08 (1,364 total observations)
-    const TOTAL_MONTHS = (LATEST_YEAR - START_YEAR) * 12 + (LATEST_MONTH_INDEX - START_MONTH_INDEX) + 1;
+    const TOTAL_MONTHS = (LATEST_YEAR - START_YEAR) * 12 + (LATEST_MONTH_INDEX) + 1; // 1,364
 
     const MONTH_NAMES = [
       "January", "February", "March", "April", "May", "June",
       "July", "August", "September", "October", "November", "December"
     ];
 
-    /**
-     * Authoritative Historical Price Benchmarks
-     * Sources: BLS Consumer Expenditure Surveys, Energy Information Administration,
-     * Department of Labor, USPS Historical Records.
-     */
     const HISTORICAL_BENCHMARKS = {
       1913: [
-        { title: "Gasoline (Regular) — ~$0.15 per gallon", desc: "One dollar purchased about 6.7 gallons of fuel." },
-        { title: "White Bread — $0.06 per 1-lb loaf", desc: "One dollar purchased roughly 16 loaves of bread." },
-        { title: "First-Class Postage Stamp — $0.02", desc: "One dollar was enough to mail 50 domestic letters." },
-        { title: "Movie Admission (Nickelodeon) — $0.05", desc: "Admitted 20 people to an early moving-picture show." },
-        { title: "Federal Minimum Wage — None", desc: "Predated federal minimum wage legislation by 25 years." }
+        { title: "Gasoline (Regular) — ~$0.15 / gal", desc: "One dollar purchased about 6.7 gallons of fuel." },
+        { title: "White Bread — $0.06 per loaf", desc: "One dollar purchased roughly 16 loaves of bread." },
+        { title: "First-Class Postage Stamp — $0.02", desc: "One dollar mailed 50 domestic letters." },
+        { title: "Movie Admission — $0.05", desc: "Admitted 20 people to an early nickelodeon moving-picture show." }
       ],
       1926: [
-        { title: "Gasoline (Regular) — $0.23 per gallon", desc: "One dollar purchased 4.3 gallons of fuel." },
-        { title: "White Bread — $0.09 per 1-lb loaf", desc: "One dollar purchased 11 loaves of bread." },
-        { title: "First-Class Postage Stamp — $0.02", desc: "One dollar mailed 50 domestic letters." },
-        { title: "Cinema Ticket — $0.25", desc: "Purchased 4 movie tickets during the silent film era." },
-        { title: "Federal Minimum Wage — None", desc: "Predated federal wage floors (established 1938)." }
+        { title: "Gasoline (Regular) — $0.23 / gal", desc: "One dollar purchased 4.3 gallons of fuel." },
+        { title: "White Bread — $0.09 per loaf", desc: "One dollar purchased 11 loaves of bread." },
+        { title: "First-Class Postage Stamp — $0.02", desc: "One dollar was enough to mail 50 domestic letters." },
+        { title: "Cinema Ticket — $0.25", desc: "Purchased 4 cinema admissions during the silent film era." }
       ],
       1938: [
-        { title: "Federal Minimum Wage — $0.25 per hour", desc: "One dollar represented 4 hours of federal minimum-wage labor." },
-        { title: "Gasoline (Regular) — $0.19 per gallon", desc: "One dollar purchased 5.2 gallons of fuel." },
-        { title: "White Bread — $0.08 per 1-lb loaf", desc: "One dollar purchased 12 loaves of bread." },
-        { title: "First-Class Postage Stamp — $0.03", desc: "One dollar was enough to mail 33 letters." },
-        { title: "Cinema Ticket — $0.25", desc: "Purchased 4 cinema admissions." }
+        { title: "Federal Minimum Wage — $0.25 / hr", desc: "One dollar represented 4 hours of federal minimum-wage labor." },
+        { title: "Gasoline (Regular) — $0.19 / gal", desc: "One dollar purchased 5.2 gallons of fuel." },
+        { title: "White Bread — $0.08 per loaf", desc: "One dollar purchased 12 loaves of bread." },
+        { title: "First-Class Postage Stamp — $0.03", desc: "One dollar mailed 33 domestic letters." }
       ],
       1951: [
-        { title: "Gasoline (Regular) — $0.27 per gallon", desc: "One dollar purchased 3.7 gallons of gasoline." },
-        { title: "White Bread — $0.16 per 1-lb loaf", desc: "One dollar purchased 6 loaves of bread." },
+        { title: "Gasoline (Regular) — $0.27 / gal", desc: "One dollar purchased 3.7 gallons of gasoline." },
+        { title: "White Bread — $0.16 per loaf", desc: "One dollar purchased 6 loaves of bread." },
         { title: "First-Class Postage Stamp — $0.03", desc: "One dollar mailed 33 letters." },
-        { title: "Movie Ticket — $0.48", desc: "Purchased roughly 2 movie theater tickets." },
-        { title: "Federal Minimum Wage — $0.75 per hour", desc: "Earned in 1 hour and 20 minutes of minimum-wage labor." }
+        { title: "Movie Ticket — $0.48", desc: "Purchased roughly 2 movie theater admissions." },
+        { title: "Federal Minimum Wage — $0.75 / hr", desc: "Earned in 1 hour and 20 minutes of minimum-wage labor." }
       ],
       1965: [
-        { title: "Gasoline (Regular) — $0.31 per gallon", desc: "One dollar purchased 3.2 gallons of gasoline." },
-        { title: "White Bread — $0.21 per 1-lb loaf", desc: "One dollar purchased 4.7 loaves of bread." },
+        { title: "Gasoline (Regular) — $0.31 / gal", desc: "One dollar purchased 3.2 gallons of gasoline." },
+        { title: "White Bread — $0.21 per loaf", desc: "One dollar purchased 4.7 loaves of bread." },
         { title: "First-Class Postage Stamp — $0.05", desc: "One dollar mailed 20 letters." },
-        { title: "Movie Ticket — $1.01", desc: "Exactly paid for one adult movie admission." },
-        { title: "Federal Minimum Wage — $1.25 per hour", desc: "Earned in 48 minutes of federal minimum-wage labor." }
+        { title: "Movie Ticket — $1.01", desc: "Covered the exact cost of an adult movie admission." },
+        { title: "Federal Minimum Wage — $1.25 / hr", desc: "Earned in 48 minutes of federal wage labor." }
       ],
       1973: [
-        { title: "Gasoline (Regular) — $0.39 per gallon", desc: "One dollar purchased 2.5 gallons during the first months of the oil crisis." },
-        { title: "White Bread — $0.28 per 1-lb loaf", desc: "One dollar purchased 3.5 loaves of bread." },
+        { title: "Gasoline (Regular) — $0.39 / gal", desc: "One dollar purchased 2.5 gallons during the first months of the oil crisis." },
+        { title: "White Bread — $0.28 per loaf", desc: "One dollar purchased 3.5 loaves of bread." },
         { title: "First-Class Postage Stamp — $0.08", desc: "One dollar was enough to mail 12 letters." },
         { title: "Daily Newspaper — $0.15", desc: "One dollar bought roughly 6 daily newspapers at a newsstand." },
-        { title: "Movie Ticket — $1.77", desc: "Covered more than half the cost of an evening cinema ticket." },
-        { title: "Federal Minimum Wage — $1.60 per hour", desc: "Earned in 37.5 minutes of federal minimum-wage labor." }
+        { title: "Movie Ticket — $1.77", desc: "Covered more than half the cost of an evening cinema admission." },
+        { title: "Federal Minimum Wage — $1.60 / hr", desc: "Earned in 37.5 minutes of federal minimum-wage work." }
       ],
       1982: [
-        { title: "Gasoline (Regular) — $1.28 per gallon", desc: "One dollar was no longer enough to buy a full gallon of fuel." },
-        { title: "White Bread — $0.53 per 1-lb loaf", desc: "One dollar purchased approximately 1.9 loaves." },
+        { title: "Gasoline (Regular) — $1.28 / gal", desc: "One dollar was no longer enough to buy a single gallon." },
+        { title: "White Bread — $0.53 per loaf", desc: "One dollar purchased approximately 1.9 loaves." },
         { title: "First-Class Postage Stamp — $0.20", desc: "One dollar mailed 5 letters." },
-        { title: "Movie Ticket — $2.94", desc: "Covered approximately one-third of a theater ticket." },
-        { title: "Federal Minimum Wage — $3.35 per hour", desc: "Earned in 18 minutes of federal minimum-wage labor." }
+        { title: "Federal Minimum Wage — $3.35 / hr", desc: "Earned in 18 minutes of federal minimum-wage work." }
       ],
       1995: [
-        { title: "Gasoline (Regular) — $1.15 per gallon", desc: "One dollar purchased 0.87 gallons of gasoline." },
-        { title: "White Bread — $0.79 per 1-lb loaf", desc: "One dollar purchased 1.25 loaves of bread." },
+        { title: "Gasoline (Regular) — $1.15 / gal", desc: "One dollar purchased 0.87 gallons of gasoline." },
+        { title: "White Bread — $0.79 per loaf", desc: "One dollar purchased 1.25 loaves of bread." },
         { title: "First-Class Postage Stamp — $0.32", desc: "One dollar mailed 3 letters." },
-        { title: "Movie Ticket — $4.35", desc: "Covered roughly one-fourth of a movie ticket." },
-        { title: "Federal Minimum Wage — $4.25 per hour", desc: "Earned in 14 minutes of federal minimum-wage labor." }
+        { title: "Federal Minimum Wage — $4.25 / hr", desc: "Earned in 14 minutes of federal minimum-wage work." }
       ],
       2008: [
-        { title: "Gasoline (Regular) — $3.27 per gallon", desc: "One dollar purchased about 0.3 gallons during the energy spike." },
-        { title: "White Bread — $1.37 per 1-lb loaf", desc: "One dollar was no longer enough to buy a whole loaf of bread." },
+        { title: "Gasoline (Regular) — $3.27 / gal", desc: "One dollar bought only 0.3 gallons during the energy shock." },
+        { title: "White Bread — $1.37 per loaf", desc: "One dollar was not enough to buy a whole loaf of bread." },
         { title: "First-Class Postage Stamp — $0.42", desc: "One dollar mailed 2 letters." },
-        { title: "Movie Ticket — $7.18", desc: "Covered approximately 14% of a movie ticket." },
-        { title: "Federal Minimum Wage — $6.55 per hour", desc: "Earned in 9 minutes of federal minimum-wage labor." }
+        { title: "Federal Minimum Wage — $6.55 / hr", desc: "Earned in 9 minutes of minimum-wage work." }
       ],
       2026: [
-        { title: "Gasoline (Regular) — ~$3.45 per gallon", desc: "One dollar buys approximately 0.29 gallons of fuel." },
-        { title: "White Bread — ~$2.05 per 1-lb loaf", desc: "One dollar buys roughly half a standard loaf." },
-        { title: "First-Class Postage Stamp — $0.73", desc: "One dollar mails 1 domestic letter with change left over." },
-        { title: "Movie Ticket — ~$11.25", desc: "Covers roughly 9% of an average adult cinema admission." },
-        { title: "Federal Minimum Wage — $7.25 per hour", desc: "Earned in 8.3 minutes of federal minimum-wage work." }
+        { title: "Gasoline (Regular) — ~$3.45 / gal", desc: "One dollar buys approximately 0.29 gallons of fuel." },
+        { title: "White Bread — ~$2.05 per loaf", desc: "One dollar buys roughly half a standard loaf." },
+        { title: "First-Class Postage Stamp — $0.73", desc: "One dollar mails 1 letter with change left over." },
+        { title: "Federal Minimum Wage — $7.25 / hr", desc: "Earned in 8.3 minutes of federal base wage work." }
       ]
     };
 
@@ -1288,33 +1361,40 @@
     const state = {
       amount: 1.00,
       selectedYear: 1973,
-      selectedMonth: 11, // December (0-indexed)
+      selectedMonth: 11, // December
       selectedDay: 3
     };
 
-    // DOM References
-    const amountInput = document.getElementById('amountInput');
-    const presetButtons = document.querySelectorAll('.preset-group button');
-    const specificDatePicker = document.getElementById('specificDatePicker');
-    const displayDateText = document.getElementById('displayDateText');
-    const displayThenText = document.getElementById('displayThenText');
-    const displayTodayText = document.getElementById('displayTodayText');
-    const resultExplanation = document.getElementById('resultExplanation');
+    // DOM Elements
+    const graphBoard = document.getElementById('graphBoard');
+    const dollarCoin = document.getElementById('dollarCoin');
+    const coinSymbol = document.getElementById('coinSymbol');
+    const coinTooltip = document.getElementById('coinTooltip');
+    const plumbLine = document.getElementById('plumbLine');
+    const graphHint = document.getElementById('graphHint');
+    const graphAreaPath = document.getElementById('graphAreaPath');
+    const graphLinePath = document.getElementById('graphLinePath');
+    const timelineAxis = document.getElementById('timelineAxis');
+    const dragPrompt = document.getElementById('dragPrompt');
 
-    const metaHistAmount = document.getElementById('metaHistAmount');
-    const metaModernAmount = document.getElementById('metaModernAmount');
+    const amountInput = document.getElementById('amountInput');
+    const presetButtons = document.querySelectorAll('.preset-pills button');
+    const datePicker = document.getElementById('datePicker');
+
+    const displayDate = document.getElementById('displayDate');
+    const displayThen = document.getElementById('displayThen');
+    const displayToday = document.getElementById('displayToday');
+    const displayNote = document.getElementById('displayNote');
+
+    const metaAmount = document.getElementById('metaAmount');
+    const metaModern = document.getElementById('metaModern');
     const metaHistCpi = document.getElementById('metaHistCpi');
     const metaCurrCpi = document.getElementById('metaCurrCpi');
-    const metaCumulative = document.getElementById('metaCumulative');
-
-    const timelineTrack = document.getElementById('timelineTrack');
-    const timelineFill = document.getElementById('timelineFill');
-    const coinMarker = document.getElementById('coinMarker');
-    const timelineRuler = document.getElementById('timelineRuler');
+    const metaChange = document.getElementById('metaChange');
 
     const contextTitleAmount = document.getElementById('contextTitleAmount');
-    const contextPeriodText = document.getElementById('contextPeriodText');
-    const historicalPriceList = document.getElementById('historicalPriceList');
+    const contextDateTitle = document.getElementById('contextDateTitle');
+    const priceExamplesList = document.getElementById('priceExamplesList');
 
     const shareUrlPreview = document.getElementById('shareUrlPreview');
     const copyShareBtn = document.getElementById('copyShareBtn');
@@ -1339,9 +1419,7 @@
 
     function getCpiValue(year, month) {
       if (!CPI_DATA[year]) return null;
-      if (CPI_DATA[year][month] !== undefined) {
-        return CPI_DATA[year][month];
-      }
+      if (CPI_DATA[year][month] !== undefined) return CPI_DATA[year][month];
       return null;
     }
 
@@ -1357,8 +1435,76 @@
       return '$' + val.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
     }
 
+    /**
+     * Compute Y-position on the graph for a given purchasing power value.
+     * Highest purchasing power (~$34 in 1913) sits near top, $1.00 sits near bottom.
+     */
+    function getGraphY(powerMultiplier) {
+      // Max power ~35 (1913), Min power = 1.0 (2026)
+      const maxP = 35.0;
+      const minP = 1.0;
+      const normalized = Math.max(0, Math.min(1, (powerMultiplier - minP) / (maxP - minP)));
+      // SVG / Board height: padding from top 40px to bottom 230px
+      const topY = 40;
+      const bottomY = 220;
+      return bottomY - (normalized * (bottomY - topY));
+    }
+
+    /**
+     * Draw the background SVG purchasing-power curve from Jan 1913 to Aug 2026
+     */
+    function drawPurchasingPowerCurve() {
+      const points = [];
+      for (let i = 0; i < TOTAL_MONTHS; i += 6) { // sampled every 6 months for clean curve
+        const { year, month } = indexToYearMonth(i);
+        const cpi = getCpiValue(year, month);
+        const power = LATEST_CPI / cpi;
+        const x = (i / (TOTAL_MONTHS - 1)) * 1000;
+        const y = getGraphY(power);
+        points.push([x, y]);
+      }
+      // include last month
+      const lastCpi = getCpiValue(LATEST_YEAR, LATEST_MONTH_INDEX);
+      points.push([1000, getGraphY(LATEST_CPI / lastCpi)]);
+
+      let pathD = `M ${points[0][0]},${points[0][1]} `;
+      for (let i = 1; i < points.length; i++) {
+        pathD += `L ${points[i][0].toFixed(1)},${points[i][1].toFixed(1)} `;
+      }
+      graphLinePath.setAttribute('d', pathD);
+
+      const areaD = pathD + `L 1000,270 L 0,270 Z`;
+      graphAreaPath.setAttribute('d', areaD);
+    }
+
+    /**
+     * Build the timeline decade labels
+     */
+    function setupDecadeAxis() {
+      timelineAxis.innerHTML = '';
+      const decades = [1913, 1920, 1930, 1940, 1950, 1960, 1970, 1980, 1990, 2000, 2010, 2020, 2026];
+
+      decades.forEach(yr => {
+        const tick = document.createElement('span');
+        tick.className = 'axis-tick';
+        tick.dataset.year = yr;
+        tick.textContent = yr;
+        tick.addEventListener('click', (e) => {
+          e.stopPropagation();
+          state.selectedYear = yr;
+          state.selectedMonth = (yr === 2026) ? LATEST_MONTH_INDEX : 0;
+          state.selectedDay = 1;
+          render();
+        });
+        timelineAxis.appendChild(tick);
+      });
+    }
+
+    /**
+     * Render the whole state
+     */
     function render() {
-      // Bounds enforcement
+      // Clamp bounds
       if (state.selectedYear > LATEST_YEAR || (state.selectedYear === LATEST_YEAR && state.selectedMonth > LATEST_MONTH_INDEX)) {
         state.selectedYear = LATEST_YEAR;
         state.selectedMonth = LATEST_MONTH_INDEX;
@@ -1371,49 +1517,62 @@
       const histCpi = getCpiValue(state.selectedYear, state.selectedMonth);
       const monthName = MONTH_NAMES[state.selectedMonth];
       const modernValue = calculateEquivalent(state.amount, histCpi);
+      const multiplier = histCpi ? (LATEST_CPI / histCpi) : 1;
 
-      // Hero Statement
-      displayDateText.textContent = `${monthName} ${state.selectedDay}, ${state.selectedYear}`;
-      displayThenText.textContent = `${formatCurrency(state.amount)} then`;
-      displayTodayText.innerHTML = `${formatCurrency(modernValue)} <span class="unit">today</span>`;
+      // Update Dollar Coin Label
+      if (state.amount === 1) {
+        coinSymbol.textContent = '$1';
+      } else if (state.amount < 1000) {
+        coinSymbol.textContent = '$' + Math.round(state.amount);
+      } else {
+        coinSymbol.textContent = '$' + (state.amount / 1000).toFixed(0) + 'k';
+      }
 
-      resultExplanation.textContent =
-        `Based on U.S. consumer-price inflation from ${monthName} ${state.selectedYear} to August 2026 (latest available official data).`;
+      // Update Dollar Coin & Plumb Line position
+      const activeIdx = yearMonthToIndex(state.selectedYear, state.selectedMonth);
+      const pct = (activeIdx / (TOTAL_MONTHS - 1)) * 100;
+      const targetY = getGraphY(multiplier);
 
-      // Metrics Summary
-      metaHistAmount.textContent = formatCurrency(state.amount);
-      metaModernAmount.textContent = formatCurrency(modernValue);
+      dollarCoin.style.left = `${pct}%`;
+      dollarCoin.style.top = `${targetY}px`;
+      plumbLine.style.left = `${pct}%`;
+
+      coinTooltip.textContent = `${monthName} ${state.selectedYear}`;
+
+      dollarCoin.setAttribute('aria-valuenow', activeIdx);
+      dollarCoin.setAttribute('aria-valuetext', `${monthName} ${state.selectedDay}, ${state.selectedYear}`);
+
+      // Primary Announcement
+      displayDate.textContent = `${monthName} ${state.selectedDay}, ${state.selectedYear}`;
+      displayThen.textContent = `${formatCurrency(state.amount)} then`;
+      displayToday.innerHTML = `${formatCurrency(modernValue)} <span class="unit">today</span>`;
+      displayNote.textContent = `Based on U.S. consumer-price inflation from ${monthName} ${state.selectedYear} to August 2026.`;
+
+      // Metrics Grid
+      metaAmount.textContent = formatCurrency(state.amount);
+      metaModern.textContent = formatCurrency(modernValue);
       metaHistCpi.textContent = histCpi ? histCpi.toFixed(2) : '—';
       metaCurrCpi.textContent = LATEST_CPI.toFixed(2);
 
       if (histCpi) {
-        const cumulativePct = ((LATEST_CPI - histCpi) / histCpi) * 100;
-        metaCumulative.textContent = (cumulativePct >= 0 ? '+' : '') + cumulativePct.toFixed(1) + '%';
+        const diffPct = ((LATEST_CPI - histCpi) / histCpi) * 100;
+        metaChange.textContent = (diffPct >= 0 ? '+' : '') + diffPct.toFixed(1) + '%';
       } else {
-        metaCumulative.textContent = '—';
+        metaChange.textContent = '—';
       }
 
-      // Slider & Coin Position
-      const activeIndex = yearMonthToIndex(state.selectedYear, state.selectedMonth);
-      const pct = (activeIndex / (TOTAL_MONTHS - 1)) * 100;
-
-      coinMarker.style.left = `${pct}%`;
-      timelineFill.style.width = `${pct}%`;
-      coinMarker.setAttribute('aria-valuenow', activeIndex);
-      coinMarker.setAttribute('aria-valuetext', `${monthName} ${state.selectedYear}`);
-
       // Date Picker Sync
-      const formattedMonth = String(state.selectedMonth + 1).padStart(2, '0');
-      const formattedDay = String(state.selectedDay).padStart(2, '0');
-      specificDatePicker.value = `${state.selectedYear}-${formattedMonth}-${formattedDay}`;
+      const fMonth = String(state.selectedMonth + 1).padStart(2, '0');
+      const fDay = String(state.selectedDay).padStart(2, '0');
+      datePicker.value = `${state.selectedYear}-${fMonth}-${fDay}`;
 
-      // Ruler highlight
-      document.querySelectorAll('.timeline-tick').forEach(tick => {
-        const tickYr = parseInt(tick.dataset.year, 10);
-        tick.classList.toggle('is-active', Math.abs(tickYr - state.selectedYear) < 5);
+      // Axis active highlight
+      document.querySelectorAll('.axis-tick').forEach(tick => {
+        const y = parseInt(tick.dataset.year, 10);
+        tick.classList.toggle('is-active', Math.abs(y - state.selectedYear) < 5);
       });
 
-      // Historical Price List
+      // Price Examples
       renderHistoricalPrices(state.selectedYear, monthName);
 
       // URL Sync
@@ -1422,21 +1581,21 @@
 
     function renderHistoricalPrices(year, monthName) {
       contextTitleAmount.textContent = state.amount === 1 ? '1' : state.amount.toLocaleString();
-      contextPeriodText.textContent = `${monthName} ${year}`;
+      contextDateTitle.textContent = `${monthName} ${year}`;
 
       const benchmarkYears = Object.keys(HISTORICAL_BENCHMARKS).map(Number).sort((a, b) => a - b);
-      let closestYear = benchmarkYears[0];
+      let closest = benchmarkYears[0];
       let minDiff = Infinity;
       benchmarkYears.forEach(by => {
         const diff = Math.abs(by - year);
         if (diff < minDiff) {
           minDiff = diff;
-          closestYear = by;
+          closest = by;
         }
       });
 
-      const items = HISTORICAL_BENCHMARKS[closestYear] || [];
-      historicalPriceList.innerHTML = items.map(item => `
+      const list = HISTORICAL_BENCHMARKS[closest] || [];
+      priceExamplesList.innerHTML = list.map(item => `
         <div class="idea">
           <strong>${item.title}</strong><br>
           <span>${item.desc}</span>
@@ -1444,80 +1603,70 @@
       `).join('');
     }
 
-    function setupTimelineRuler() {
-      timelineRuler.innerHTML = '';
-      const decades = [1913, 1920, 1930, 1940, 1950, 1960, 1970, 1980, 1990, 2000, 2010, 2020, 2026];
+    /* ==========================================================================
+       PICK UP & DROP PHYSICS
+       ========================================================================== */
+    let isPickedUp = false;
 
-      decades.forEach(yr => {
-        const tick = document.createElement('span');
-        tick.className = 'timeline-tick';
-        tick.dataset.year = yr;
-        tick.textContent = yr;
-        tick.addEventListener('click', (e) => {
-          e.stopPropagation();
-          state.selectedYear = yr;
-          state.selectedMonth = (yr === 2026) ? LATEST_MONTH_INDEX : 0;
-          state.selectedDay = 1;
-          render();
-        });
-        timelineRuler.appendChild(tick);
-      });
-    }
-
-    // Timeline Dragging Interactions
-    let isDragging = false;
-
-    function handlePointerMove(e) {
-      if (!isDragging) return;
-      updateFromPointerX(e.clientX);
-    }
-
-    function stopDragging() {
-      if (!isDragging) return;
-      isDragging = false;
-      coinMarker.classList.remove('is-dragging');
-      window.removeEventListener('pointermove', handlePointerMove);
-      window.removeEventListener('pointerup', stopDragging);
-    }
-
-    function startDragging(e) {
-      isDragging = true;
-      coinMarker.classList.add('is-dragging');
-      window.addEventListener('pointermove', handlePointerMove, { passive: false });
-      window.addEventListener('pointerup', stopDragging);
-      updateFromPointerX(e.clientX);
-    }
-
-    function updateFromPointerX(clientX) {
-      const rect = timelineTrack.getBoundingClientRect();
+    function dropAtPointerX(clientX) {
+      const rect = graphBoard.getBoundingClientRect();
       const x = clientX - rect.left;
       const clampedX = Math.max(0, Math.min(rect.width, x));
       const ratio = clampedX / rect.width;
-      const targetIndex = Math.round(ratio * (TOTAL_MONTHS - 1));
-      const { year, month } = indexToYearMonth(targetIndex);
+      const targetIdx = Math.round(ratio * (TOTAL_MONTHS - 1));
+      const { year, month } = indexToYearMonth(targetIdx);
 
       state.selectedYear = year;
       state.selectedMonth = month;
-      const maxDays = new Date(year, month + 1, 0).getDate();
-      state.selectedDay = Math.min(state.selectedDay || 1, maxDays);
+      const maxD = new Date(year, month + 1, 0).getDate();
+      state.selectedDay = Math.min(state.selectedDay || 1, maxD);
 
       render();
     }
 
-    coinMarker.addEventListener('pointerdown', (e) => {
+    function onPointerMove(e) {
+      if (!isPickedUp) return;
+      dropAtPointerX(e.clientX);
+    }
+
+    function onPointerUp() {
+      if (!isPickedUp) return;
+      isPickedUp = false;
+      dollarCoin.classList.remove('is-picked-up');
+      dragPrompt.textContent = `Dropped on ${MONTH_NAMES[state.selectedMonth]} ${state.selectedYear}`;
+      graphHint.textContent = "Click or drag to drop again";
+
+      window.removeEventListener('pointermove', onPointerMove);
+      window.removeEventListener('pointerup', onPointerUp);
+    }
+
+    // Pick up dollar coin
+    dollarCoin.addEventListener('pointerdown', (e) => {
       e.preventDefault();
-      startDragging(e);
+      isPickedUp = true;
+      dollarCoin.classList.add('is-picked-up');
+      dragPrompt.textContent = "Dragging dollar... Release to drop on date";
+      graphHint.textContent = "Release to drop";
+
+      window.addEventListener('pointermove', onPointerMove, { passive: false });
+      window.addEventListener('pointerup', onPointerUp);
     });
 
-    timelineTrack.addEventListener('pointerdown', (e) => {
-      if (e.target === coinMarker) return;
-      updateFromPointerX(e.clientX);
-      startDragging(e);
+    // Directly click/tap anywhere on the board to drop
+    graphBoard.addEventListener('pointerdown', (e) => {
+      if (e.target === dollarCoin || dollarCoin.contains(e.target)) return;
+      dropAtPointerX(e.clientX);
+      isPickedUp = true;
+      dollarCoin.classList.add('is-picked-up');
+      dragPrompt.textContent = "Dragging dollar... Release to drop on date";
+
+      window.addEventListener('pointermove', onPointerMove, { passive: false });
+      window.addEventListener('pointerup', onPointerUp);
     });
 
-    // Keyboard navigation
-    coinMarker.addEventListener('keydown', (e) => {
-      let currentIndex = yearMonthToIndex(state.selectedYear, state.selectedMonth);
+    // Accessible Keyboard Stepping
+    dollarCoin.addEventListener('keydown', (e) => {
+      let currentIdx = yearMonthToIndex(state.selectedYear, state.selectedMonth);
       let step = 0;
 
       if (e.key === 'ArrowLeft' || e.key === 'ArrowDown') {
@@ -1529,23 +1678,23 @@
       } else if (e.key === 'PageUp') {
         step = 60;
       } else if (e.key === 'Home') {
-        currentIndex = 0;
+        currentIdx = 0;
       } else if (e.key === 'End') {
-        currentIndex = TOTAL_MONTHS - 1;
+        currentIdx = TOTAL_MONTHS - 1;
       }
 
       if (step !== 0 || e.key === 'Home' || e.key === 'End') {
         e.preventDefault();
-        const targetIndex = Math.max(0, Math.min(TOTAL_MONTHS - 1, currentIndex + step));
-        const { year, month } = indexToYearMonth(targetIndex);
+        const targetIdx = Math.max(0, Math.min(TOTAL_MONTHS - 1, currentIdx + step));
+        const { year, month } = indexToYearMonth(targetIdx);
         state.selectedYear = year;
         state.selectedMonth = month;
         render();
       }
     });
 
-    // Specific Date Picker Input
-    specificDatePicker.addEventListener('change', (e) => {
+    // Date Picker Input
+    datePicker.addEventListener('change', (e) => {
       if (!e.target.value) return;
       const [y, m, d] = e.target.value.split('-').map(Number);
       if (!isNaN(y) && !isNaN(m) && !isNaN(d)) {
@@ -1556,7 +1705,7 @@
       }
     });
 
-    // Amount Input
+    // Dollar Amount Inputs
     amountInput.addEventListener('input', (e) => {
       const val = parseFloat(e.target.value);
       if (!isNaN(val) && val > 0) {
@@ -1577,7 +1726,7 @@
       }
     });
 
-    // Presets
+    // Preset Amount Buttons
     presetButtons.forEach(btn => {
       btn.addEventListener('click', () => {
         presetButtons.forEach(b => b.classList.remove('active'));
@@ -1589,8 +1738,8 @@
       });
     });
 
-    // Quick Jumps
-    document.querySelectorAll('.quick-jump-group button').forEach(btn => {
+    // Quick Jump Buttons
+    document.querySelectorAll('.jump-group button').forEach(btn => {
       btn.addEventListener('click', () => {
         const jumpYrs = parseInt(btn.dataset.jump, 10);
         if (jumpYrs === 0) {
@@ -1608,9 +1757,9 @@
 
     // URL State management
     function updateUrlState() {
-      const formattedMonth = String(state.selectedMonth + 1).padStart(2, '0');
-      const formattedDay = String(state.selectedDay).padStart(2, '0');
-      const dateStr = `${state.selectedYear}-${formattedMonth}-${formattedDay}`;
+      const fM = String(state.selectedMonth + 1).padStart(2, '0');
+      const fD = String(state.selectedDay).padStart(2, '0');
+      const dateStr = `${state.selectedYear}-${fM}-${fD}`;
 
       const params = new URLSearchParams();
       params.set('date', dateStr);
@@ -1653,7 +1802,7 @@
       state.selectedDay = 3;
     }
 
-    // Share link copy button
+    // Share link copy
     copyShareBtn.addEventListener('click', () => {
       navigator.clipboard.writeText(window.location.href).then(() => {
         toast.classList.add('show');
@@ -1661,7 +1810,7 @@
       });
     });
 
-    // Secondary Dual Comparison Tool
+    // Secondary Comparison Tool
     function updateComparison() {
       const amt = parseFloat(cmpAmount.value) || 1.00;
       const dateAVal = cmpDateA.value;
@@ -1691,8 +1840,9 @@
     cmpDateA.addEventListener('change', updateComparison);
     cmpDateB.addEventListener('change', updateComparison);
 
-    // Boot
-    setupTimelineRuler();
+    // Initialize
+    drawPurchasingPowerCurve();
+    setupDecadeAxis();
     parseUrlState();
     render();
     updateComparison();
