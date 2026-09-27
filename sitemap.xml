@@ -4,7 +4,7 @@
   <!-- Homepage -->
   <url>
     <loc>https://fluryjanis.github.io/History-of-Humanity/</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-09-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -26,7 +26,7 @@
 
   <url>
     <loc>https://fluryjanis.github.io/History-of-Humanity/blog/What-People-in-2026-Think-2126-Will-Look-Like.html</loc>
-    <lastmod>2026-09-01</lastmod>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -61,7 +61,7 @@
 
   <url>
     <loc>https://fluryjanis.github.io/History-of-Humanity/blog/Will-AI-Create-a-Second-Gilded-Age.html</loc>
-    <lastmod>2026-09-04</lastmod>
+    <lastmod>2026-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -83,6 +83,25 @@
   <url>
     <loc>https://fluryjanis.github.io/History-of-Humanity/blog/What-Is-History-of-Man.html</loc>
     <lastmod>2026-09-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://fluryjanis.github.io/History-of-Humanity/blog/What-People-Thought-2026-Would-Look-Like-vs-Reality.html</loc>
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://fluryjanis.github.io/History-of-Humanity/blog/Drop-A-Dollar.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://fluryjanis.github.io/History-of-Humanity/blog/What-Do-People-Think-Is-the-Best-Form-of-Government-in-2026.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
